@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>N1 Flashcard Ultimate</title>
+    <script src="data.js"></script>
+    <style>
+        :root {
+            --primary: #3498db;
+            --success: #2ecc71;
+            --danger: #e74c3c;
+            --bg: #f5f6fa;
+        }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            user-select: none;
+            touch-action: none;
+        }
+
+        h2 { color: #2c3e50; margin: 15px 0; font-size: 20px; }
+
+        #lessonSelect {
+            width: 85%;
+            padding: 12px;
+            border-radius: 12px;
+            border: 2px solid var(--primary);
+            margin-bottom: 15px;
+            font-size: 16px;
+            background: white;
+            outline: none;
+        }
+
+        /* KHUNG THẺ */
+        .main-wrapper {
+            position: relative;
+            width: 90vw;
+            max-width: 400px;
+            height: 300px;
+            perspective: 1200px;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        /* Mặt thẻ */
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+            padding: 25px;
+        }
+
+        .face-front { font-size: 50px; font-weight: bold; color: #333; }
+        .face-back { transform: rotateY(180deg); background: #ffffff; }
+
+        .reading { font-size: 32px; color: var(--danger); margin-bottom: 12px; }
+        .meaning { font-size: 22px; color: var(--success); font-weight: 500; text-align: center; }
+
+        /* Nhãn báo hiệu vuốt */
+        .swipe-badge {
+            position: absolute;
+            top: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            opacity: 0;
+            z-index: 20;
+            pointer-events: none;
+        }
+        .badge-right { right: 20px; background: var(--success); }
+        .badge-left { left: 20px; background: var(--danger); }
+
+        /* NÚT ĐIỀU KHIỂN */
+        .btn-container {
+            margin-top: 35px;
+            display: flex;
+            gap: 15px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .btn-action {
+            flex: 1;
+            padding: 18px;
+            border: none;
+            border-radius: 18px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn-not { background: var(--danger); }
+        .btn-ok { background: var(--success); }
+        .btn-action:active { transform: scale(0.92); opacity: 0.9; }
+
+        /* MÀN HÌNH KẾT QUẢ */
+        #resultView {
+            display: none;
+            text-align: center;
+            background: white;
+            padding: 40px 20px;
+            border-radius: 30px;
+            width: 85%;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .nav-btn {
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+        .btn-blue { background: var(--primary); }
+        .btn-purple { background: #9b59b6; }
+
+        #footer-status { margin-top: auto; padding-bottom: 25px; color: #bdc3c7; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Bé Yêu N3</h2>
+    
+    <select id="lessonSelect" onchange="loadLesson()"></select>
+
+    <div id="studyView" style="display:contents">
+        <div class="main-wrapper" id="touchZone">
+            <div id="lbOk" class="swipe-badge badge-right">THUỘC</div>
+            <div id="lbNot" class="swipe-badge badge-left">CHƯA</div>
+            
+            <div class="card" id="myCard">
+                <div class="card-face face-front" id="txtF">...</div>
+                <div class="card-face face-back">
+                    <div class="reading" id="txtR"></div>
+                    <div class="meaning" id="txtM"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn-action btn-not" onclick="mark(false)">Chưa thuộc</button>
+            <button class="btn-action btn-ok" onclick="mark(true)">Đã thuộc</button>
+        </div>
+    </div>
+
+    <div id="resultView">
+        <h3 id="resTitle">Xong lượt này!</h3>
+        <p style="color: var(--success); font-size: 20px;">✔️ Thuộc: <span id="numOk">0</span></p>
+        <p style="color: var(--danger); font-size: 20px;">❌ Chưa: <span id="numNo">0</span></p>
+        <button class="nav-btn btn-purple" id="btnWeak" onclick="retryWeak()">Ôn từ chưa thuộc</button>
+        <button class="nav-btn btn-blue" onclick="loadLesson()">Học lại cả bài</button>
+    </div>
+
+    <div id="footer-status">Đang tải dữ liệu...</div>
+
+    <script>
+        let dataList = [], currIdx = 0, oks = [], nos = [];
+        let sX = 0, cX = 0, isDrag = false, sTime = 0, flipping = false;
+
+        window.onload = function() {
+            if (typeof allData === 'undefined') {
+                document.getElementById('footer-status').innerText = "Lỗi: Không tìm thấy data.js!";
+                return;
+            }
+            const lessons = [...new Set(allData.map(i => i.lesson))].sort((a,b)=>a-b);
+            const sel = document.getElementById('lessonSelect');
+            lessons.forEach(l => {
+                let o = document.createElement('option');
+                o.value = l; o.innerText = "Bài học số " + l;
+                sel.appendChild(o);
+            });
+            loadLesson();
+            initSwipe();
+        };
+
+        function loadLesson() {
+            const L = document.getElementById('lessonSelect').value;
+            dataList = allData.filter(i => i.lesson == L).sort(() => Math.random() - 0.5);
+            resetRound();
+        }
+
+        function resetRound() {
+            currIdx = 0; oks = []; nos = [];
+            document.getElementById('studyView').style.display = "contents";
+            document.getElementById('resultView').style.display = "none";
+            renderCard();
+        }
+
+        function renderCard() {
+            const c = document.getElementById('myCard');
+            flipping = false; 
+            c.style.transition = "transform 0.5s";
+            c.style.transform = "rotateY(0deg)";
+            
+            setTimeout(() => {
+                const item = dataList[currIdx];
+                document.getElementById('txtF').innerText = item.words;
+                document.getElementById('txtR').innerText = item.reading;
+                document.getElementById('txtM').innerText = item.meaning;
+                document.getElementById('footer-status').innerText = `Tiến độ: ${currIdx + 1} / ${dataList.length}`;
+            }, 150);
+        }
+
+        function mark(isOk) {
+            if (flipping) return;
+            const c = document.getElementById('myCard');
+            c.style.transition = "transform 0.4s ease-in";
+            // Giữ nguyên mặt lật hiện tại khi bay đi
+            let rotY = c.style.transform.includes('180deg') ? "rotateY(180deg)" : "rotateY(0deg)";
+            c.style.transform = `translateX(${isOk ? 600 : -600}px) ${rotY} rotate(${isOk ? 30 : -30}deg)`;
+
+            setTimeout(() => {
+                if (isOk) oks.push(dataList[currIdx]); else nos.push(dataList[currIdx]);
+                if (currIdx < dataList.length - 1) {
+                    currIdx++; renderCard();
+                } else {
+                    document.getElementById('studyView').style.display = "none";
+                    document.getElementById('resultView').style.display = "block";
+                    document.getElementById('numOk').innerText = oks.length;
+                    document.getElementById('numNo').innerText = nos.length;
+                    document.getElementById('btnWeak').style.display = nos.length > 0 ? "block" : "none";
+                }
+            }, 300);
+        }
+
+        function retryWeak() {
+            dataList = [...nos].sort(() => Math.random() - 0.5);
+            resetRound();
+        }
+
+        function initSwipe() {
+            const zone = document.getElementById('touchZone');
+            const card = document.getElementById('myCard');
+
+            const start = (e) => {
+                if (flipping) return;
+                sX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                cX = sX;
+                sTime = Date.now();
+                isDrag = false;
+                card.style.transition = "none";
+            };
+
+            const move = (e) => {
+                if (sX === 0 || flipping) return;
+                let mX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                let diff = mX - sX;
+
+                if (Math.abs(diff) > 10) {
+                    isDrag = true;
+                    cX = mX;
+                    let rotY = card.style.transform.includes('180deg') ? "rotateY(180deg)" : "rotateY(0deg)";
+                    card.style.transform = `translateX(${diff}px) ${rotY} rotate(${diff/15}deg)`;
+                    document.getElementById('lbOk').style.opacity = diff > 80 ? 1 : 0;
+                    document.getElementById('lbNot').style.opacity = diff < -80 ? 1 : 0;
+                }
+            };
+
+            const end = () => {
+                if (sX === 0 || flipping) return;
+                let diff = cX - sX;
+                let tDiff = Date.now() - sTime;
+
+                // LẬT THẺ (Chỉ lật khi không kéo và chạm nhanh)
+                if (Math.abs(diff) < 20 && tDiff < 250) {
+                    flipping = true;
+                    let isBack = card.style.transform.includes('180deg');
+                    card.style.transition = "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)";
+                    card.style.transform = isBack ? "rotateY(0deg)" : "rotateY(180deg)";
+                    setTimeout(() => { flipping = false; }, 500);
+                } 
+                // VUỐT
+                else if (diff > 130) mark(true);
+                else if (diff < -130) mark(false);
+                else {
+                    let rotY = card.style.transform.includes('180deg') ? "rotateY(180deg)" : "rotateY(0deg)";
+                    card.style.transition = "transform 0.3s";
+                    card.style.transform = `${rotY} translateX(0px)`;
+                }
+                document.getElementById('lbOk').style.opacity = 0;
+                document.getElementById('lbNot').style.opacity = 0;
+                sX = 0; cX = 0;
+            };
+
+            zone.addEventListener('touchstart', start, {passive: true});
+            window.addEventListener('touchmove', move, {passive: false});
+            window.addEventListener('touchend', end);
+            zone.addEventListener('mousedown', start);
+            window.addEventListener('mousemove', move);
+            window.addEventListener('mouseup', end);
+        }
+    </script>
+</body>
+</html>
