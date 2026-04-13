@@ -8,8 +8,32 @@
     <style>
         :root { --primary: #3498db; --success: #2ecc71; --danger: #e74c3c; --warning: #f1c40f; --bg: #f0f2f5; }
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg); margin: 0; display: flex; flex-direction: column; align-items: center; height: 100vh; overflow: hidden; user-select: none; touch-action: none; }
-        h2 { color: #2c3e50; margin: 15px 0 10px 0; font-size: 18px; }
+        body {
+    font-family: 'Segoe UI', sans-serif;
+    /* Thiết lập ảnh nền */
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    touch-action: none;
+}
+
+/* Chỉnh lại màu tiêu đề cho nổi bật trên nền ảnh */
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 15px 0 10px 0;
+    font-size: 18px;
+}
         #lessonSelect { width: 85%; padding: 12px; border-radius: 12px; border: 2px solid var(--primary); margin-bottom: 10px; font-size: 16px; outline: none; }
         .container { position: relative; width: 90vw; max-width: 400px; height: 260px; perspective: 1200px; }
         .card { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 0.5s; }
