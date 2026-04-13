@@ -1,4029 +1,4143 @@
-const allData =[
+const allData = [
   {
     "lesson": "1",
     "words": "人生",
     "reading": "じんせい",
-    "meaning": "Cuộc sống"
+    "meaning": "cuộc sống"
   },
   {
     "lesson": "1",
     "words": "人間",
     "reading": "にんげん",
-    "meaning": "Nhân loại, con người, tình người"
+    "meaning": "con người"
   },
   {
     "lesson": "1",
     "words": "人",
     "reading": "ひと",
-    "meaning": "Con người"
+    "meaning": "người"
   },
   {
     "lesson": "1",
     "words": "祖先",
     "reading": "そせん",
-    "meaning": "Tổ tiên"
+    "meaning": "tổ tiên"
   },
   {
     "lesson": "1",
     "words": "親戚",
     "reading": "しんせき",
-    "meaning": "Họ hàng"
+    "meaning": "họ hàng"
   },
   {
     "lesson": "1",
     "words": "夫婦",
     "reading": "ふうふ",
-    "meaning": "Vợ chồng"
+    "meaning": "vợ chồng"
   },
   {
     "lesson": "1",
     "words": "長男",
     "reading": "ちょうなん",
-    "meaning": "Trưởng nam"
+    "meaning": "trưởng nam"
   },
   {
     "lesson": "1",
     "words": "主人",
     "reading": "しゅじん",
-    "meaning": "Ông chủ, chủ nhân, chồng"
+    "meaning": "chồng, chủ tiệm"
   },
   {
     "lesson": "1",
     "words": "双子",
     "reading": "ふたご",
-    "meaning": "Sinh đôi"
+    "meaning": "sinh đôi"
   },
   {
     "lesson": "1",
     "words": "迷子",
     "reading": "まいご",
-    "meaning": "Trẻ lạc"
+    "meaning": "trẻ bị lạc"
   },
   {
     "lesson": "1",
     "words": "他人",
     "reading": "たにん",
-    "meaning": "Người khác"
+    "meaning": "người khác"
   },
   {
     "lesson": "1",
     "words": "敵",
     "reading": "てき",
-    "meaning": "Kẻ thù"
+    "meaning": "kẻ thù"
   },
   {
     "lesson": "1",
     "words": "味方",
     "reading": "みかた",
-    "meaning": "Bạn bè, đồng minh, người ủng hộ"
+    "meaning": "bạn bè, đồng minh"
   },
   {
     "lesson": "1",
     "words": "筆者",
     "reading": "ひっしゃ",
-    "meaning": "Tác giả"
+    "meaning": "tác giả"
   },
   {
     "lesson": "1",
     "words": "寿命",
     "reading": "じゅみょう",
-    "meaning": "Tuổi thọ"
+    "meaning": "tuổi thọ"
   },
   {
     "lesson": "1",
     "words": "将来",
     "reading": "しょうらい",
-    "meaning": "Tương lai"
+    "meaning": "tương lai"
   },
   {
     "lesson": "1",
     "words": "才能",
     "reading": "さいのう",
-    "meaning": "Tài năng, năng khiếu"
+    "meaning": "tài năng"
   },
   {
     "lesson": "1",
     "words": "能力",
     "reading": "のうりょく",
-    "meaning": "Khả năng, năng lực"
+    "meaning": "năng lực"
   },
   {
     "lesson": "1",
     "words": "長所",
     "reading": "ちょうしょ",
-    "meaning": "Ưu điểm, sở trường"
+    "meaning": "sở trường"
   },
   {
     "lesson": "1",
     "words": "個性",
     "reading": "こせい",
-    "meaning": "Tính cách, cá tính"
+    "meaning": "cá tính"
   },
   {
     "lesson": "1",
     "words": "遺伝",
     "reading": "いでん",
-    "meaning": "Di truyền"
+    "meaning": "di truyền"
   },
   {
     "lesson": "1",
     "words": "動作",
     "reading": "どうさ",
-    "meaning": "Động tác"
+    "meaning": "động tác"
   },
   {
     "lesson": "1",
-    "words": "まね",
-    "reading": "",
-    "meaning": "Bắt chước"
+    "words": "真似",
+    "reading": "まね",
+    "meaning": "bắt chước, copy"
   },
   {
     "lesson": "1",
     "words": "睡眠",
     "reading": "すいみん",
-    "meaning": "Giấc ngủ"
+    "meaning": "ngủ"
   },
   {
     "lesson": "1",
     "words": "食欲",
     "reading": "しょくよく",
-    "meaning": "Thèm ăn"
-  },
-  {
-    "lesson": "1",
-    "words": "家事",
-    "reading": "かじ",
-    "meaning": "Việc nhà"
+    "meaning": "thèm ăn"
   },
   {
     "lesson": "1",
     "words": "外食",
     "reading": "がいしょく",
-    "meaning": "Ăn ngoài"
+    "meaning": "ăn ngoài"
+  },
+  {
+    "lesson": "1",
+    "words": "家事",
+    "reading": "かじ",
+    "meaning": "việc nhà"
   },
   {
     "lesson": "1",
     "words": "出産",
     "reading": "しゅっさん",
-    "meaning": "Sinh con"
+    "meaning": "sinh đẻ"
   },
   {
     "lesson": "1",
     "words": "介護",
     "reading": "かいご",
-    "meaning": "Chăm sóc"
+    "meaning": "chăm sóc(người ko thể tự chăm sóc cho bản thân)"
   },
   {
     "lesson": "1",
     "words": "共働き",
     "reading": "ともばたらき",
-    "meaning": "Cùng việc kiếm sống"
+    "meaning": "vợ chồng cùng làm việc"
   },
   {
     "lesson": "1",
     "words": "出勤",
     "reading": "しゅっきん",
-    "meaning": "Đi làm"
+    "meaning": "đi làm"
   },
   {
     "lesson": "1",
     "words": "出世",
     "reading": "しゅっせ",
-    "meaning": "Thăng tiến"
+    "meaning": "thành đạt"
   },
   {
     "lesson": "1",
     "words": "地位",
     "reading": "ちい",
-    "meaning": "Vị trí, chức vụ, địa vị"
+    "meaning": "địa vị, vị trí"
   },
   {
     "lesson": "1",
     "words": "受験",
     "reading": "じゅけん",
-    "meaning": "Dự thi"
+    "meaning": "kì thi, tham gia kỳ thi"
   },
   {
     "lesson": "1",
     "words": "専攻",
     "reading": "せんこう",
-    "meaning": "Chuyên môn"
+    "meaning": "chuyên ngành"
   },
   {
     "lesson": "1",
     "words": "支度",
     "reading": "したく",
-    "meaning": "Chuẩn bị"
+    "meaning": "chuẩn bị"
   },
   {
     "lesson": "1",
     "words": "全身",
     "reading": "ぜんしん",
-    "meaning": "Toàn thân"
+    "meaning": "toàn bộ cơ thể"
   },
   {
     "lesson": "1",
     "words": "しわ",
-    "reading": "",
-    "meaning": "Vết nhăn"
+    "reading": "しわ",
+    "meaning": "nếp nhăn"
   },
   {
     "lesson": "1",
     "words": "服装",
     "reading": "ふくそう",
-    "meaning": "Quần áo, trang phục"
+    "meaning": "quần áo, trang phục"
   },
   {
     "lesson": "1",
     "words": "礼",
     "reading": "れい",
-    "meaning": "Cảm ơn, chào hỏi, lễ nghi"
+    "meaning": "lễ, cảm ơn"
   },
   {
     "lesson": "1",
     "words": "世辞",
     "reading": "せじ",
-    "meaning": "Khen, nịnh"
+    "meaning": "nịnh, ca tụng"
   },
   {
     "lesson": "1",
     "words": "言い訳",
     "reading": "いいわけ",
-    "meaning": "Biện bạch, lý do"
+    "meaning": "lý do"
   },
   {
     "lesson": "1",
     "words": "話題",
     "reading": "わだい",
-    "meaning": "Đề tài, chủ đề"
+    "meaning": "chủ đề"
   },
   {
     "lesson": "1",
     "words": "秘密",
     "reading": "ひみつ",
-    "meaning": "Bí mật"
+    "meaning": "bí mật"
   },
   {
     "lesson": "1",
     "words": "尊敬",
     "reading": "そんけい",
-    "meaning": "Kính trọng"
+    "meaning": "tôn trọng"
   },
   {
     "lesson": "1",
-    "words": "謙遜",
+    "words": "謙そん",
     "reading": "けんそん",
-    "meaning": "Khiêm tốn"
+    "meaning": "khiên tốn"
   },
   {
     "lesson": "1",
     "words": "期待",
     "reading": "きたい",
-    "meaning": "Hy vọng, kỳ vọng"
+    "meaning": "mong chờ"
   },
   {
     "lesson": "1",
     "words": "苦労",
     "reading": "くろう",
-    "meaning": "Vất vả, khó khăn"
+    "meaning": "lo lắng"
   },
   {
     "lesson": "1",
-    "words": "意思",
+    "words": "意志",
     "reading": "いし",
-    "meaning": "Ý chí"
+    "meaning": "ý chí"
   },
   {
     "lesson": "2",
     "words": "感情",
     "reading": "かんじょう",
-    "meaning": "Tình cảm, cảm xúc"
+    "meaning": "biểu cảm, tôn tọng"
   },
   {
     "lesson": "2",
     "words": "材料",
     "reading": "ざいりょう",
-    "meaning": "Nguyên liệu, vật liệu, tài liệu"
+    "meaning": "nguyên liệu"
   },
   {
     "lesson": "2",
     "words": "石",
     "reading": "いし",
-    "meaning": "Đá"
+    "meaning": "đá"
   },
   {
     "lesson": "2",
     "words": "ひも",
-    "reading": "",
-    "meaning": "Dây"
+    "reading": "ひも",
+    "meaning": "dây"
   },
   {
     "lesson": "2",
     "words": "券",
     "reading": "けん",
-    "meaning": "Vé"
+    "meaning": "vé"
   },
   {
     "lesson": "2",
     "words": "名簿",
     "reading": "めいぼ",
-    "meaning": "Danh bạ, danh sách"
+    "meaning": "danh bạ, danh sách"
   },
   {
     "lesson": "2",
     "words": "表",
     "reading": "ひょう",
-    "meaning": "Bảng"
+    "meaning": "bảng biểu"
   },
   {
     "lesson": "2",
     "words": "針",
     "reading": "はり",
-    "meaning": "Kim"
+    "meaning": "kim"
   },
   {
     "lesson": "2",
     "words": "栓",
     "reading": "せん",
-    "meaning": "Nắp, van"
+    "meaning": "nút, nắp, cửa (nước chữa cháy, gas)"
   },
   {
     "lesson": "2",
     "words": "湯気",
     "reading": "ゆげ",
-    "meaning": "Hơi nước"
+    "meaning": "hơi, khí"
   },
   {
     "lesson": "2",
     "words": "日当たり",
     "reading": "ひあたり",
-    "meaning": "Ánh sáng mặt trời"
+    "meaning": "nơi có ánh sáng chiếu vào"
   },
   {
     "lesson": "2",
     "words": "空",
     "reading": "から",
-    "meaning": "Trống, rỗng"
+    "meaning": "trống rỗng, bầu trời"
   },
   {
     "lesson": "2",
     "words": "斜め",
     "reading": "ななめ",
-    "meaning": "Nghiêng"
+    "meaning": "nghiêng"
   },
   {
     "lesson": "2",
     "words": "履歴",
     "reading": "りれき",
-    "meaning": "Lý lịch"
+    "meaning": "lý lịch"
   },
   {
     "lesson": "2",
     "words": "娯楽",
     "reading": "ごらく",
-    "meaning": "Giải trí"
+    "meaning": "vui chơi, thú vui"
   },
   {
     "lesson": "2",
     "words": "司会",
     "reading": "しかい",
-    "meaning": "MC, dẫn chương trình"
+    "meaning": "chủ trì buổi tiệc, hội nghị"
   },
   {
     "lesson": "2",
     "words": "歓迎",
     "reading": "かんげい",
-    "meaning": "Hoan nghênh, chào đón"
+    "meaning": "hoan nghênh"
   },
   {
     "lesson": "2",
     "words": "窓口",
     "reading": "まどぐち",
-    "meaning": "Quầy giao dịch"
+    "meaning": "cửa bán vé"
   },
   {
     "lesson": "2",
     "words": "手続き",
     "reading": "てつづき",
-    "meaning": "Thủ tục"
+    "meaning": "thủ tục"
   },
   {
     "lesson": "2",
     "words": "徒歩",
     "reading": "とほ",
-    "meaning": "Đi bộ"
+    "meaning": "đi bộ"
   },
   {
     "lesson": "2",
     "words": "駐車",
     "reading": "ちゅうしゃ",
-    "meaning": "Đỗ xe"
+    "meaning": "bãi đỗ xe"
   },
   {
     "lesson": "2",
     "words": "違反",
     "reading": "いはん",
-    "meaning": "Vi phạm"
+    "meaning": "vi phạm"
   },
   {
     "lesson": "2",
     "words": "平日",
     "reading": "へいじつ",
-    "meaning": "Ngày thường"
+    "meaning": "ngày thường"
   },
   {
     "lesson": "2",
     "words": "日付",
     "reading": "ひづけ",
-    "meaning": "Ngày tháng"
+    "meaning": "ngày tháng"
   },
   {
     "lesson": "2",
     "words": "日中",
     "reading": "にっちゅう",
-    "meaning": "Ban ngày"
+    "meaning": "ban ngày"
   },
   {
     "lesson": "2",
     "words": "日程",
     "reading": "にってい",
-    "meaning": "Lịch trình"
+    "meaning": "lịch trình, kế hoạch"
   },
   {
     "lesson": "2",
     "words": "日帰り",
     "reading": "ひがえり",
-    "meaning": "Đi về trong ngày"
+    "meaning": "đi về trong ngày"
   },
   {
     "lesson": "2",
     "words": "順序",
     "reading": "じゅんじょ",
-    "meaning": "Thứ tự"
+    "meaning": "thứ tự"
   },
   {
     "lesson": "2",
     "words": "時期",
     "reading": "じき",
-    "meaning": "Thời kỳ"
+    "meaning": "thời kì"
   },
   {
     "lesson": "2",
     "words": "現在",
     "reading": "げんざい",
-    "meaning": "Hiện tại"
+    "meaning": "hiện tại"
   },
   {
     "lesson": "2",
     "words": "臨時",
     "reading": "りんじ",
-    "meaning": "Tạm thời"
+    "meaning": "tạm thời (臨時ニュース、臨時バス、臨時電車)"
   },
   {
     "lesson": "2",
     "words": "費用",
     "reading": "ひよう",
-    "meaning": "Chi phí"
+    "meaning": "chi phí"
   },
   {
     "lesson": "2",
     "words": "定価",
     "reading": "ていか",
-    "meaning": "Giá niêm yết, giá cố định"
+    "meaning": "giá cố định"
   },
   {
     "lesson": "2",
     "words": "割引",
     "reading": "わりびき",
-    "meaning": "Giảm giá"
+    "meaning": "giảm giá"
   },
   {
     "lesson": "2",
-    "words": "お負け",
+    "words": "おまけ",
     "reading": "おまけ",
-    "meaning": "Giảm giá, khuyến mại"
+    "meaning": "quà khuyến mại、quà kèm theo"
   },
   {
     "lesson": "2",
     "words": "無料",
     "reading": "むりょう",
-    "meaning": "Miễn phí"
+    "meaning": "miễn phí"
   },
   {
     "lesson": "2",
     "words": "現金",
     "reading": "げんきん",
-    "meaning": "Tiền mặt"
+    "meaning": "tiền mặt"
   },
   {
     "lesson": "2",
     "words": "合計",
     "reading": "ごうけい",
-    "meaning": "Tổng cộng"
+    "meaning": "tổng cộng"
   },
   {
     "lesson": "2",
     "words": "収入",
     "reading": "しゅうにゅう",
-    "meaning": "Thu nhập"
+    "meaning": "thu nhập"
   },
   {
     "lesson": "2",
     "words": "支出",
     "reading": "ししゅつ",
-    "meaning": "Chi tiêu, chi phí"
+    "meaning": "chi tiêu"
   },
   {
     "lesson": "2",
     "words": "予算",
     "reading": "よさん",
-    "meaning": "Dự toán, ngân sách"
+    "meaning": "ngân sách"
   },
   {
     "lesson": "2",
     "words": "利益",
     "reading": "りえき",
-    "meaning": "Lợi ích, lợi nhuận"
+    "meaning": "lợi nhuận"
   },
   {
     "lesson": "2",
     "words": "赤字",
     "reading": "あかじ",
-    "meaning": "Lỗ, thâm hụt"
+    "meaning": "lỗ, thâm hụt"
   },
   {
     "lesson": "2",
     "words": "経費",
     "reading": "けいひ",
-    "meaning": "Kinh phí"
+    "meaning": "kinh phí"
   },
   {
     "lesson": "2",
     "words": "勘定",
     "reading": "かんじょう",
-    "meaning": "Thanh toán, tính toán, tính tiền"
+    "meaning": "tính toán, thanh toán　（勘定お願いします：chủ quán tính tiền ）"
   },
   {
     "lesson": "2",
     "words": "弁償",
     "reading": "べんしょう",
-    "meaning": "Bồi thường"
+    "meaning": "bồi thường"
   },
   {
     "lesson": "2",
     "words": "請求",
     "reading": "せいきゅう",
-    "meaning": "Yêu cầu"
+    "meaning": "yêu cầu"
   },
   {
     "lesson": "2",
     "words": "景気",
     "reading": "けいき",
-    "meaning": "Tình trạng, tình hình kinh tế"
+    "meaning": "thường nói về tình hình kinh tế như thế nào"
   },
   {
     "lesson": "2",
     "words": "募金",
     "reading": "ぼきん",
-    "meaning": "Quyên góp"
+    "meaning": "quyên tiền, gây quỹ"
   },
   {
     "lesson": "2",
     "words": "募集",
     "reading": "ぼしゅう",
-    "meaning": "Tuyển dụng, tập hợp"
+    "meaning": "tuyển dụng"
   },
   {
     "lesson": "3",
     "words": "価値",
     "reading": "かち",
-    "meaning": "Giá trị"
+    "meaning": "giá trị"
   },
   {
     "lesson": "3",
     "words": "好む",
     "reading": "このむ",
-    "meaning": "Thích"
+    "meaning": "thích"
   },
   {
     "lesson": "3",
     "words": "嫌う",
     "reading": "きらう",
-    "meaning": "Ghét"
+    "meaning": "ghét　(mức độ 嫌う→恨む→憎む)"
   },
   {
     "lesson": "3",
     "words": "願う",
     "reading": "ねがう",
-    "meaning": "Cầu mong"
+    "meaning": "ước, yêu cầu"
   },
   {
     "lesson": "3",
     "words": "甘える",
     "reading": "あまえる",
-    "meaning": "Làm nũng"
+    "meaning": "nũng nịu"
   },
   {
     "lesson": "3",
     "words": "かわいがる",
-    "reading": "",
-    "meaning": "Yêu thương, yêu mến"
+    "reading": "かわいがる",
+    "meaning": "yêu mến, nâng niu"
   },
   {
     "lesson": "3",
     "words": "気付く",
     "reading": "きづく",
-    "meaning": "Nhận ra, phát hiện ra"
+    "meaning": "nhận ra"
   },
   {
     "lesson": "3",
     "words": "疑う",
     "reading": "うたがう",
-    "meaning": "Nghi ngờ"
+    "meaning": "nghi ngờ"
   },
   {
     "lesson": "3",
     "words": "苦しむ",
     "reading": "くるしむ",
-    "meaning": "Khổ, vất vả"
+    "meaning": "khổ, chịu đựng"
   },
   {
     "lesson": "3",
     "words": "悲しむ",
     "reading": "かなしむ",
-    "meaning": "Đau khổ, buồn bã"
+    "meaning": "buồn"
   },
   {
     "lesson": "3",
     "words": "がっかりする",
-    "reading": "",
-    "meaning": "Thất vọng"
+    "reading": "がっかりする",
+    "meaning": "thất vọng"
   },
   {
     "lesson": "3",
     "words": "励ます",
     "reading": "はげます",
-    "meaning": "Cổ vũ, khích lệ, động viên"
+    "meaning": "động viên, an ủi nhưng thiên về động viên hơn　 (慰める thiên về an ủi)"
   },
   {
     "lesson": "3",
-    "words": "うなずく",
-    "reading": "",
-    "meaning": "Gật đầu"
+    "words": "頷く",
+    "reading": "うなずく",
+    "meaning": "gật đầu, đồng ý"
   },
   {
     "lesson": "3",
     "words": "張り切る",
     "reading": "はりきる",
-    "meaning": "Hăng hái"
+    "meaning": "hăm hở, làm việc chăm chỉ"
   },
   {
     "lesson": "3",
     "words": "威張る",
     "reading": "いばる",
-    "meaning": "Kiêu căng"
+    "meaning": "kiêu ngạo"
   },
   {
     "lesson": "3",
     "words": "怒鳴る",
     "reading": "どなる",
-    "meaning": "Gào, hét"
+    "meaning": "hét lên"
   },
   {
     "lesson": "3",
     "words": "暴れる",
     "reading": "あばれる",
-    "meaning": "Nổi giận, quậy phá"
+    "meaning": "nổi giận, bạo lực"
   },
   {
     "lesson": "3",
     "words": "しゃがむ",
-    "reading": "",
-    "meaning": "Ngồi xổm"
+    "reading": "しゃがむ",
+    "meaning": "ngồi chơi, ngồi xổm"
   },
   {
     "lesson": "3",
-    "words": "どく",
-    "reading": "",
-    "meaning": "Tránh, né"
+    "words": "退く",
+    "reading": "どく",
+    "meaning": "làm tránh ra"
   },
   {
     "lesson": "3",
-    "words": "どける",
-    "reading": "",
-    "meaning": "Đẩy ra, lấy ra"
+    "words": "退ける",
+    "reading": "どける",
+    "meaning": "tránh ra"
   },
   {
     "lesson": "3",
-    "words": "かぶる",
-    "reading": "",
-    "meaning": "Đội, mang, che"
+    "words": "被る",
+    "reading": "かぶる",
+    "meaning": "đội (hướng về bản thân)"
   },
   {
     "lesson": "3",
-    "words": "かぶせる",
-    "reading": "",
-    "meaning": "Che đậy, trùm lên"
+    "words": "被せる",
+    "reading": "かぶせる",
+    "meaning": "phủ lên (hướng về phía khác)"
   },
   {
     "lesson": "3",
     "words": "かじる",
-    "reading": "",
-    "meaning": "Nhai, cắn, gặm"
+    "reading": "かじる",
+    "meaning": "nhai, cắn (dấu vết)"
   },
   {
     "lesson": "3",
     "words": "撃つ",
     "reading": "うつ",
-    "meaning": "Bắn"
+    "meaning": "bắn"
   },
   {
     "lesson": "3",
-    "words": "こぐ",
-    "reading": "",
-    "meaning": "Đạp xe, chèo thuyền"
+    "words": "漕ぐ",
+    "reading": "こぐ",
+    "meaning": "đạp xe, chèo"
   },
   {
     "lesson": "3",
     "words": "敷く",
     "reading": "しく",
-    "meaning": "Trải"
+    "meaning": "trải ra"
   },
   {
     "lesson": "3",
-    "words": "つぐ",
-    "reading": "",
-    "meaning": "Rót"
+    "words": "つぐ (注ぐ)",
+    "reading": "つぐ",
+    "meaning": "rót (rượu)"
   },
   {
     "lesson": "3",
     "words": "配る",
     "reading": "くばる",
-    "meaning": "Phân phát"
+    "meaning": "phân phát"
   },
   {
     "lesson": "3",
     "words": "放る",
     "reading": "ほうる",
-    "meaning": "Ném, vứt bỏ"
+    "meaning": "ném, bỏ mặc　（子供を放っておく bỏ mặc đứa trẻ）"
   },
   {
     "lesson": "3",
     "words": "掘る",
     "reading": "ほる",
-    "meaning": "Đào"
+    "meaning": "đào, khai quật"
   },
   {
     "lesson": "3",
-    "words": "まく",
-    "reading": "",
-    "meaning": "Gieo, tưới"
+    "words": "撒く",
+    "reading": "まく",
+    "meaning": "rắc, rải"
   },
   {
     "lesson": "3",
-    "words": "計る／測る／量る",
+    "words": "測る・計る・量る",
     "reading": "はかる",
-    "meaning": "Cân, đo"
+    "meaning": "đo, đo đạc"
   },
   {
     "lesson": "3",
     "words": "占う",
     "reading": "うらなう",
-    "meaning": "Bói, chiêm nghiệm, dự đoán"
+    "meaning": "dự đoán, bói"
   },
   {
     "lesson": "3",
     "words": "引っ張る",
     "reading": "ひっぱる",
-    "meaning": "Kéo"
+    "meaning": "kéo"
   },
   {
     "lesson": "3",
     "words": "突く",
     "reading": "つく",
-    "meaning": "Chống, đâm, chọc"
+    "meaning": "chọc, đâm"
   },
   {
     "lesson": "3",
     "words": "突き当たる",
     "reading": "つきあたる",
-    "meaning": "Đụng, va chạm vào"
+    "meaning": "đi hết đường, đến cuối đường"
   },
   {
     "lesson": "3",
     "words": "立ち止まる",
     "reading": "たちどまる",
-    "meaning": "Đứng lại, dừng lại"
+    "meaning": "dừng lại"
   },
   {
     "lesson": "3",
     "words": "近寄る",
     "reading": "ちかよる",
-    "meaning": "Tiếp cận, tới gần"
+    "meaning": "tiếp cận"
   },
   {
     "lesson": "3",
     "words": "横切る",
     "reading": "よこぎる",
-    "meaning": "Đi ngang, vượt qua"
+    "meaning": "băng xéo qua, cắt ngang hàng, ngang mặt người khác"
   },
   {
     "lesson": "3",
     "words": "転ぶ",
-    "reading": "よこぶ",
-    "meaning": "Ngã, chuyển biến"
+    "reading": "ころぶ",
+    "meaning": "ngã"
   },
   {
     "lesson": "3",
-    "words": "つまずく",
-    "reading": "",
-    "meaning": "Vấp phải"
+    "words": "躓く",
+    "reading": "つまずく",
+    "meaning": "vấp (Vd: vấp hòn đá)"
   },
   {
     "lesson": "3",
     "words": "ひく",
-    "reading": "",
-    "meaning": "Đâm vào"
+    "reading": "ひく",
+    "meaning": "chèn, cán qua (車にひかれる bị xe cán)"
   },
   {
     "lesson": "3",
-    "words": "おぼれる",
-    "reading": "",
-    "meaning": "Chết đuối, chìm đắm"
+    "words": "溺れる",
+    "reading": "おぼれる",
+    "meaning": "chìm, đắm"
   },
   {
     "lesson": "3",
     "words": "痛む",
     "reading": "いたむ",
-    "meaning": "Đau"
+    "meaning": "đau"
   },
   {
     "lesson": "3",
     "words": "かかる",
-    "reading": "",
-    "meaning": "Bị, mắc"
+    "reading": "かかる",
+    "meaning": "bị nhiễm"
   },
   {
     "lesson": "3",
     "words": "酔う",
     "reading": "よう",
-    "meaning": "Say"
+    "meaning": "say"
   },
   {
     "lesson": "3",
     "words": "吐く",
     "reading": "はく",
-    "meaning": "Thở, nôn"
+    "meaning": "thở ra, nôn ra"
   },
   {
     "lesson": "3",
     "words": "診る",
     "reading": "みる",
-    "meaning": "Khám bệnh"
+    "meaning": "chuẩn đoán"
   },
   {
     "lesson": "3",
     "words": "見舞う",
     "reading": "みまう",
-    "meaning": "Thăm hỏi"
+    "meaning": "đi thăm bệnh"
   },
   {
     "lesson": "3",
     "words": "勤める",
     "reading": "つとめる",
-    "meaning": "Làm việc"
+    "meaning": "làm việc"
   },
   {
     "lesson": "4",
     "words": "稼ぐ",
     "reading": "かせぐ",
-    "meaning": "Kiếm tiền"
+    "meaning": "kiếm tiền"
   },
   {
     "lesson": "4",
     "words": "支払う",
     "reading": "しはらう",
-    "meaning": "Thanh toán"
+    "meaning": "trả tiền"
   },
   {
     "lesson": "4",
     "words": "受け取る",
     "reading": "うけとる",
-    "meaning": "Nhận"
+    "meaning": "nhận"
   },
   {
     "lesson": "4",
     "words": "払い込む",
     "reading": "はらいこむ",
-    "meaning": "Nộp, đóng tiền"
+    "meaning": "trả vào"
   },
   {
     "lesson": "4",
     "words": "払い戻す",
     "reading": "はらいもどす",
-    "meaning": "Hoàn trả"
+    "meaning": "trả lại"
   },
   {
     "lesson": "4",
     "words": "引き出す",
     "reading": "ひきだす",
-    "meaning": "Rút ra, lấy ra"
+    "meaning": "rút ra"
   },
   {
     "lesson": "4",
     "words": "もうかる",
-    "reading": "",
-    "meaning": "Sinh lời, có lời"
+    "reading": "もうかる",
+    "meaning": "có lợi nhuận"
   },
   {
     "lesson": "4",
     "words": "もうける",
-    "reading": "",
-    "meaning": "Kiếm lời"
+    "reading": "もうける",
+    "meaning": "kiếm lợi, có con"
   },
   {
     "lesson": "4",
     "words": "落ち込む",
     "reading": "おちこむ",
-    "meaning": "Suy giảm, suy sụp"
+    "meaning": "giảm, rơi"
   },
   {
     "lesson": "4",
     "words": "売れる",
     "reading": "うれる",
-    "meaning": "Bán chạy"
+    "meaning": "bán chạy"
   },
   {
     "lesson": "4",
     "words": "売り切れる",
     "reading": "うりきれる",
-    "meaning": "Bán hết sạch"
+    "meaning": "bán sạch"
   },
   {
     "lesson": "4",
     "words": "くっ付く",
     "reading": "くっつく",
-    "meaning": "Dính"
+    "meaning": "gắn vào"
   },
   {
     "lesson": "4",
     "words": "くっ付ける",
     "reading": "くっつける",
-    "meaning": "Dán vào, ghép vào"
+    "meaning": "dính vào"
   },
   {
     "lesson": "4",
     "words": "固まる",
     "reading": "かたまる",
-    "meaning": "Đông cứng, tụ họp, củng cố"
+    "meaning": "cứng lại"
   },
   {
     "lesson": "4",
     "words": "固める",
     "reading": "かためる",
-    "meaning": "Làm cứng, dồn lại, củng cố, tăng cường"
+    "meaning": "làm cứng"
   },
   {
     "lesson": "4",
     "words": "縮む",
     "reading": "ちぢむ",
-    "meaning": "Co lại, thu nhỏ lại"
+    "meaning": "ngắn lại, co lại"
   },
   {
     "lesson": "4",
     "words": "縮まる",
     "reading": "ちぢまる",
-    "meaning": "Bị thu gọn, nén lại"
+    "meaning": "làm ngắn"
   },
   {
     "lesson": "4",
     "words": "縮める",
     "reading": "ちぢめる",
-    "meaning": "Rút ngắn"
+    "meaning": "làm ngắn"
   },
   {
     "lesson": "4",
     "words": "沈む",
     "reading": "しずむ",
-    "meaning": "Chìm"
+    "meaning": "chìm, lặn, bị nhấn xuống"
   },
   {
     "lesson": "4",
     "words": "沈める",
     "reading": "しずめる",
-    "meaning": "Làm chìm"
+    "meaning": "chìm, lặn"
   },
   {
     "lesson": "4",
     "words": "下がる",
     "reading": "さがる",
-    "meaning": "Hạ xuống, rủ xuống"
+    "meaning": "rơi"
   },
   {
     "lesson": "4",
     "words": "下げる",
     "reading": "さげる",
-    "meaning": "Giảm bớt, cúi đầu, treo"
+    "meaning": "giảm bớt, hạ"
   },
   {
     "lesson": "4",
     "words": "転がる",
     "reading": "ころがる",
-    "meaning": "Lăn, ngã, ngả lưng"
+    "meaning": "(tự) lăn"
   },
   {
     "lesson": "4",
     "words": "転がす",
-    "reading": "転がす",
-    "meaning": "Làm đổ, lăn"
+    "reading": "ころがす",
+    "meaning": "lăn(vật gì đó, lăn quả bóng)"
   },
   {
     "lesson": "4",
     "words": "傾く",
     "reading": "かたむく",
-    "meaning": "Nghiêng, đổ"
+    "meaning": "nghiêng"
   },
   {
     "lesson": "4",
     "words": "傾ける",
     "reading": "かたむける",
-    "meaning": "Nghiêng"
+    "meaning": "hướng vào"
   },
   {
     "lesson": "4",
     "words": "裏返す",
     "reading": "うらがえす",
-    "meaning": "Lật ngược"
+    "meaning": "lật úp"
   },
   {
     "lesson": "4",
     "words": "散らかる",
     "reading": "ちらかる",
-    "meaning": "Rơi vãi bừa bộn"
+    "meaning": "bừa bộn, trong mớ hỗn độn"
   },
   {
     "lesson": "4",
     "words": "散らかす",
     "reading": "ちらかす",
-    "meaning": "Làm bừa bãi, lung tung"
+    "meaning": "vứt lung tung"
   },
   {
     "lesson": "4",
     "words": "散らばる",
     "reading": "ちらばる",
-    "meaning": "Rải rác mỗi nơi 1 ít"
+    "meaning": "văng tứ tung (làm rơi hộp bánh nên bánh văng tứ tung)"
   },
   {
     "lesson": "4",
     "words": "刻む",
     "reading": "きざむ",
-    "meaning": "Thái, khắc, ghi nhớ"
+    "meaning": "cắt nhỏ, chạm khắc"
   },
   {
     "lesson": "4",
     "words": "挟まる",
     "reading": "はさまる",
-    "meaning": "Kẹp, kẹt"
+    "meaning": "bị kẹp"
   },
   {
     "lesson": "4",
     "words": "挟む",
     "reading": "はさむ",
-    "meaning": "Kẹp vào, chèn vào"
+    "meaning": "kẹp"
   },
   {
     "lesson": "4",
     "words": "つぶれる",
-    "reading": "",
-    "meaning": "Bị nghiền, phá sản, tốn thời gian"
+    "reading": "つぶれる",
+    "meaning": "bị hỏng, bị nghiền"
   },
   {
     "lesson": "4",
     "words": "つぶす",
-    "reading": "",
-    "meaning": "Nghiền nát, giết thời gian"
+    "reading": "つぶす",
+    "meaning": "làm hỏng, giết(thời gian)"
   },
   {
     "lesson": "4",
-    "words": "へこむ",
-    "reading": "",
-    "meaning": "Bị lõm"
+    "words": "凹む",
+    "reading": "へこむ",
+    "meaning": "lõm"
   },
   {
     "lesson": "4",
-    "words": "ほどける",
-    "reading": "",
-    "meaning": "Tuột ra"
+    "words": "解ける",
+    "reading": "ほどける",
+    "meaning": "mở, cởi ra"
   },
   {
     "lesson": "4",
-    "words": "ほどく",
-    "reading": "",
-    "meaning": "Cởi ra, mở ra"
+    "words": "解く",
+    "reading": "ほどく",
+    "meaning": "cởi"
   },
   {
     "lesson": "4",
     "words": "枯れる",
     "reading": "かれる",
-    "meaning": "Khô héo"
+    "meaning": "bị héo, bị tàn"
   },
   {
     "lesson": "4",
     "words": "枯らす",
     "reading": "からす",
-    "meaning": "Làm héo"
+    "meaning": "héo"
   },
   {
     "lesson": "4",
     "words": "傷む",
     "reading": "いたむ",
-    "meaning": "Bị thương, bị hỏng"
+    "meaning": "bị hỏng"
   },
   {
     "lesson": "4",
     "words": "湿る",
     "reading": "しめる",
-    "meaning": "Ẩm ướt"
+    "meaning": "bị ẩm"
   },
   {
     "lesson": "4",
     "words": "凍る",
     "reading": "こおる",
-    "meaning": "Đóng băng"
+    "meaning": "đông cứng"
   },
   {
     "lesson": "4",
     "words": "震える",
     "reading": "ふるえる",
-    "meaning": "Run"
+    "meaning": "run rẩy"
   },
   {
     "lesson": "4",
     "words": "輝く",
     "reading": "かがやく",
-    "meaning": "Tỏa sáng"
+    "meaning": "sáng"
   },
   {
     "lesson": "4",
-    "words": "あふれる",
-    "reading": "",
-    "meaning": "Ngập, tràn đầy"
+    "words": "溢れる",
+    "reading": "あふれる",
+    "meaning": "tràn, đầy"
   },
   {
     "lesson": "4",
     "words": "余る",
     "reading": "あまる",
-    "meaning": "Dư, thừa"
+    "meaning": "còn sót lại"
   },
   {
     "lesson": "4",
     "words": "目立つ",
     "reading": "めだつ",
-    "meaning": "Nổi bật"
+    "meaning": "nổi bật (thiết kế, hoa văn không nói đến chất lượng, giá cả sản phẩm)"
   },
   {
     "lesson": "4",
     "words": "見下ろす",
     "reading": "みおろす",
-    "meaning": "Nhìn xuống"
+    "meaning": "nhìn xuống"
   },
   {
     "lesson": "4",
-    "words": "戦う／闘う",
+    "words": "戦う/闘う",
     "reading": "たたかう",
-    "meaning": "Chiến đấu, đấu tranh"
+    "meaning": "đánh nhau, tranh chấp"
   },
   {
     "lesson": "5",
     "words": "敗れる",
     "reading": "やぶれる",
-    "meaning": "Thua, thất bại"
+    "meaning": "bị đánh bại"
   },
   {
     "lesson": "5",
     "words": "逃げる",
     "reading": "にげる",
-    "meaning": "Chạy, bỏ trốn"
+    "meaning": "chạy trốn"
   },
   {
     "lesson": "5",
     "words": "逃がす",
     "reading": "にがす",
-    "meaning": "Để thoát, làm mất, thả"
+    "meaning": "Để mất; để tuột mất (tuột mất một cơ hội ), Thả (thả con mèo ra)"
   },
   {
     "lesson": "5",
     "words": "戻る",
     "reading": "もどる",
-    "meaning": "Quay về, quay lại"
+    "meaning": "quay lại"
   },
   {
     "lesson": "5",
     "words": "戻す",
     "reading": "もどす",
-    "meaning": "Trả lại, hoàn lại, khôi phục"
+    "meaning": "để trả lại"
   },
   {
     "lesson": "5",
     "words": "はまる",
-    "reading": "",
-    "meaning": "Bị mắc, bị kẹt, được áp dụng"
+    "reading": "はまる",
+    "meaning": "khớp, bị kẹt"
   },
   {
     "lesson": "5",
     "words": "はめる",
-    "reading": "",
-    "meaning": "Cài, đóng, kẹp chặt, làm mắc"
+    "reading": "はめる",
+    "meaning": "làm chặt lại"
   },
   {
     "lesson": "5",
     "words": "扱う",
     "reading": "あつかう",
-    "meaning": "Đối xử, cư xử, sử dụng, làm"
+    "meaning": "đối xử, xử lý"
   },
   {
     "lesson": "5",
     "words": "関わる",
     "reading": "かかわる",
-    "meaning": "Liên quan"
+    "meaning": "liên quan"
   },
   {
     "lesson": "5",
     "words": "目指す",
     "reading": "めざす",
-    "meaning": "Nhắm vào, hướng dẫn"
+    "meaning": "hướng tới mục tiêu (ý nghĩa tích cực)"
   },
   {
     "lesson": "5",
-    "words": "立つ",
+    "words": "立つ・発つ",
     "reading": "たつ",
-    "meaning": "Rời khỏi, khởi hành"
+    "meaning": "khởi hành, rời khỏi"
   },
   {
     "lesson": "5",
     "words": "迎える",
     "reading": "むかえる",
-    "meaning": "Nghênh đón, đón tiếp"
+    "meaning": "đón"
   },
   {
     "lesson": "5",
     "words": "持てる",
     "reading": "もてる",
-    "meaning": "Có, mang"
+    "meaning": "phổ biến, được yêu thích"
   },
   {
     "lesson": "5",
-    "words": "たとえる",
-    "reading": "",
-    "meaning": "Ví như, giống như"
+    "words": "例える",
+    "reading": "たとえる",
+    "meaning": "ví như, so với"
   },
   {
     "lesson": "5",
     "words": "努める",
     "reading": "つとめる",
-    "meaning": "Cố gắng, nỗ lực"
+    "meaning": "nỗ lực, cố gắng"
   },
   {
     "lesson": "5",
     "words": "務まる",
     "reading": "つとまる",
-    "meaning": "Đảm nhiệm, gánh vác"
+    "meaning": "được đảm nhiệm"
   },
   {
     "lesson": "5",
     "words": "務める",
     "reading": "つとめる",
-    "meaning": "Làm việc, đảm nhận"
+    "meaning": "phục vụ, làm"
   },
   {
     "lesson": "5",
     "words": "取り消す",
     "reading": "とりけす",
-    "meaning": "Hủy bỏ"
+    "meaning": "hủy"
   },
   {
     "lesson": "5",
     "words": "終える",
     "reading": "おえる",
-    "meaning": "Kết thúc, hoàn thành"
+    "meaning": "kết thúc"
   },
   {
     "lesson": "5",
     "words": "呼びかける",
-    "reading": "よびかける",
-    "meaning": "Gọi, kêu gọi"
+    "reading": "よぶかける",
+    "meaning": "gọi"
   },
   {
     "lesson": "5",
     "words": "呼び出す",
-    "reading": "よびだす",
-    "meaning": "Gọi đến"
+    "reading": "よぶだす",
+    "meaning": "triệu hồi, triệu tập"
   },
   {
     "lesson": "5",
     "words": "有難い",
     "reading": "ありがたい",
-    "meaning": "Cảm kích, biết ơn"
+    "meaning": "cảm ơn"
   },
   {
     "lesson": "5",
     "words": "申し訳ない",
     "reading": "もうしわけない",
-    "meaning": "Xin lỗi"
+    "meaning": "xin lỗi"
   },
   {
     "lesson": "5",
     "words": "めでたい",
-    "reading": "",
-    "meaning": "Vui vẻ"
+    "reading": "めでたい",
+    "meaning": "vui, hạnh phúc"
   },
   {
     "lesson": "5",
-    "words": "幸い",
-    "reading": "さいわい",
-    "meaning": "May mắn"
+    "words": "幸いな",
+    "reading": "さいわいな",
+    "meaning": "hạnh phúc"
   },
   {
     "lesson": "5",
     "words": "恋しい",
     "reading": "こいしい",
-    "meaning": "Được yêu quý, quý mến"
+    "meaning": "nhớ (thiên về tình cảm, muốn gặp, muốn làm liền bây giờ)"
   },
   {
     "lesson": "5",
     "words": "懐かしい",
     "reading": "なつかしい",
-    "meaning": "Nhớ nhung, thân thuộc"
+    "meaning": "hoài niệm, nhớ về quá khứ đã qua"
   },
   {
     "lesson": "5",
     "words": "幼い",
     "reading": "おさない",
-    "meaning": "Trẻ con, ngây thơ"
+    "meaning": "non nớt, bé bỏng"
   },
   {
     "lesson": "5",
     "words": "心細い",
     "reading": "こころぼそい",
-    "meaning": "Cô đơn"
+    "meaning": "cô đơn, mất đi niềm tin, hy vọng"
   },
   {
     "lesson": "5",
-    "words": "かわいそう",
-    "reading": "",
-    "meaning": "Đáng thương, tội nghiệp"
+    "words": "かわいそうな",
+    "reading": "かわいそうな",
+    "meaning": "tội nghiệp"
   },
   {
     "lesson": "5",
-    "words": "気の毒",
-    "reading": "きのどく",
-    "meaning": "Tội nghiệp"
+    "words": "気の毒な",
+    "reading": "きのどくな",
+    "meaning": "đáng tiếc, đáng thương"
   },
   {
     "lesson": "5",
     "words": "貧しい",
     "reading": "まずしい",
-    "meaning": "Nghèo, khó khăn, đạm bạc"
+    "meaning": "nghèo"
   },
   {
     "lesson": "5",
     "words": "惜しい",
     "reading": "おしい",
-    "meaning": "Đáng tiếc, quý giá"
+    "meaning": "đáng tiếc, thường dùng để nói về việc thiếu chút nữa là thành công"
   },
   {
     "lesson": "5",
-    "words": "仕方がない",
-    "reading": "しかたがない",
-    "meaning": "Không còn cách nào khác"
+    "words": "仕方（が）ない",
+    "reading": "しかた（が）ない",
+    "meaning": "vô phương (chọn cái này, chỉ còn cách này thôi)"
   },
   {
     "lesson": "5",
     "words": "やむを得ない",
     "reading": "やむをえない",
-    "meaning": "Không thể tránh khỏi, bất đắc dĩ"
+    "meaning": "không tránh khỏi (mang tính ép buộc cao hơn)"
   },
   {
     "lesson": "5",
     "words": "面倒くさい",
-    "reading": "めんどくさい",
-    "meaning": "Phiền phức"
+    "reading": "めんどうくさい",
+    "meaning": "phiền toái"
   },
   {
     "lesson": "5",
     "words": "しつこい",
-    "reading": "",
-    "meaning": "Dai dẳng, lâu dài"
+    "reading": "しつこい",
+    "meaning": "lằng nhằng, nói hoài, càm ràm hoài (thái độ bực mình)"
   },
   {
     "lesson": "5",
     "words": "くどい",
-    "reading": "",
-    "meaning": "Dài dòng, lắm lời, dai dẳng"
+    "reading": "くどい",
+    "meaning": "dài dòng, lắm lời (nhẹ hơn しつこい)"
   },
   {
     "lesson": "5",
     "words": "煙い",
     "reading": "けむい",
-    "meaning": "Khói mù mịt"
+    "meaning": "nhiều khói"
   },
   {
     "lesson": "5",
-    "words": "邪魔",
-    "reading": "じゃま",
-    "meaning": "Cản trở"
+    "words": "邪魔な",
+    "reading": "じゃまな",
+    "meaning": "vướng víu"
   },
   {
     "lesson": "5",
     "words": "うるさい",
-    "reading": "",
-    "meaning": "Ồn ào, phiền phức"
+    "reading": "うるさい",
+    "meaning": "ồn ào, om sòm"
   },
   {
     "lesson": "5",
     "words": "騒々しい",
     "reading": "そうぞうしい",
-    "meaning": "Ồn ào, ầm ĩ"
+    "meaning": "ồn ào, sôi nổi (thường thể hiện khung cảnh ồn ào)"
   },
   {
     "lesson": "5",
-    "words": "慌しい",
+    "words": "慌ただしい",
     "reading": "あわただしい",
-    "meaning": "Bận rộn"
+    "meaning": "bận rộn (nhiều thứ linh tinh phải xử lý 今日は慌ただしい日だった。)"
   },
   {
     "lesson": "5",
     "words": "そそっかしい",
-    "reading": "",
-    "meaning": "Cuống cuồng, hấp tấp"
+    "reading": "そそっかしい",
+    "meaning": "hấp tấp (tính cách)"
   },
   {
     "lesson": "5",
     "words": "思いがけない",
     "reading": "おもいがけない",
-    "meaning": "Không ngờ, ngoài dự tính"
+    "meaning": "không ngờ đến"
   },
   {
     "lesson": "5",
     "words": "何気ない",
     "reading": "なにげない",
-    "meaning": "Tình cờ, không"
+    "meaning": "ngẫu nhiên, tình cờ, không cố ý"
   },
   {
     "lesson": "5",
     "words": "とんでもない",
-    "reading": "",
-    "meaning": "Quá đáng, vớ vẩn"
+    "reading": "とんでもない",
+    "meaning": "không thể tin được, không có chuyện đó đâu"
   },
   {
     "lesson": "5",
     "words": "くだらない",
-    "reading": "",
-    "meaning": "Vô nghĩa"
+    "reading": "くだらない",
+    "meaning": "vô giá trị, vô nghĩa"
   },
   {
     "lesson": "5",
     "words": "ばかばかしい",
-    "reading": "",
-    "meaning": "Ngu ngốc, vớ vẩn"
+    "reading": "ばかばかしい",
+    "meaning": "vớ vẩn, ngu ngốc"
   },
   {
     "lesson": "5",
-    "words": "でたらめ",
+    "words": "でたらめ(な)",
     "reading": "",
-    "meaning": "Bừa bãi, làm bừa"
+    "meaning": "bừa, linh tinh"
   },
   {
     "lesson": "6",
     "words": "だらしない",
-    "reading": "",
-    "meaning": "Bừa bộn, luộm thuộm"
+    "reading": "だらしない",
+    "meaning": "không gọn gàng (tính cách)"
   },
   {
     "lesson": "6",
     "words": "ずうずうしい",
-    "reading": "",
-    "meaning": "Trơ trẽn"
+    "reading": "ずうずうしい",
+    "meaning": "vô liêm sỉ, trơ trẽn"
   },
   {
     "lesson": "6",
-    "words": "ずるい",
-    "reading": "",
-    "meaning": "Gian xảo, bất công"
+    "words": "狡い",
+    "reading": "ずるい",
+    "meaning": "ranh mãnh, chỉ tính có lợi cho bản thân"
   },
   {
     "lesson": "6",
     "words": "憎らしい",
     "reading": "にくらしい",
-    "meaning": "Đáng ghét, ghê tởm"
+    "meaning": "thấy ghét ghét (ganh tị)"
   },
   {
     "lesson": "6",
     "words": "憎い",
     "reading": "にくい",
-    "meaning": "Đáng ghét, đáng ghê tởm"
+    "meaning": "căm ghét đến mức muốn giết(mức độ 嫌う→恨む→憎む)"
   },
   {
     "lesson": "6",
     "words": "険しい",
     "reading": "けわしい",
-    "meaning": "Dốc, khó khăn"
+    "meaning": "dốc, nghiêm khắc"
   },
   {
     "lesson": "6",
     "words": "辛い",
     "reading": "つらい",
-    "meaning": "Vất vả, đau khổ"
+    "meaning": "đau đớn"
   },
   {
     "lesson": "6",
     "words": "きつい",
     "reading": "",
-    "meaning": "Chật, nghiêm khắc"
+    "meaning": "chật, gay go, khó khăn"
   },
   {
     "lesson": "6",
     "words": "緩い",
     "reading": "ゆるい",
-    "meaning": "Lỏng"
+    "meaning": "lỏng, chậm"
   },
   {
     "lesson": "6",
     "words": "鈍い",
     "reading": "にぶい",
-    "meaning": "Cùn, chậm chạp"
+    "meaning": "cùn, đần độn, kém"
   },
   {
     "lesson": "6",
     "words": "鋭い",
     "reading": "するどい",
-    "meaning": "Sắc bén, nhanh nhạy"
+    "meaning": "sắc, sắc sảo"
   },
   {
     "lesson": "6",
-    "words": "洗い／粗い",
+    "words": "荒い・粗い",
     "reading": "あらい",
-    "meaning": "Gấp gáp, thô bạo, dữ dội, sần sùi"
+    "meaning": "bạo lực, khốc liệt"
   },
   {
     "lesson": "6",
-    "words": "強引",
-    "reading": "ごういん",
-    "meaning": "Bắt buộc, cưỡng bức, bạo lực"
+    "words": "強引な",
+    "reading": "ごういんな",
+    "meaning": "cưỡng bức, bắt buộc"
   },
   {
     "lesson": "6",
-    "words": "勝手",
-    "reading": "かって",
-    "meaning": "Tự ý, ích kỷ, tự động, tình trạng"
+    "words": "勝手な",
+    "reading": "かってな",
+    "meaning": "tự ý, tự tiện"
   },
   {
     "lesson": "6",
-    "words": "強気",
-    "reading": "つよき",
-    "meaning": "Kiên định"
+    "words": "強気な",
+    "reading": "つよきな",
+    "meaning": "kiên định, vững vàng"
   },
   {
     "lesson": "6",
-    "words": "頑固",
-    "reading": "がんこ",
-    "meaning": "Ngoan cố, cứng đầu"
+    "words": "頑固な",
+    "reading": "がんこな",
+    "meaning": "bảo thủ, cố chấp"
   },
   {
     "lesson": "6",
-    "words": "過剰",
-    "reading": "かじょう",
-    "meaning": "Vượt quá, dư thừa"
+    "words": "過剰な",
+    "reading": "かじょうな",
+    "meaning": "vượt quá, thái quá (không đếm được) (phản ứng)"
   },
   {
     "lesson": "6",
-    "words": "重大",
-    "reading": "じゅうだい",
-    "meaning": "Quan trọng, lớn lao"
+    "words": "重大な",
+    "reading": "じゅうたいな",
+    "meaning": "trọng đại　(liên quan đến tính mạng, bệnh tình, tin tức, sự kiện)"
   },
   {
     "lesson": "6",
-    "words": "深刻",
-    "reading": "しんこく",
-    "meaning": "Nghiêm trọng"
+    "words": "深刻な",
+    "reading": "しんこくな",
+    "meaning": "nghiêm trọng"
   },
   {
     "lesson": "6",
-    "words": "気楽",
-    "reading": "きらく",
-    "meaning": "Thoải mái"
+    "words": "気楽な",
+    "reading": "きらくな",
+    "meaning": "thoải mái, nhàn hạ"
   },
   {
     "lesson": "6",
-    "words": "安易",
-    "reading": "あんい",
-    "meaning": "Dễ dàng, đơn giản"
+    "words": "安易な",
+    "reading": "あんいな",
+    "meaning": "dễ dàng, đơn giản (suy nghĩ)"
   },
   {
     "lesson": "6",
     "words": "運",
     "reading": "うん",
-    "meaning": "Vận may"
+    "meaning": "số, vận mệnh"
   },
   {
     "lesson": "6",
     "words": "勘",
     "reading": "かん",
-    "meaning": "Trực giác, linh cảm, cảm tính"
+    "meaning": "trực giác, linh cảm, kiểu như giác quan thứ sáu"
   },
   {
     "lesson": "6",
     "words": "感覚",
     "reading": "かんかく",
-    "meaning": "Cảm giác"
+    "meaning": "cảm giác, giác quan (5 giác quan)"
   },
   {
     "lesson": "6",
     "words": "神経",
     "reading": "しんけい",
-    "meaning": "Thần kinh"
+    "meaning": "thần kinh, điều khiển giác quan"
   },
   {
     "lesson": "6",
     "words": "記憶",
     "reading": "きおく",
-    "meaning": "Ký ức, nhớ"
+    "meaning": "ký ức, trí nhớ (記憶力 khả năng ghi nhớ)"
   },
   {
     "lesson": "6",
     "words": "様子",
     "reading": "ようす",
-    "meaning": "Dáng vẻ, bộ dạng, tình trạng"
+    "meaning": "trạng thái, tình trạng"
   },
   {
     "lesson": "6",
     "words": "雰囲気",
     "reading": "ふんいき",
-    "meaning": "Bầu không khí"
+    "meaning": "bầu không khí"
   },
   {
     "lesson": "6",
     "words": "魅力",
     "reading": "みりょく",
-    "meaning": "Sức quyến rũ, thu hút, hấp dẫn"
+    "meaning": "mị lực, sức hút, sức hấp dẫn"
   },
   {
     "lesson": "6",
     "words": "機嫌",
     "reading": "きげん",
-    "meaning": "Tâm trạng, tính khí"
+    "meaning": "tâm trạng, thần thái (今日は機嫌が良さそうだね) gần nghĩa với 気分"
   },
   {
     "lesson": "6",
     "words": "感心",
     "reading": "かんしん",
-    "meaning": "Quan tâm"
+    "meaning": "quan tâm"
   },
   {
     "lesson": "6",
     "words": "意欲",
     "reading": "いよく",
-    "meaning": "Ý muốn, mong muốn"
+    "meaning": "ý dục, muốn"
   },
   {
     "lesson": "6",
     "words": "全力",
     "reading": "ぜんりょく",
-    "meaning": "Toàn bộ sức lực"
+    "meaning": "toàn lực"
   },
   {
     "lesson": "6",
     "words": "本気",
     "reading": "ほんき",
-    "meaning": "Thật lòng, đúng đắn, nghiêm chỉnh"
+    "meaning": "nghiêm chỉnh, chân thực, nghiêm túc, thật lòng"
   },
   {
     "lesson": "6",
     "words": "意識",
     "reading": "いしき",
-    "meaning": "Ý thức, nhận thức"
+    "meaning": "nhận thức, ý thức nhận biết"
   },
   {
     "lesson": "6",
     "words": "感激",
     "reading": "かんげき",
-    "meaning": "Cảm kích, cảm động"
+    "meaning": "cảm kích, xúc động"
   },
   {
     "lesson": "6",
     "words": "同情",
     "reading": "どうじょう",
-    "meaning": "Đồng cảm, cảm thông"
+    "meaning": "đồng cảm với khó khăn của người khác"
   },
   {
     "lesson": "6",
     "words": "同意",
     "reading": "どうい",
-    "meaning": "Đồng ý"
+    "meaning": "đồng ý"
   },
   {
     "lesson": "6",
     "words": "同感",
     "reading": "どうかん",
-    "meaning": "Đồng tình"
+    "meaning": "đồng ý, cùng ý kiến"
   },
   {
     "lesson": "6",
     "words": "対立",
     "reading": "たいりつ",
-    "meaning": "Đối lập"
+    "meaning": "đối lập"
   },
   {
     "lesson": "6",
     "words": "主張",
     "reading": "しゅちょう",
-    "meaning": "Chủ trương, ý kiến"
+    "meaning": "chủ trương"
   },
   {
     "lesson": "6",
     "words": "要求",
     "reading": "ようきゅう",
-    "meaning": "Sự yêu cầu, đòi hỏi"
+    "meaning": "yêu cầu"
   },
   {
     "lesson": "6",
     "words": "得",
     "reading": "とく",
-    "meaning": "Lời, lợi"
+    "meaning": "lợi ích, lãi"
   },
   {
     "lesson": "6",
     "words": "損",
     "reading": "そん",
-    "meaning": "Lỗ"
+    "meaning": "lỗ, tổn thất"
   },
   {
     "lesson": "6",
     "words": "勝負",
     "reading": "しょうぶ",
-    "meaning": "Thi đấu, thắng thua"
+    "meaning": "đánh cược, trận đấu"
   },
   {
     "lesson": "6",
     "words": "勢い",
     "reading": "いきおい",
-    "meaning": "Mạnh mẽ, tràn đầy sinh lực, sức mạnh"
+    "meaning": "mạnh mẽ, tràn trề"
   },
   {
     "lesson": "6",
     "words": "爆発",
     "reading": "ばくはつ",
-    "meaning": "Nổ, vụ nổ, bộc phát"
+    "meaning": "nổ"
   },
   {
     "lesson": "6",
     "words": "災害",
     "reading": "さいがい",
-    "meaning": "Thảm họa, tai họa"
+    "meaning": "thảm họa　(động đất, sóng thần)"
   },
   {
     "lesson": "6",
     "words": "天候",
     "reading": "てんこう",
-    "meaning": "Thời tiết"
+    "meaning": "thời tiết"
   },
   {
     "lesson": "6",
     "words": "乾燥",
     "reading": "かんそう",
-    "meaning": "Khô, khô hạn"
+    "meaning": "sự khô khan, khô hạn"
   },
   {
     "lesson": "7",
     "words": "観測",
     "reading": "かんそく",
-    "meaning": "Đo đạc, quan sát"
+    "meaning": "quan sát, dự đoán"
   },
   {
     "lesson": "7",
     "words": "遭難",
     "reading": "そうなん",
-    "meaning": "Thảm họa, đắm thuyền"
+    "meaning": "gặp nạn (khi bị sóng thần, khi leo núi, v.v)"
   },
   {
     "lesson": "7",
     "words": "発生",
     "reading": "はっせい",
-    "meaning": "Phát sinh, xảy ra"
+    "meaning": "phát sinh"
   },
   {
     "lesson": "7",
     "words": "登場",
     "reading": "とうじょう",
-    "meaning": "Xuất hiện, lên sân khấu"
+    "meaning": "lối vào, xuất hiện"
   },
   {
     "lesson": "7",
     "words": "回復",
     "reading": "かいふく",
-    "meaning": "Phục hồi"
+    "meaning": "hồi phục"
   },
   {
     "lesson": "7",
     "words": "援助",
     "reading": "えんじょ",
-    "meaning": "Chi viện, hỗ trợ"
+    "meaning": "viện trợ"
   },
   {
     "lesson": "7",
     "words": "保険",
     "reading": "ほけん",
-    "meaning": "Bảo hiểm"
+    "meaning": "bảo hiểm"
   },
   {
     "lesson": "7",
     "words": "追加",
     "reading": "ついか",
-    "meaning": "Thêm vào, gọi thêm đồ"
+    "meaning": "thêm vào"
   },
   {
     "lesson": "7",
     "words": "応用",
     "reading": "おうよう",
-    "meaning": "Ứng dụng"
+    "meaning": "ứng dụng, Áp dụng"
   },
   {
     "lesson": "7",
-    "words": "回答／解答",
+    "words": "解答",
     "reading": "かいとう",
-    "meaning": "Đáp án, trả lời"
+    "meaning": "giải quyết vấn đề, nghi vấn"
   },
   {
     "lesson": "7",
     "words": "結論",
     "reading": "けつろん",
-    "meaning": "Kết luận"
+    "meaning": "kết luận"
   },
   {
     "lesson": "7",
     "words": "案",
     "reading": "あん",
-    "meaning": "Phương án, hướng dẫn"
+    "meaning": "kế hoạch, ý tưởng"
   },
   {
     "lesson": "7",
     "words": "集中",
     "reading": "しゅうちゅう",
-    "meaning": "Tập trung"
+    "meaning": "tập trung"
   },
   {
     "lesson": "7",
     "words": "区別",
     "reading": "くべつ",
-    "meaning": "Phân biệt"
+    "meaning": "phân biệt"
   },
   {
     "lesson": "7",
     "words": "差別",
     "reading": "さべつ",
-    "meaning": "Phân biệt, khác biệt"
+    "meaning": "khác biệt (trong cách đối xử, 人種差別 phân biệt chủng tộc )"
   },
   {
     "lesson": "7",
     "words": "中間",
     "reading": "ちゅうかん",
-    "meaning": "Trung gian, giữa"
+    "meaning": "ở giữa"
   },
   {
     "lesson": "7",
     "words": "逆",
     "reading": "ぎゃく",
-    "meaning": "Đối nghịch, ngược lại"
+    "meaning": "ngược lại"
   },
   {
     "lesson": "7",
     "words": "よそ",
-    "reading": "",
-    "meaning": "Nơi khác"
+    "reading": "よそ",
+    "meaning": "nơi khác"
   },
   {
     "lesson": "7",
     "words": "外",
     "reading": "ほか",
-    "meaning": "Khác"
+    "meaning": "người (khác), ngoài ra"
   },
   {
     "lesson": "7",
-    "words": "堺",
+    "words": "境",
     "reading": "さかい",
-    "meaning": "Biên giới, ranh giới"
+    "meaning": "biên giới, ngăn cách"
   },
   {
     "lesson": "7",
     "words": "半ば",
     "reading": "なかば",
-    "meaning": "Một nửa"
+    "meaning": "một nửa, ở giữa (văn viết của 途中)"
   },
   {
     "lesson": "7",
     "words": "普段",
     "reading": "ふだん",
-    "meaning": "Thông thường, thường xuyên"
+    "meaning": "bình thường"
   },
   {
     "lesson": "7",
     "words": "日常",
     "reading": "にちじょう",
-    "meaning": "Hằng ngày"
+    "meaning": "hàng ngày"
   },
   {
     "lesson": "7",
     "words": "一般",
     "reading": "いっぱん",
-    "meaning": "Thông thường, phổ biến"
+    "meaning": "tổng quan, cái chung"
   },
   {
     "lesson": "7",
     "words": "常識",
     "reading": "じょうしき",
-    "meaning": "Kiến thức chung, kiến thức thông thường"
+    "meaning": "ý thức tuân thủ luật lệ, phép tắc thông thường"
   },
   {
     "lesson": "7",
     "words": "ことわざ",
-    "reading": "",
-    "meaning": "Tục ngữ, thành ngữ"
+    "reading": "ことわざ",
+    "meaning": "thành ngữ"
   },
   {
     "lesson": "7",
     "words": "権利",
     "reading": "けんり",
-    "meaning": "Quyền lợi"
+    "meaning": "quyền lợi"
   },
   {
     "lesson": "7",
     "words": "義務",
     "reading": "ぎむ",
-    "meaning": "Nghĩa vụ"
+    "meaning": "nghĩa vụ"
   },
   {
     "lesson": "7",
     "words": "きっかけ",
-    "reading": "",
-    "meaning": "Cơ hội, thời cơ, lúc, lý do"
+    "reading": "きっかけ",
+    "meaning": "cơ hội, khởi đầu"
   },
   {
     "lesson": "7",
     "words": "行動",
     "reading": "こうどう",
-    "meaning": "Hành động"
+    "meaning": "hành động"
   },
   {
     "lesson": "7",
     "words": "使用",
     "reading": "しよう",
-    "meaning": "Sử dụng"
+    "meaning": "sử dụng"
   },
   {
     "lesson": "7",
     "words": "提出",
     "reading": "ていしゅつ",
-    "meaning": "Nộp"
+    "meaning": "đề xuất, giao nộp"
   },
   {
     "lesson": "7",
     "words": "期限",
     "reading": "きげん",
-    "meaning": "Kỳ hạn, thời hạn"
+    "meaning": "giới hạn, kỳ hạn"
   },
   {
     "lesson": "7",
     "words": "延期",
     "reading": "えんき",
-    "meaning": "Trì hoãn"
+    "meaning": "trì hoãn"
   },
   {
     "lesson": "7",
     "words": "延長",
     "reading": "えんちょう",
-    "meaning": "Kéo dài"
+    "meaning": "kéo dài"
   },
   {
     "lesson": "7",
     "words": "短縮",
     "reading": "たんしゅく",
-    "meaning": "Rút ngắn"
+    "meaning": "rút ngắn"
   },
   {
     "lesson": "7",
     "words": "映像",
     "reading": "えいぞう",
-    "meaning": "Hình ảnh, đồ họa"
+    "meaning": "hình ảnh, phim ảnh trên tivi, điện thoại, camera"
   },
   {
     "lesson": "7",
     "words": "撮影",
     "reading": "さつえい",
-    "meaning": "Chụp hình"
+    "meaning": "chụp ảnh"
   },
   {
     "lesson": "7",
     "words": "背景",
     "reading": "はいけい",
-    "meaning": "Bối cảnh, phông nền"
+    "meaning": "bối cảnh, phông nền"
   },
   {
     "lesson": "7",
     "words": "独立",
     "reading": "どくりつ",
-    "meaning": "Độc lập"
+    "meaning": "độc lập"
   },
   {
     "lesson": "7",
     "words": "候補",
     "reading": "こうほ",
-    "meaning": "Ứng cử, lựa chọn"
+    "meaning": "ứng cử, ứng cử viên"
   },
   {
     "lesson": "7",
     "words": "支持",
     "reading": "しじ",
-    "meaning": "Ủng hộ, giúp đỡ"
+    "meaning": "chống đỡ, ủng hộ (支持者: người ủng hộ)"
   },
   {
     "lesson": "7",
     "words": "投票",
     "reading": "とうひょう",
-    "meaning": "Bỏ phiếu"
+    "meaning": "bầu cử"
   },
   {
     "lesson": "7",
     "words": "当選",
     "reading": "とうせん",
-    "meaning": "Trúng cử, trúng giải"
+    "meaning": "trúng cử, trúng giải"
   },
   {
     "lesson": "7",
     "words": "抽選",
     "reading": "ちゅうせん",
-    "meaning": "Rút thăm, xổ số"
+    "meaning": "rút thăm"
   },
   {
     "lesson": "7",
     "words": "配布",
     "reading": "はいふ",
-    "meaning": "Phân phát, cung cấp"
+    "meaning": "phân phát"
   },
   {
     "lesson": "7",
     "words": "失格",
     "reading": "しっかく",
-    "meaning": "Mất tư cách"
+    "meaning": "mất tư cách, mất quyền"
   },
   {
     "lesson": "7",
     "words": "余暇",
     "reading": "よか",
-    "meaning": "Thời gian rảnh"
+    "meaning": "thời gian rỗi"
   },
   {
     "lesson": "7",
     "words": "行事",
     "reading": "ぎょうじ",
-    "meaning": "Sự kiện"
+    "meaning": "sự kiện"
   },
   {
     "lesson": "7",
     "words": "理想",
     "reading": "りそう",
-    "meaning": "Lý tưởng"
+    "meaning": "lý tưởng"
   },
   {
     "lesson": "8",
     "words": "現実",
     "reading": "げんじつ",
-    "meaning": "Hiện thực"
+    "meaning": "hiện thực, thực tế"
   },
   {
     "lesson": "8",
     "words": "体験",
     "reading": "たいけん",
-    "meaning": "Trải nghiệm"
+    "meaning": "trải nghiệm"
   },
   {
     "lesson": "8",
     "words": "空想",
     "reading": "くうそう",
-    "meaning": "Mơ mộng"
-  },
-  {
-    "lesson": "8",
-    "words": "実現",
-    "reading": "じつげん",
-    "meaning": "Thực hiện"
+    "meaning": "không tưởng, kỳ diệu"
   },
   {
     "lesson": "8",
     "words": "実物",
     "reading": "じつぶつ",
-    "meaning": "Đồ thật"
+    "meaning": "thực chất, nguyên bản"
+  },
+  {
+    "lesson": "8",
+    "words": "実現",
+    "reading": "じつげん",
+    "meaning": "hiện thực"
   },
   {
     "lesson": "8",
     "words": "実施",
     "reading": "じっし",
-    "meaning": "Thực thi, thực hiện"
+    "meaning": "thực thi"
   },
   {
     "lesson": "8",
     "words": "許可",
     "reading": "きょか",
-    "meaning": "Sự cho phép, chấp nhận, phê duyệt"
+    "meaning": "sự cho phép"
   },
   {
     "lesson": "8",
     "words": "全体",
     "reading": "ぜんたい",
-    "meaning": "Toàn thể"
+    "meaning": "toàn thể"
   },
   {
     "lesson": "8",
     "words": "部分",
     "reading": "ぶぶん",
-    "meaning": "Bộ phận"
+    "meaning": "bộ phận"
   },
   {
     "lesson": "8",
     "words": "統一",
     "reading": "とういつ",
-    "meaning": "Thống nhất"
+    "meaning": "thống nhất"
   },
   {
     "lesson": "8",
     "words": "拡大",
     "reading": "かくだい",
-    "meaning": "Mở rộng, tăng dần"
+    "meaning": "mở rộng, tăng lên"
   },
   {
     "lesson": "8",
     "words": "縮小",
     "reading": "しゅくしょう",
-    "meaning": "Thu nhỏ"
+    "meaning": "co nhỏ, nén lại"
   },
   {
     "lesson": "8",
     "words": "集合",
     "reading": "しゅうごう",
-    "meaning": "Tập hợp, tập trung"
+    "meaning": "tập hợp"
   },
   {
     "lesson": "8",
     "words": "方向",
     "reading": "ほうこう",
-    "meaning": "Phương hướng"
+    "meaning": "phương hướng"
   },
   {
     "lesson": "8",
     "words": "間隔",
     "reading": "かんかく",
-    "meaning": "Khoảng cách"
+    "meaning": "khoảng cách, khoảng giữa"
   },
   {
     "lesson": "8",
     "words": "脇",
     "reading": "わき",
-    "meaning": "Nách, hông, lề đường"
+    "meaning": "phía bên, bên hông, bênh nách"
   },
   {
     "lesson": "8",
     "words": "通過",
     "reading": "つうか",
-    "meaning": "Vượt qua, đi qua"
+    "meaning": "thông qua"
   },
   {
     "lesson": "8",
     "words": "移動",
     "reading": "いどう",
-    "meaning": "Chuyển động, di chuyển"
+    "meaning": "di chuyển"
   },
   {
     "lesson": "8",
     "words": "停止",
     "reading": "ていし",
-    "meaning": "Dừng lại, đình chỉ"
+    "meaning": "dừng lại, tạm dừng"
   },
   {
     "lesson": "8",
     "words": "低下",
     "reading": "ていか",
-    "meaning": "Giảm"
+    "meaning": "rơi xuống, từ chối"
   },
   {
     "lesson": "8",
     "words": "超過",
     "reading": "ちょうか",
-    "meaning": "Vượt quá"
+    "meaning": "vượt quá đếm được (tiền, thời gian, bệnh)"
   },
   {
     "lesson": "8",
     "words": "立ち上がる",
     "reading": "たちあがる",
-    "meaning": "Đứng dậy"
+    "meaning": "đứng lên"
   },
   {
     "lesson": "8",
     "words": "飛び上がる",
     "reading": "とびあがる",
-    "meaning": "Bay lên, nhảy lên"
+    "meaning": "bay lên , nhảy lên, bất ngờ"
   },
   {
     "lesson": "8",
     "words": "浮かび上がる",
     "reading": "うかびあがる",
-    "meaning": "Nổi lên"
+    "meaning": "nổi lên, nổi lên tình nghi"
   },
   {
     "lesson": "8",
     "words": "舞い上がる",
     "reading": "まいあがる",
-    "meaning": "Bay lên, vút lên"
+    "meaning": "bay vút lên, tâm trạng bay bổng"
   },
   {
     "lesson": "8",
     "words": "燃え上がる",
     "reading": "もえあがる",
-    "meaning": "Bốc cháy"
+    "meaning": "bốc cháy lên"
   },
   {
     "lesson": "8",
     "words": "盛り上がる",
     "reading": "もりあがる",
-    "meaning": "Nổi lên, tăng lên"
+    "meaning": "chồng chất lên, tăng lên, phấn khích"
   },
   {
     "lesson": "8",
-    "words": "湧き上がる",
+    "words": "沸(湧)き上がる",
     "reading": "わきあがる",
-    "meaning": "Sôi lên, nảy lên"
+    "meaning": "sôi lên, mãnh liệt hơn"
   },
   {
     "lesson": "8",
     "words": "晴れ上がる",
     "reading": "はれあがる",
-    "meaning": "Sáng sủa"
+    "meaning": "sáng sủa lên"
   },
   {
     "lesson": "8",
     "words": "震え上がる",
     "reading": "ふるえあがる",
-    "meaning": "Run cầm cập"
-  },
-  {
-    "lesson": "8",
-    "words": "干上がる",
-    "reading": "ひあがる",
-    "meaning": "Khô hạn"
+    "meaning": "run bắn lên"
   },
   {
     "lesson": "8",
     "words": "縮み上がる",
     "reading": "ちぢみあがる",
-    "meaning": "Co rúm"
+    "meaning": "Co rúm lại; sợ hãi; khúm núm"
+  },
+  {
+    "lesson": "8",
+    "words": "干上がる",
+    "reading": "ひあがる",
+    "meaning": "khô nẻ"
   },
   {
     "lesson": "8",
     "words": "でき上がる",
     "reading": "できあがる",
-    "meaning": "Hoàn thành"
+    "meaning": "hoàn thành"
   },
   {
     "lesson": "8",
     "words": "持ち上げる",
     "reading": "もちあげる",
-    "meaning": "Nâng lên"
+    "meaning": "nhấc lên"
   },
   {
     "lesson": "8",
     "words": "見上げる",
     "reading": "みあげる",
-    "meaning": "Nhìn lên"
+    "meaning": "ngước lên, ngưỡng mộ"
   },
   {
     "lesson": "8",
     "words": "積み上げる",
     "reading": "つみあげる",
-    "meaning": "Chất lên, tích góp"
+    "meaning": "vun lên, chất lên"
   },
   {
     "lesson": "8",
     "words": "打ち上げる",
     "reading": "うちあげる",
-    "meaning": "Bắn, phóng, kết thúc"
+    "meaning": "hoàn thành; phóng; bắn lên"
   },
   {
     "lesson": "8",
     "words": "立ち上げる",
     "reading": "たちあげる",
-    "meaning": "Khởi động, bắt đầu"
+    "meaning": "khởi động, thành lập"
   },
   {
     "lesson": "8",
     "words": "切り上げる",
     "reading": "きりあげる",
-    "meaning": "Kết thúc, làm tròn"
+    "meaning": "tạm ngưng, cắt"
   },
   {
     "lesson": "8",
     "words": "繰り上げる",
     "reading": "くりあげる",
-    "meaning": "Thực hiện sớm hơn"
+    "meaning": "sớm hơn (lịch trình), tiến lên"
   },
   {
     "lesson": "8",
     "words": "磨き上げる",
     "reading": "みがきあげる",
-    "meaning": "Đánh bóng"
+    "meaning": "đánh bóng lên"
   },
   {
     "lesson": "8",
     "words": "鍛え上げる",
     "reading": "きたえあげる",
-    "meaning": "Rèn giũa, huấn luyện nghiêm khắc"
+    "meaning": "dạy dỗ, rèn đúc"
   },
   {
     "lesson": "8",
     "words": "書き上げる",
     "reading": "かきあげる",
-    "meaning": "Viết xong"
+    "meaning": "viết xong"
   },
   {
     "lesson": "8",
     "words": "育て上げる",
     "reading": "そだてあげる",
-    "meaning": "Nuôi lớn"
+    "meaning": "nuôi lớn"
   },
   {
     "lesson": "8",
     "words": "読み上げる",
     "reading": "よみあげる",
-    "meaning": "Lần lượt đọc"
+    "meaning": "đọc từng cái một"
   },
   {
     "lesson": "8",
     "words": "数え上げる",
-    "reading": "あぞえあげる",
-    "meaning": "Đếm, liệt kê"
+    "reading": "かぞえあげる",
+    "meaning": "đếm từng cái một, liệt kê"
   },
   {
     "lesson": "8",
     "words": "投げ出す",
     "reading": "なげだす",
-    "meaning": "Ném đi, bỏ cuộc"
+    "meaning": "ném ra ngoài, ngồi gác chéo chân lên"
   },
   {
     "lesson": "8",
     "words": "持ち出す",
     "reading": "もちだす",
-    "meaning": "Mang đi"
+    "meaning": "mang ra ngoài"
   },
   {
     "lesson": "8",
     "words": "追い出す",
     "reading": "おいだす",
-    "meaning": "Đuổi đi"
+    "meaning": "đuổi cổ, tống cổ"
   },
   {
     "lesson": "8",
     "words": "放り出す",
     "reading": "ほうりだす",
-    "meaning": "Quẳng ra, vứt ra"
+    "meaning": "quẳng đi"
   },
   {
     "lesson": "9",
     "words": "貸し出す",
     "reading": "かしだす",
-    "meaning": "Cho mượn"
+    "meaning": "cho vay; cho mượn, phải trả lại (do thói quen dùng từ)"
   },
   {
     "lesson": "9",
     "words": "聞き出す",
     "reading": "ききだす",
-    "meaning": "Nghe được"
+    "meaning": "lấy thông tin, chất vấn"
   },
   {
     "lesson": "9",
     "words": "連れ出す",
     "reading": "つれだす",
-    "meaning": "Dẫn đi"
+    "meaning": "dẫn ra ngoài"
   },
   {
     "lesson": "9",
     "words": "引っ張り出す",
     "reading": "ひっぱりだす",
-    "meaning": "Lôi ra, kéo ra"
+    "meaning": "lôi ra; đem ra; kéo ra ngoài"
   },
   {
     "lesson": "9",
     "words": "逃げ出す",
     "reading": "にげだす",
-    "meaning": "Chạy ra"
+    "meaning": "chạy trốn"
   },
   {
     "lesson": "9",
     "words": "飛び出す",
     "reading": "とびだす",
-    "meaning": "Nhảy ra, lao ra"
+    "meaning": "chạy ra; nhảy ra; bay ra"
   },
   {
     "lesson": "9",
     "words": "見つけ出す",
     "reading": "みつけだす",
-    "meaning": "Tìm ra"
+    "meaning": "biết là có => tìm => để ra ngoài"
   },
   {
     "lesson": "9",
     "words": "探し出す",
     "reading": "さがしだす",
-    "meaning": "Tìm thấy"
+    "meaning": "phát hiện được => để ra"
   },
   {
     "lesson": "9",
     "words": "書き出す",
     "reading": "かきだす",
-    "meaning": "Viết xuống"
+    "meaning": "viết ra"
   },
   {
     "lesson": "9",
     "words": "飛び込む",
     "reading": "とびこむ",
-    "meaning": "Nhảy xuống, lao vào"
+    "meaning": "nhảy vào, lao mình vào"
   },
   {
     "lesson": "9",
     "words": "駆け込む",
     "reading": "かけこむ",
-    "meaning": "Chạy vào"
+    "meaning": "chạy bổ vào; đâm sầm vào"
   },
   {
     "lesson": "9",
     "words": "割り込む",
     "reading": "わりこむ",
-    "meaning": "Chen vào"
+    "meaning": "chen vào; xen ngang"
   },
   {
     "lesson": "9",
     "words": "差し込む",
     "reading": "さしこむ",
-    "meaning": "Chiếu vào"
+    "meaning": "cắm vào"
   },
   {
     "lesson": "9",
     "words": "染み込む",
     "reading": "しみこむ",
-    "meaning": "Thấm vào"
+    "meaning": "thấm vào trong, thấm qua"
   },
   {
     "lesson": "9",
     "words": "引っ込む",
     "reading": "ひっこむ",
-    "meaning": "Lui vào"
+    "meaning": "lui vào trong"
   },
   {
     "lesson": "9",
     "words": "詰め込む",
-    "reading": "つみこむ",
-    "meaning": "Nhét vào"
+    "reading": "つめこむ",
+    "meaning": "nhét vào; tống vào"
   },
   {
     "lesson": "9",
     "words": "飲み込む",
     "reading": "のみこむ",
-    "meaning": "Nuốt, hiểu"
+    "meaning": "nuốt, hiểu; thành thục"
   },
   {
     "lesson": "9",
     "words": "運び込む",
     "reading": "はこびこむ",
-    "meaning": "Chuyển vào trong"
+    "meaning": "mang vào bên trong"
   },
   {
     "lesson": "9",
     "words": "打ち込む",
     "reading": "うちこむ",
-    "meaning": "Bắn vào, nhập vào, tập trung"
+    "meaning": "Đóng vào(đinh); găm vào; nhập vào (thông tin )"
   },
   {
     "lesson": "9",
     "words": "注ぎ込む",
     "reading": "そそぎこむ",
-    "meaning": "Đổ vào, dồn vào"
+    "meaning": "dồn hết vào，đổ vào"
   },
   {
     "lesson": "9",
     "words": "引き込む",
     "reading": "ひきこむ",
-    "meaning": "Lôi kéo vào"
+    "meaning": "lôi kéo vào, dẫn vào"
   },
   {
     "lesson": "9",
     "words": "書き込む",
     "reading": "かきこむ",
-    "meaning": "Viết vào, điền vào"
+    "meaning": "ghi vào, viết vào"
   },
   {
     "lesson": "9",
     "words": "巻き込む",
     "reading": "まきこむ",
-    "meaning": "Cuốn vào, dính vào"
+    "meaning": "lôi cuốn, hấp dẫn, dính líu"
   },
   {
     "lesson": "9",
     "words": "追い込む",
     "reading": "おいこむ",
-    "meaning": "Dồn vào, lùa vào"
+    "meaning": "lùa; dồn (dồn ai đó vào tình huống nguy hiểm)"
   },
   {
     "lesson": "9",
     "words": "呼び込む",
     "reading": "よびこむ",
-    "meaning": "Mời gọi"
+    "meaning": "mời gọi, lôi kéo"
   },
   {
     "lesson": "9",
     "words": "座り込む",
     "reading": "すわりこむ",
-    "meaning": "Ngồi bệt xuống"
+    "meaning": "ngồi lì"
   },
   {
     "lesson": "9",
     "words": "寝込む",
     "reading": "ねこむ",
-    "meaning": "Ngủ li bì"
+    "meaning": "ngủ li bì"
   },
   {
     "lesson": "9",
     "words": "話し込む",
     "reading": "はなしこむ",
-    "meaning": "Mải nói chyện"
+    "meaning": "Đi sâu vào cuộc thảo luận, mải nói chuyện"
   },
   {
     "lesson": "9",
     "words": "黙り込む",
     "reading": "だまりこむ",
-    "meaning": "Im bặt"
+    "meaning": "chìm vào yên lặng; nín lặng"
   },
   {
     "lesson": "9",
     "words": "泊まり込む",
     "reading": "とまりこむ",
-    "meaning": "Trọ lại qua đêm"
+    "meaning": "trọ lại"
   },
   {
     "lesson": "9",
     "words": "住み込む",
     "reading": "すみこむ",
-    "meaning": "Sống"
+    "meaning": "sinh sống"
   },
   {
     "lesson": "9",
     "words": "煮込む",
     "reading": "にこむ",
-    "meaning": "Nấu nhừ, ninh nhừ"
+    "meaning": "nấu; ninh kỹ"
   },
   {
     "lesson": "9",
     "words": "売り込む",
     "reading": "うりこむ",
-    "meaning": "Tiếp thị sản phẩm"
+    "meaning": "nổi danh; có tiếng, cung cấp tình báo"
   },
   {
     "lesson": "9",
     "words": "頼み込む",
     "reading": "たのみこむ",
-    "meaning": "Yêu cầu khẩn khoản"
+    "meaning": "yêu cầu khẩn khoản"
   },
   {
     "lesson": "9",
     "words": "教え込む",
     "reading": "おしえこむ",
-    "meaning": "Dạy dỗ"
+    "meaning": "dạy dỗ"
   },
   {
     "lesson": "9",
     "words": "話し合う",
     "reading": "はなしあう",
-    "meaning": "Thảo luận, đàm phán"
+    "meaning": "thảo luận; trao đổi"
   },
   {
     "lesson": "9",
     "words": "言い合う",
     "reading": "いいあう",
-    "meaning": "Tranh luận, cãi cọ"
+    "meaning": "tranh luận. cãi cọ"
   },
   {
     "lesson": "9",
-    "words": "かたりあう",
-    "reading": "",
-    "meaning": "Tâm sự"
+    "words": "語り合う",
+    "reading": "かたりあう",
+    "meaning": "trò chuyện cùng nhau; nói chuyện với nhau"
   },
   {
     "lesson": "9",
     "words": "見つめ合う",
     "reading": "みつめあう",
-    "meaning": "Nhìm chằm chằm"
+    "meaning": "tìm thấy nhau (tình yêu)"
   },
   {
     "lesson": "9",
     "words": "向かい合う",
     "reading": "むかいあう",
-    "meaning": "Đối mặt"
+    "meaning": "đối diện;đối mặt với nhau"
   },
   {
     "lesson": "9",
     "words": "助け合う",
     "reading": "たすけあう",
-    "meaning": "Giúp đỡ nhau"
+    "meaning": "hợp tác giúp đỡ lẫn nhau"
   },
   {
     "lesson": "9",
     "words": "分け合う",
     "reading": "わけあう",
-    "meaning": "Chia sẻ"
+    "meaning": "chia sẻ, chia sớt, chia đều ra.."
   },
   {
     "lesson": "9",
     "words": "出し合う",
     "reading": "だしあう",
-    "meaning": "Cùng đóng góp, cùng trả tiền"
+    "meaning": "đóng góp, phối hợp, cùng góp phần"
   },
   {
     "lesson": "9",
     "words": "申し合わせる",
     "reading": "もうしあわせる",
-    "meaning": "Thu xếp, sắp xếp, dàn xếp"
+    "meaning": "thu xếp"
   },
   {
     "lesson": "9",
     "words": "誘い合わせる",
     "reading": "さそいあわせる",
-    "meaning": "Rủ cùng làm"
+    "meaning": "hẹn nhau, rủ nhau"
   },
   {
     "lesson": "9",
     "words": "隣り合わせる",
     "reading": "となりあわせる",
-    "meaning": "Liền kề, cạnh nhau"
+    "meaning": "bên cạnh nhau"
   },
   {
     "lesson": "9",
     "words": "組み合わせる",
     "reading": "くみあわせる",
-    "meaning": "Kết hợp, phối hợp"
+    "meaning": "ghép lại; kết hợp; liên kết lại; liên kết; phối hợp"
   },
   {
     "lesson": "9",
     "words": "詰め合わせる",
     "reading": "つめあわせる",
-    "meaning": "Đóng gói, đóng hộp"
+    "meaning": "đóng gói,đóng hộp"
   },
   {
     "lesson": "9",
     "words": "重ね合わせる",
     "reading": "かさねあわせる",
-    "meaning": "Chồng chất"
+    "meaning": "xếp chồng lên"
   },
   {
     "lesson": "9",
     "words": "居合わせる",
     "reading": "いあわせる",
-    "meaning": "Tình cờ gặp"
+    "meaning": "tình cờ gặp"
   },
   {
     "lesson": "10",
     "words": "乗り合わせる",
     "reading": "のりあわせる",
-    "meaning": "Đi cùng xe"
+    "meaning": "tình cờ đi cùng nhau, cưỡi cùng nhau"
   },
   {
     "lesson": "10",
     "words": "持ち合わせる",
     "reading": "もちあわせる",
-    "meaning": "Mang sẵn trong người (không chuẩn bị trước)"
+    "meaning": "có, có mang theo"
   },
   {
     "lesson": "10",
     "words": "問い合わせる",
     "reading": "といあわせる",
-    "meaning": "Hỏi, hỏi thăm"
+    "meaning": "hỏi; hỏi thăm"
   },
   {
     "lesson": "10",
     "words": "照らし合わせる",
     "reading": "てらしあわせる",
-    "meaning": "So sánh, đối chiếu"
+    "meaning": "so sánh, đối chiếu"
   },
   {
     "lesson": "10",
     "words": "聞き直す",
     "reading": "ききなおす",
-    "meaning": "Nghe lại"
+    "meaning": "hỏi lại lần nữa"
   },
   {
     "lesson": "10",
     "words": "やり直す",
     "reading": "やりなおす",
-    "meaning": "Làm lại"
+    "meaning": "làm lại"
   },
   {
     "lesson": "10",
     "words": "かけ直す",
     "reading": "かけなおす",
-    "meaning": "Gọi lại"
+    "meaning": "gọi lại"
   },
   {
     "lesson": "10",
     "words": "出直す",
     "reading": "でなおす",
-    "meaning": "Trở lại"
+    "meaning": "làm lại từ đầu"
   },
   {
     "lesson": "10",
     "words": "持ち直す",
     "reading": "もちなおす",
-    "meaning": "Cầm chặt hơn, chuyển biến tốt hơn"
+    "meaning": "chuyển biến tốt"
   },
   {
     "lesson": "10",
     "words": "考え直す",
     "reading": "かんがえなおす",
-    "meaning": "Nghĩ lại"
+    "meaning": "xem lại , suy nghĩ lại"
   },
   {
     "lesson": "10",
     "words": "思い直す",
     "reading": "おもいなおす",
-    "meaning": "Đổi ý"
+    "meaning": "nghĩ lại; thay đổi ý định; thay đổi quyết định"
   },
   {
     "lesson": "10",
     "words": "アンテナ",
-    "reading": "",
-    "meaning": "Ăng ten"
+    "reading": "antenna",
+    "meaning": "ăng ten"
   },
   {
     "lesson": "10",
     "words": "イヤホン",
-    "reading": "",
-    "meaning": "Tai nghe"
+    "reading": "earphone",
+    "meaning": "tai nghe　"
   },
   {
     "lesson": "10",
-    "words": "サイレン",
-    "reading": "",
-    "meaning": "Chuông, còi báo động"
+    "words": "サイレン 　",
+    "reading": "siren",
+    "meaning": "tiếng chuông (chuông tan ca, chuông báo cháy)"
   },
   {
     "lesson": "10",
     "words": "コード",
-    "reading": "",
-    "meaning": "Dây"
+    "reading": "cord",
+    "meaning": "dây (điện)　"
   },
   {
     "lesson": "10",
     "words": "モニター",
-    "reading": "",
-    "meaning": "Màn hình, giám sát, theo dõi"
+    "reading": "monitor",
+    "meaning": "màn hình　"
   },
   {
     "lesson": "10",
     "words": "メーター",
-    "reading": "",
-    "meaning": "Công tơ mét, đồng hồ đo, mét"
+    "reading": "meter",
+    "meaning": "đồng hồ đo　"
   },
   {
     "lesson": "10",
     "words": "ペア",
-    "reading": "",
-    "meaning": "Cặp, đôi"
+    "reading": "pair",
+    "meaning": "một cặp　"
   },
   {
     "lesson": "10",
     "words": "リズム",
-    "reading": "",
-    "meaning": "Nhịp điệu"
+    "reading": "rhythm",
+    "meaning": "giai điệu　　"
   },
   {
     "lesson": "10",
     "words": "アクセント",
-    "reading": "",
-    "meaning": "Trọng âm, sự nhấn mạnh"
+    "reading": "accent",
+    "meaning": "giọng, nhấn　"
   },
   {
     "lesson": "10",
     "words": "アルファベット",
-    "reading": "",
-    "meaning": "Bảng chữ cái"
+    "reading": "alphabet",
+    "meaning": "bảng chữ cái　"
   },
   {
     "lesson": "10",
     "words": "アドレス",
-    "reading": "",
-    "meaning": "Địa chỉ"
+    "reading": "address",
+    "meaning": "địa chỉ"
   },
   {
     "lesson": "10",
     "words": "メモ",
-    "reading": "",
-    "meaning": "Ghi chú, ghi chép"
+    "reading": "memo",
+    "meaning": "ghi chú"
   },
   {
     "lesson": "10",
     "words": "マーク",
-    "reading": "",
-    "meaning": "Đánh dấu"
+    "reading": "mark",
+    "meaning": "đánh dấu"
   },
   {
     "lesson": "10",
     "words": "イラスト",
-    "reading": "",
-    "meaning": "Hình minh họa"
+    "reading": "illustration",
+    "meaning": "minh họa"
   },
   {
     "lesson": "10",
     "words": "サイン",
-    "reading": "",
-    "meaning": "Chữ ký, dấu hiệu, ký tên"
+    "reading": "ｓｉｇｎ",
+    "meaning": "chữ kí, kí、dấu hiệu"
   },
   {
     "lesson": "10",
     "words": "スター",
-    "reading": "",
-    "meaning": "Ngôi sao"
+    "reading": "star",
+    "meaning": "ngôi sao nổi tiếng"
   },
   {
     "lesson": "10",
     "words": "アンコール",
-    "reading": "",
-    "meaning": "Lời mời/yêu cầu trình diễn lại"
+    "reading": "encore",
+    "meaning": "lần nữa"
   },
   {
     "lesson": "10",
     "words": "モデル",
-    "reading": "",
-    "meaning": "Mẫu, người mẫu"
+    "reading": "model",
+    "meaning": "mẫu mã"
   },
   {
     "lesson": "10",
     "words": "サンプル",
-    "reading": "",
-    "meaning": "Mẫu, hàng mẫu"
+    "reading": "sample",
+    "meaning": "hàng mẫu"
   },
   {
     "lesson": "10",
     "words": "スタイル",
-    "reading": "",
-    "meaning": "Phong cách, thân hình"
+    "reading": "style",
+    "meaning": "kiểu cách, phong cách"
   },
   {
     "lesson": "10",
     "words": "ウエスト",
-    "reading": "",
-    "meaning": "Eo"
+    "reading": "waist",
+    "meaning": "eo, vòng eo"
   },
   {
     "lesson": "10",
     "words": "カロリー",
-    "reading": "",
-    "meaning": "Calo"
+    "reading": "calorie",
+    "meaning": "calo"
   },
   {
     "lesson": "10",
     "words": "オーバー",
-    "reading": "",
-    "meaning": "Vượt quá"
+    "reading": "over",
+    "meaning": "quá"
   },
   {
     "lesson": "10",
     "words": "コントロール",
-    "reading": "",
-    "meaning": "Điều khiển, kiểm soát"
+    "reading": "control",
+    "meaning": "kiểm soát, điều khiển"
   },
   {
     "lesson": "10",
     "words": "カーブ",
-    "reading": "",
-    "meaning": "Cua, quanh co, uốn lượn"
+    "reading": "curve",
+    "meaning": "khúc cua, cong"
   },
   {
     "lesson": "10",
     "words": "コース",
-    "reading": "",
-    "meaning": "Khóa học, sân đua, đường đua, vòng đua"
+    "reading": "course",
+    "meaning": "khóa học"
   },
   {
     "lesson": "10",
     "words": "レース",
-    "reading": "",
-    "meaning": "Đường đua, cuộc đua"
+    "reading": "race",
+    "meaning": "cuộc đua"
   },
   {
     "lesson": "10",
     "words": "リード",
-    "reading": "",
-    "meaning": "Lãnh đạo, dẫn đầu, tiêu đề"
+    "reading": "lead",
+    "meaning": "dẫn đầu"
   },
   {
     "lesson": "10",
     "words": "トップ",
-    "reading": "",
-    "meaning": "Đứng đầu"
+    "reading": "TOP",
+    "meaning": "đầu bảng"
   },
   {
     "lesson": "10",
     "words": "ゴール",
-    "reading": "",
-    "meaning": "Khung thành, về đích, đạt được"
+    "reading": "goal",
+    "meaning": "đạt thành tích, ghi bàn"
   },
   {
     "lesson": "10",
     "words": "パス",
-    "reading": "",
-    "meaning": "Bỏ qua, vượt qua, đậu"
+    "reading": "pass",
+    "meaning": "vượt qua"
   },
   {
     "lesson": "10",
     "words": "ベスト",
-    "reading": "",
-    "meaning": "Tốt nhất, số 1"
+    "reading": "best",
+    "meaning": "tốt nhất"
   },
   {
     "lesson": "10",
     "words": "レギュラー",
-    "reading": "",
-    "meaning": "Thông thường, chính thức"
+    "reading": "regular",
+    "meaning": "bình thường"
   },
   {
     "lesson": "10",
     "words": "コーチ",
-    "reading": "",
-    "meaning": "Huấn luyện viên"
+    "reading": "coach",
+    "meaning": "huấn luyện viên"
   },
   {
     "lesson": "10",
     "words": "キャプテン",
-    "reading": "",
-    "meaning": "Đội trưởng"
+    "reading": "captain",
+    "meaning": "đội trưởng"
   },
   {
     "lesson": "10",
     "words": "サークル",
-    "reading": "",
-    "meaning": "Câu lạc bộ"
+    "reading": "circle",
+    "meaning": "vòng"
   },
   {
     "lesson": "10",
     "words": "キャンパス",
-    "reading": "",
-    "meaning": "Khuôn viên trường, sân trường"
+    "reading": "campus",
+    "meaning": "trại"
   },
   {
     "lesson": "10",
     "words": "オリエンテーション",
-    "reading": "",
-    "meaning": "Buổi hướng dẫn, buổi định hướng"
+    "reading": "orientation",
+    "meaning": "định hướng"
   },
   {
     "lesson": "10",
     "words": "カリキュラム",
-    "reading": "",
-    "meaning": "Chương trình giảng dạy"
+    "reading": "curriculum",
+    "meaning": "giáo án"
   },
   {
     "lesson": "11",
     "words": "プログラム",
-    "reading": "",
-    "meaning": "Chương trình"
+    "reading": "program",
+    "meaning": "chương trình"
   },
   {
     "lesson": "11",
     "words": "レッスン",
-    "reading": "",
-    "meaning": "Lớp học, buổi học, bài học"
+    "reading": "lesson",
+    "meaning": "bài học"
   },
   {
     "lesson": "11",
     "words": "レクリエーション",
-    "reading": "",
-    "meaning": "Giải trí"
+    "reading": "recreation",
+    "meaning": "giải trí"
   },
   {
     "lesson": "11",
     "words": "レジャー",
-    "reading": "",
-    "meaning": "Thời gian rảnh"
+    "reading": "leisure",
+    "meaning": "vui chơi, rảnh rỗi"
   },
   {
     "lesson": "11",
     "words": "ガイド",
-    "reading": "",
-    "meaning": "Hướng dẫn"
+    "reading": "guide",
+    "meaning": "hướng dẫn"
   },
   {
     "lesson": "11",
     "words": "シーズン",
-    "reading": "",
-    "meaning": "Mùa, thời kỳ"
+    "reading": "season",
+    "meaning": "mùa"
   },
   {
     "lesson": "11",
     "words": "ダイヤ",
-    "reading": "",
-    "meaning": "Lịch trình, thời khóa biểu"
+    "reading": "diagram",
+    "meaning": "thời gian biểu"
   },
   {
     "lesson": "11",
     "words": "ウイークデー",
-    "reading": "",
-    "meaning": "Ngày thường"
+    "reading": "weekday",
+    "meaning": "ngày trong tuần"
   },
   {
     "lesson": "11",
     "words": "サービス",
-    "reading": "",
-    "meaning": "Dịch vụ"
+    "reading": "service",
+    "meaning": "dịch vụ"
   },
   {
     "lesson": "11",
     "words": "アルコール",
-    "reading": "",
-    "meaning": "Đồ uống có cồn, rượu, cồn"
+    "reading": "alcohol",
+    "meaning": "cồn, rượu"
   },
   {
     "lesson": "11",
     "words": "デコレーション",
-    "reading": "",
-    "meaning": "Trang trí"
+    "reading": "decoration",
+    "meaning": "trang trí"
+  },
+  {
+    "lesson": "11",
+    "words": "気が合う",
+    "reading": "あの人とはよく気が合う。 hợp tính",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が大きい",
+    "reading": "お酒を飲むとつい気が大きくなる。 Hào phóng",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が小さい",
+    "reading": "お金があるのに、気が小さいので、なかなか大きい買い物ができない。 Hẹp hòi",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が強い",
+    "reading": "気が弱いので、気が強い人が羨ましい。 Cứng cỏi",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が弱い",
+    "reading": "気が弱くて、みんなの前ではなかなか意見が言えない。 nhút nhát",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が長い",
+    "reading": "気が長いので、佐藤さんは駅で３０分も友達を待った。 Kiên nhẫn",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が短い",
+    "reading": "課長は気が短いので、すぐ怒る。 Nóng tính",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が若い",
+    "reading": "田村さんは年齢に比べて、気が若い。 như con nít",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が重い",
+    "reading": "もうすぐ試験があるので、気が重い。 cảm giác nặng nề",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気がある",
+    "reading": "彼は仕事をする気があるのかないのか、分からない。 quan tâm, thích, hứng thú",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が変わる",
+    "reading": "映画を見に行こうと思って出かけたが、気が変わって、デパートへ行った。tính khí thay đổi, thay đổi",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気に進まない",
+    "reading": "買い物に誘われたが、気に進まないので、行かなかった。 không muốn làm",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気がする",
+    "reading": "この問題は試験に出るような気がある。 Có linh cảm",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が付く",
+    "reading": "家を出てから、忘れ物をしたことに気が付いた。 Nhận ra",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気が楽だ",
+    "reading": "両親が元気なうちは別々に住む方が楽だ。 thoải mái",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気を付ける",
+    "reading": "これから寒くなるから、風邪をひかないように気を付けてください。 Chú ý",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気を悪くする",
+    "reading": "彼は友達に注意されて、気を悪くしたみたいだ。 làm người khác buồn, giận",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気になる",
+    "reading": "明日から山に行くので天気が気になる。 tò mò, quan tâm",
+    "meaning": ""
+  },
+  {
+    "lesson": "11",
+    "words": "気にする",
+    "reading": "リーさんは何週間も前から発表のことを気にしている。 để ý, lo lắng",
+    "meaning": ""
   },
   {
     "lesson": "11",
     "words": "最も",
     "reading": "もっとも",
-    "meaning": "Nhất"
+    "meaning": "nhất (= 一番)"
   },
   {
     "lesson": "11",
     "words": "ほぼ",
-    "reading": "",
-    "meaning": "Hầu như, gần như"
+    "reading": "ほぼ",
+    "meaning": "gần như (= だいたい＝ほとんど＝おおよそ)"
   },
   {
     "lesson": "11",
     "words": "相当",
     "reading": "そうとう",
-    "meaning": "Tương đương, khá"
+    "meaning": "đáng kể　(＝すいぶん＝かなり)"
   },
   {
     "lesson": "11",
-    "words": "割に／割と／割合に.と",
-    "reading": "わりに／わりと／わりあいに.と",
-    "meaning": "Tương đối"
+    "words": "割に・割と・割合(に・と)",
+    "reading": "わりに・わりと・わりあい(に・と)",
+    "meaning": "tương đối, khá là (so với suy nghĩ bản thân)　"
   },
   {
     "lesson": "11",
     "words": "多少",
     "reading": "たしょう",
-    "meaning": "Ít nhiều, một chút, một ít"
+    "meaning": "một chút (= ちょっと、少し)"
   },
   {
     "lesson": "11",
     "words": "少々",
     "reading": "しょうしょう",
-    "meaning": "Một chút, một ít"
+    "meaning": "một chút, khoảnh khắc (thời gian)"
   },
   {
     "lesson": "11",
-    "words": "すべて",
-    "reading": "",
-    "meaning": "Tất cả"
+    "words": "全て",
+    "reading": "すべて",
+    "meaning": "mọi thứ (= 全部 < 全て < 何もかも)"
   },
   {
     "lesson": "11",
     "words": "何もかも",
     "reading": "なにもかも",
-    "meaning": "Tất cả, mọi thứ"
+    "meaning": "toàn bộ, mọi thứ"
   },
   {
     "lesson": "11",
     "words": "たっぷり",
-    "reading": "",
-    "meaning": "Tràn đầy, đầy"
+    "reading": "たっぷり",
+    "meaning": "đủ, nhiều (＝たくさん、いっぱい)、（trang phục: きつい＜ぴったり＜たっぷり)"
   },
   {
     "lesson": "11",
     "words": "できるだけ",
-    "reading": "",
-    "meaning": "Trong khả năng có thể, càng"
+    "reading": "できるだけ",
+    "meaning": "cố gắng hết sức"
   },
   {
     "lesson": "11",
     "words": "次第に",
     "reading": "しだいに",
-    "meaning": "Dần dần, từ từ"
+    "meaning": "dần dần （＝だんだん＝徐々に＝少しずつ ＝追々）"
   },
   {
     "lesson": "11",
     "words": "徐々に",
     "reading": "じょじょに",
-    "meaning": "Dần dần, từ từ"
+    "meaning": "từng chút một"
   },
   {
     "lesson": "11",
     "words": "さらに",
-    "reading": "",
-    "meaning": "Hơn nữa"
+    "reading": "さらに",
+    "meaning": "hơn nữa　（①もっと　②もう一度　③その上）"
   },
   {
     "lesson": "11",
     "words": "一層",
     "reading": "いっそう",
-    "meaning": "Thêm nữa"
+    "meaning": "hơn, vẫn　（＝もっと）"
   },
   {
     "lesson": "11",
     "words": "一段と",
     "reading": "いちだんと",
-    "meaning": "Hơn nhiều"
+    "meaning": "hơn rất nhiều　（＝もっと）"
   },
   {
     "lesson": "11",
     "words": "より",
-    "reading": "",
-    "meaning": "Nhiều, hơn nữa"
+    "reading": "より",
+    "meaning": "hơn （＝もっと）"
   },
   {
     "lesson": "11",
     "words": "結局",
     "reading": "けっきょく",
-    "meaning": "Kết cục"
+    "meaning": "kết cục, kết luận"
   },
   {
     "lesson": "11",
     "words": "ようやく",
-    "reading": "",
-    "meaning": "Cuối cùng"
+    "reading": "ようやく",
+    "meaning": "(sau bao nỗ lực) cuối cùng (=やっと＝ついに＝とうとう)"
   },
   {
     "lesson": "11",
     "words": "再び",
     "reading": "ふたたび",
-    "meaning": "Lại, thêm lần nữa"
+    "meaning": "lần nữa　（＝もう一度＝再度）"
   },
   {
     "lesson": "11",
-    "words": "たちまち",
-    "reading": "",
-    "meaning": "Ngay lập tức"
+    "words": "忽ち",
+    "reading": "たちまち",
+    "meaning": "ngay lập tức　（＝あっという間に）　(biểu hiện sự thay đổi trạng thái)"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "今度",
     "reading": "こんど",
-    "meaning": "Lần này, gần đây, lần tới, lần sau"
+    "meaning": "lần tới"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "今後",
     "reading": "こんご",
-    "meaning": "Sau này, từ bây giờ"
+    "meaning": "từ bây giờ"
   },
   {
-    "lesson": "11",
-    "words": "後に",
-    "reading": "のちに",
-    "meaning": "Sau khi"
+    "lesson": "12",
+    "words": "後(に)",
+    "reading": "のち(に)",
+    "meaning": "sau đó, tương lai (晴れのち曇り　trời nắng sau đó có mây)"
   },
   {
-    "lesson": "11",
-    "words": "まもなく",
-    "reading": "",
-    "meaning": "Sắp, chẳng bao lâu nữa"
+    "lesson": "12",
+    "words": "間もなく",
+    "reading": "まもなく",
+    "meaning": "chẳng mấy chốc, sắp (①もうすぐ　②すぐに)"
   },
   {
-    "lesson": "11",
-    "words": "そのうちに",
-    "reading": "",
-    "meaning": "Sớm muộn cũng..., chẳng mấy chốc"
+    "lesson": "12",
+    "words": "そのうち(に)",
+    "reading": "そのうち(に)",
+    "meaning": "chẳng mấy chốc"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "やがて",
-    "reading": "",
-    "meaning": "Chẳng mấy chốc, sắp sửa, nhanh chóng"
+    "reading": "やがて",
+    "meaning": "chẳng mấy chốc, cuối cùng (①まもなく　②そのうち)"
   },
   {
-    "lesson": "11",
-    "words": "いずれ",
-    "reading": "",
-    "meaning": "Một lúc nào đó, chẳng mấy chốc"
+    "lesson": "12",
+    "words": "何れ",
+    "reading": "いずれ",
+    "meaning": "sớm hay muộn, lúc nào đó"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "先ほど",
     "reading": "さきほど",
-    "meaning": "Vừa lúc nãy, ít phút trước"
+    "meaning": "mới lúc trước (=さっき)(cảm giác của người nói không lâu)"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "とっくに",
-    "reading": "",
-    "meaning": "Từ lâu rồi"
+    "reading": "とっくに",
+    "meaning": "rồi, lâu rồi (cảm giác của người nói lâu)"
   },
   {
-    "lesson": "11",
-    "words": "すでに",
-    "reading": "",
-    "meaning": "Đã...rồi"
+    "lesson": "12",
+    "words": "既に",
+    "reading": "すでに",
+    "meaning": "đã (= もう)"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "事前に",
     "reading": "じぜんに",
-    "meaning": "Trước"
+    "meaning": "trước"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "当日",
     "reading": "とうじつ",
-    "meaning": "Ngày hôm đó"
+    "meaning": "ngày hôm đó"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "当時",
     "reading": "とうじ",
-    "meaning": "Khi ấy, hồi đó"
+    "meaning": "thời đó"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "一時",
     "reading": "いちじ",
-    "meaning": "Tạm thời, có lúc"
+    "meaning": "nhất thời, có lúc"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "至急",
     "reading": "しきゅう",
-    "meaning": "Ngay lập tức, khẩn cấp"
+    "meaning": "khẩn cấp"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "直ちに",
     "reading": "ただちに",
-    "meaning": "Ngay lập tức"
+    "meaning": "ngay lập tức　（直ちに→すぐに→間もなく）"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "早速",
     "reading": "さっそく",
-    "meaning": "Ngay lập tức"
+    "meaning": "nhanh chóng　（＝すぐに）"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "いきなり",
-    "reading": "",
-    "meaning": "Bất ngờ, đột ngột"
+    "reading": "いきなり",
+    "meaning": "bất ngờ　（＝急に、突然）"
   },
   {
-    "lesson": "11",
+    "lesson": "12",
     "words": "常に",
     "reading": "つねに",
-    "meaning": "Luôn luôn"
+    "meaning": "thường xuyên"
   },
   {
     "lesson": "12",
     "words": "絶えず",
     "reading": "たえず",
-    "meaning": "Liên tục, không ngớt"
+    "meaning": "liên tục"
   },
   {
     "lesson": "12",
     "words": "しばしば",
-    "reading": "",
-    "meaning": "Thường xuyên"
+    "reading": "しばしば",
+    "meaning": "rất thường xuyên (しばしば > たびたび > しょっちゅう＝常に)"
   },
   {
     "lesson": "12",
     "words": "たびたび",
-    "reading": "",
-    "meaning": "Thường xuyên"
+    "reading": "たびたび",
+    "meaning": "hay, nhiều lần"
   },
   {
     "lesson": "12",
-    "words": "しゅっちゅう",
-    "reading": "",
-    "meaning": "Luôn luôn, thường xuyên"
+    "words": "しょっちゅう",
+    "reading": "しょっちゅう",
+    "meaning": "luôn luôn, thường xuyên"
   },
   {
     "lesson": "12",
     "words": "たまに",
-    "reading": "",
-    "meaning": "Thỉnh thoảng, đôi khi"
+    "reading": "たまに",
+    "meaning": "thỉnh thoảng"
   },
   {
     "lesson": "12",
-    "words": "めったに",
-    "reading": "",
-    "meaning": "Hiếm khi"
+    "words": "めったに…ない",
+    "reading": "めったに",
+    "meaning": "hầu như không"
   },
   {
     "lesson": "12",
-    "words": "にこにこ／にっこり",
-    "reading": "",
-    "meaning": "Cười mỉm, cười tủm tỉm"
+    "words": "にこにこ・にっこり",
+    "reading": "にこにこ・にっこり",
+    "meaning": "cười khúc khích, cười sung sướng"
   },
   {
     "lesson": "12",
-    "words": "にやにや／にやりと",
-    "reading": "",
-    "meaning": "Cười toe toét, cười nham nhở"
+    "words": "にやにや・にやりと",
+    "reading": "にやにや・にやりと",
+    "meaning": "cười tủm"
   },
   {
     "lesson": "12",
-    "words": "どきどき/どきりと",
-    "reading": "",
-    "meaning": "Đập thình thịch, hồi hộp"
+    "words": "どきどき・どきりと",
+    "reading": "どきどき・どきりと",
+    "meaning": "hồi hộp"
   },
   {
     "lesson": "12",
     "words": "はらはら",
-    "reading": "",
-    "meaning": "Rung rinh, rưng rưng, thấp thỏm lo sợ"
+    "reading": "はらはら",
+    "meaning": "run rẩy(người), rung rung(vật)"
   },
   {
     "lesson": "12",
     "words": "かんかん",
-    "reading": "",
-    "meaning": "Phát điên, nổi cáu"
+    "reading": "かんかん",
+    "meaning": "rực rỡ(ánh sáng), bực mình"
   },
   {
     "lesson": "12",
-    "words": "びしょびしょ／びっしょり",
-    "reading": "",
-    "meaning": "Ướt sũng, ướt nhẹp"
+    "words": "びしょびしょ・びっしょり",
+    "reading": "びしょびしょ・びっしょり",
+    "meaning": "ướt sũng"
   },
   {
     "lesson": "12",
     "words": "うろうろ",
-    "reading": "",
-    "meaning": "Lảng vảng, quanh quẩn, lòng vòng"
+    "reading": "うろうろ",
+    "meaning": "đi lung tung, đi xung quanh"
   },
   {
     "lesson": "12",
     "words": "のろのろ",
-    "reading": "",
-    "meaning": "Chậm chạp, đờ đẫn"
+    "reading": "のろのろ",
+    "meaning": "chậm rãi, chậm như sên"
   },
   {
     "lesson": "12",
     "words": "ふらふら",
-    "reading": "",
-    "meaning": "Choáng váng, dễ thay đổi, loạng choạng, vô thức"
+    "reading": "ふらふら",
+    "meaning": "chóng mặt, hay thay đổi"
   },
   {
     "lesson": "12",
     "words": "ぶらぶら",
-    "reading": "",
-    "meaning": "Đung đưa, lang thang, quanh quẩn"
+    "reading": "ぶらぶら",
+    "meaning": "quanh quẩn, đung đưa (đồ vật)"
   },
   {
     "lesson": "12",
-    "words": "したがって",
-    "reading": "",
-    "meaning": "Vì vậy"
+    "words": "従って",
+    "reading": "したがって",
+    "meaning": "đưa ra kết luận, (＝だから、それで、そのため、)(không dùng trong câu chỉ nguyên nhân, kết quả, そのため、だから、それで　dùng được)"
   },
   {
     "lesson": "12",
     "words": "だが",
-    "reading": "",
-    "meaning": "Tuy nhiên"
+    "reading": "だが",
+    "meaning": "tuy nhiên　(だけど→でも/けれども→しかし/だが)"
   },
   {
     "lesson": "12",
     "words": "ところが",
-    "reading": "",
-    "meaning": "Nhưng"
+    "reading": "ところが",
+    "meaning": "ngoài dự đoán　(vd: nghĩ là thế này nhưng kết quả lại khác)"
   },
   {
     "lesson": "12",
     "words": "しかも",
-    "reading": "",
-    "meaning": "Hơn nữa, thêm vào đó"
+    "reading": "しかも",
+    "meaning": "hơn nữa　（①その上　②それも）"
   },
   {
     "lesson": "12",
     "words": "すると",
-    "reading": "",
-    "meaning": "Lập tức, nói thế là"
+    "reading": "すると",
+    "meaning": "①lập tức, ngay　 ②có nghĩa là"
   },
   {
     "lesson": "12",
     "words": "なぜなら",
-    "reading": "",
-    "meaning": "Bởi vì"
+    "reading": "なぜなら",
+    "meaning": "bởi vì, vì　（＝から、なぜかというと、どうしてかというと）"
   },
   {
     "lesson": "12",
     "words": "だって",
-    "reading": "",
-    "meaning": "Bởi vì"
+    "reading": "だって",
+    "meaning": "bởi vì, như"
   },
   {
     "lesson": "12",
     "words": "要するに",
     "reading": "ようするに",
-    "meaning": "Tóm lại, chủ yếu là"
+    "meaning": "tóm lại　（＝つまり、すなわち）"
   },
   {
     "lesson": "12",
-    "words": "すなわち",
-    "reading": "",
-    "meaning": "Có nghĩa là"
+    "words": "即ち",
+    "reading": "すなわち",
+    "meaning": "có nghĩa là, đó là"
   },
   {
     "lesson": "12",
-    "words": "あるいは",
-    "reading": "",
-    "meaning": "Hoặc là, nói cách khác"
+    "words": "或いは",
+    "reading": "あるいは",
+    "meaning": "①hoặc, ② có lẽ　（thường đi chung　かもしれない）"
   },
   {
     "lesson": "12",
     "words": "さて",
-    "reading": "",
-    "meaning": "Vậy"
+    "reading": "さて",
+    "meaning": "nào, để xem (khi bắt đầu một việc khác)"
   },
   {
     "lesson": "12",
     "words": "では",
-    "reading": "",
-    "meaning": "Vậy"
+    "reading": "では",
+    "meaning": "thế thì, trong trường hợp đó"
   },
   {
     "lesson": "12",
     "words": "ところで",
-    "reading": "",
-    "meaning": "Nhân tiện"
+    "reading": "ところで",
+    "meaning": "Nhân tiện (dùng khi đổi sang chủ đề khác để nói)"
   },
   {
     "lesson": "12",
     "words": "そう言えば",
     "reading": "そういえば",
-    "meaning": "Nhắc mới nhớ"
+    "meaning": "nghĩ kỹ thì"
   },
   {
     "lesson": "12",
     "words": "ただ",
-    "reading": "",
-    "meaning": "Nhưng"
+    "reading": "ただ",
+    "meaning": "đưa ra ý kiến, ví dụ ngược lại(quán đó ngon nhưng mà xa)"
   },
   {
-    "lesson": "12",
-    "words": "食料／食糧",
+    "lesson": "13",
+    "words": "食料・食糧",
     "reading": "しょくりょう",
-    "meaning": "Thực phẩm, lương thực"
+    "meaning": "đồ ăn, thực phẩm"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "粒",
     "reading": "つぶ",
-    "meaning": "Hạt"
+    "meaning": "hạt, viên"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "くず",
-    "reading": "",
-    "meaning": "Vụn, rác, phần thừa"
+    "reading": "くず",
+    "meaning": "vụn rác"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "栽培",
     "reading": "さいばい",
-    "meaning": "Trồng trọt"
+    "meaning": "nuôi trồng"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "収穫",
     "reading": "しゅうかく",
-    "meaning": "Thu hoạch"
+    "meaning": "thu hoạch"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "産地",
     "reading": "さんち",
-    "meaning": "Nơi sản xuất"
+    "meaning": "nơi sản xuất"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "土地",
     "reading": "とち",
-    "meaning": "Đất"
+    "meaning": "đất đai"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "倉庫",
     "reading": "そうこ",
-    "meaning": "Kho"
+    "meaning": "kho"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "所有",
     "reading": "しょゆう",
-    "meaning": "Sở hữu"
+    "meaning": "sở hữu"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "収集",
     "reading": "しゅうしゅう",
-    "meaning": "Thu gom, thu thập"
+    "meaning": "thu thập"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "滞在",
     "reading": "たいざい",
-    "meaning": "Lưu lại, tạm trú"
+    "meaning": "ở"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "便",
     "reading": "べん",
-    "meaning": "Thuận tiện"
+    "meaning": "thuận tiện"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "便",
     "reading": "びん",
-    "meaning": "Thư từ, kiện hàng, chuyến bay"
+    "meaning": "thư"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "設備",
     "reading": "せつび",
-    "meaning": "Thiết bị"
+    "meaning": "thiết bị"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "設計",
     "reading": "せっけい",
-    "meaning": "Thiết kế"
+    "meaning": "thiết kế, kế hoạch"
   },
   {
-    "lesson": "12",
-    "words": "製作／制作",
+    "lesson": "13",
+    "words": "制作・製作",
     "reading": "せいさく",
-    "meaning": "Chế tạo, làm"
+    "meaning": "chế tạo, sản xuất"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "製造",
     "reading": "せいぞう",
-    "meaning": "Chế tạo, sản xuất"
+    "meaning": "chế tạo, sản xuất"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "建築",
     "reading": "けんちく",
-    "meaning": "Xây dựng"
+    "meaning": "kiến thiết, xây dựng"
   },
   {
-    "lesson": "12",
+    "lesson": "13",
     "words": "人工",
     "reading": "じんこう",
-    "meaning": "Nhân tạo"
+    "meaning": "nhân tạo"
   },
   {
     "lesson": "13",
     "words": "圧力",
     "reading": "あつりょく",
-    "meaning": "Áp lực, sức ép"
+    "meaning": "áp lực"
   },
   {
     "lesson": "13",
     "words": "刺激",
     "reading": "しげき",
-    "meaning": "Kích thích"
+    "meaning": "kích thích, khiêu khích"
   },
   {
     "lesson": "13",
     "words": "摩擦",
     "reading": "まさつ",
-    "meaning": "Ma sát, mâu thuẫn"
+    "meaning": "ma sát, mâu thuẫn"
   },
   {
     "lesson": "13",
     "words": "立場",
     "reading": "たちば",
-    "meaning": "Lập trường, vị trí"
+    "meaning": "lập trường （立場に立つ）"
   },
   {
     "lesson": "13",
     "words": "役割",
     "reading": "やくわり",
-    "meaning": "Vai trò, phận sự"
+    "meaning": "vai trò　【役割を果たす】"
   },
   {
     "lesson": "13",
     "words": "分担",
     "reading": "ぶんたん",
-    "meaning": "Chia sẻ"
+    "meaning": "chia sẻ"
   },
   {
     "lesson": "13",
     "words": "担当",
     "reading": "たんとう",
-    "meaning": "Phụ trách, chịu trách nhiệm"
+    "meaning": "chịu trách nhiệm, đảm đương"
   },
   {
     "lesson": "13",
-    "words": "交替／交代",
+    "words": "交代・交替",
     "reading": "こうたい",
-    "meaning": "Ca kíp, phiên, thay đổi, chuyển giao"
+    "meaning": "thay phiên, thay đổi"
   },
   {
     "lesson": "13",
     "words": "代理",
     "reading": "だいり",
-    "meaning": "Đại diện"
+    "meaning": "đại diện, đại lý (代理店)"
   },
   {
     "lesson": "13",
     "words": "審判",
     "reading": "しんぱん",
-    "meaning": "Trọng tài, phán quyết"
+    "meaning": "thẩm phám, trọng tài"
   },
   {
     "lesson": "13",
     "words": "監督",
     "reading": "かんとく",
-    "meaning": "Quản đốc, đạo diễn, huấn luyện viên, chỉ đạo, quan sát"
+    "meaning": "huấn luyện viên, đạo diễn (người nắm quyền chỉ đạo tổng quát chung )"
   },
   {
     "lesson": "13",
     "words": "予測",
     "reading": "よそく",
-    "meaning": "Dự đoán"
+    "meaning": "dự đoán"
   },
   {
     "lesson": "13",
     "words": "予期",
     "reading": "よき",
-    "meaning": "Dự đoán, mong đợi"
+    "meaning": "mong đợi"
   },
   {
     "lesson": "13",
     "words": "判断",
     "reading": "はんだん",
-    "meaning": "Phán đoán, đánh giá"
+    "meaning": "phán đoán"
   },
   {
     "lesson": "13",
     "words": "評価",
     "reading": "ひょうか",
-    "meaning": "Đánh giá"
+    "meaning": "đánh giá, bình phẩm"
   },
   {
     "lesson": "13",
     "words": "指示",
     "reading": "しじ",
-    "meaning": "Chỉ thị, hướng dẫn, chỉ dẫn"
+    "meaning": "chỉ dẫn, chỉ thị"
   },
   {
     "lesson": "13",
     "words": "無視",
     "reading": "むし",
-    "meaning": "Phớt lờ, xem thường"
+    "meaning": "bỏ qua, ngó ngơ"
   },
   {
     "lesson": "13",
     "words": "無断",
     "reading": "むだん",
-    "meaning": "Không được phép, không báo trước"
+    "meaning": "không cho phép, chưa có sự cho phép"
   },
   {
     "lesson": "13",
     "words": "承知",
     "reading": "しょうち",
-    "meaning": "Biết rõ, hiểu rõ, chấp nhận"
+    "meaning": "hiểu, đồng ý"
   },
   {
     "lesson": "13",
     "words": "納得",
     "reading": "なっとく",
-    "meaning": "Chấp nhận, lí giải"
+    "meaning": "bị thuyết phục, thỏa mãn"
   },
   {
     "lesson": "13",
     "words": "疑問",
     "reading": "ぎもん",
-    "meaning": "Câu hỏi, thắc mắc, nghi vấn"
+    "meaning": "nghi vấn"
   },
   {
     "lesson": "13",
     "words": "推測",
     "reading": "すいそく",
-    "meaning": "Phỏng đoán"
+    "meaning": "phỏng đoán"
   },
   {
     "lesson": "13",
     "words": "肯定",
     "reading": "こうてい",
-    "meaning": "Khẳng định"
+    "meaning": "khẳng định"
   },
   {
     "lesson": "13",
     "words": "参考",
     "reading": "さんこう",
-    "meaning": "Tham khảo"
+    "meaning": "tham khảo"
   },
   {
     "lesson": "13",
     "words": "程度",
     "reading": "ていど",
-    "meaning": "Mức độ, trình độ, khoảng"
+    "meaning": "mức độ; trình độ"
   },
   {
     "lesson": "13",
     "words": "評判",
     "reading": "ひょうばん",
-    "meaning": "Bình luận, đánh giá"
+    "meaning": "bình luận, có ý nghĩa được đánh giá tốt"
   },
   {
     "lesson": "13",
     "words": "批評",
     "reading": "ひひょう",
-    "meaning": "Phê bình, bình luận"
+    "meaning": "xem xét, chỉ trích"
   },
   {
     "lesson": "13",
     "words": "推薦",
     "reading": "すいせん",
-    "meaning": "Giới thiệu, tiến cử"
+    "meaning": "tiến cử, giới thiệu"
   },
   {
     "lesson": "13",
     "words": "信用",
     "reading": "しんよう",
-    "meaning": "Tin tưởng"
+    "meaning": "tự tin, lòng tin　（cách thường dùng 信用する店、信用する会社、信用する人）"
   },
   {
     "lesson": "13",
     "words": "信頼",
     "reading": "しんらい",
-    "meaning": "Tin cậy, tín nhiệm"
+    "meaning": "tin tưởng, tín nhiệm (tin tưởng để nhờ vả 信頼できる人)thường thể hiện dưới dạng 信頼できる"
   },
   {
     "lesson": "13",
     "words": "尊重",
     "reading": "そんちょう",
-    "meaning": "Tôn trọng"
+    "meaning": "tôn trọng"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "作業",
     "reading": "さぎょう",
-    "meaning": "Công việc"
+    "meaning": "công việc, sự làm việc"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "工夫",
     "reading": "くふう",
-    "meaning": "Công phu, tìm tòi, đào sâu nghiên cứu"
+    "meaning": "công phu, phải nghĩ nhiều phương pháp, cách thức"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "消化",
     "reading": "しょうか",
-    "meaning": "Tiêu hóa, lí giải, thực hiện xong"
+    "meaning": "tiêu hóa, tiêu thụ"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "吸収",
     "reading": "きゅうしゅう",
-    "meaning": "Hấp thụ, tiếp thu"
+    "meaning": "hấp thụ"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "設置",
     "reading": "せっち",
-    "meaning": "Thành lập, lắp đặt"
+    "meaning": "cài đặt"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "設定",
     "reading": "せってい",
-    "meaning": "Thiết lập, cài đặt"
+    "meaning": "thiết lập"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "調節",
     "reading": "ちょうせつ",
-    "meaning": "Điều chỉnh"
+    "meaning": "điều tiết (nhiệt độ phòng, chiều cao ghế)"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "調整",
     "reading": "ちょうせい",
-    "meaning": "Điều chỉnh"
+    "meaning": "điều chỉnh (hướng của anten, lịch trình, mức độ lợi hại)"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "解放",
     "reading": "かいほう",
-    "meaning": "Giải phóng, thoát khỏi"
+    "meaning": "mở cửa, tự do hóa, giải phóng"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "総合",
     "reading": "そうごう",
-    "meaning": "Tổng hợp"
+    "meaning": "tổng hợp, cùng nhau"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "連続",
     "reading": "れんぞく",
-    "meaning": "Liên tiếp, liên tục"
+    "meaning": "liên tục (phim nhiều tập, động đất liên tục, vụ án giết người hàng loạt, )"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "持続",
     "reading": "じぞく",
-    "meaning": "Kéo dài, duy trì"
+    "meaning": "duy trì, kéo dài (sự hứng khởi, sự tập trung, thể lực, hiệu quả)"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "中断",
     "reading": "ちゅうだん",
-    "meaning": "Gián đoạn"
+    "meaning": "gián đoạn"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "安定",
     "reading": "あんてい",
-    "meaning": "Ổn định"
+    "meaning": "ổn định"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "混乱",
     "reading": "こんらん",
-    "meaning": "Hỗn loạn"
+    "meaning": "hỗn độn, hỗn loạn"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "上昇",
     "reading": "じょうしょう",
-    "meaning": "Tiến lên, tăng cao"
+    "meaning": "tiến lên, tăng lên"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "達成",
     "reading": "たっせい",
-    "meaning": "Đạt được, hoàn thành"
+    "meaning": "thành tựu, đạt được"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "事情",
     "reading": "じじょう",
-    "meaning": "Lí do, tình hình"
+    "meaning": "tình hình, điều kiện"
   },
   {
-    "lesson": "13",
+    "lesson": "14",
     "words": "事態",
     "reading": "じたい",
-    "meaning": "Tình hình"
+    "meaning": "tình hình, tình trạng"
   },
   {
     "lesson": "14",
     "words": "障害",
     "reading": "しょうがい",
-    "meaning": "Trở ngại, khuyết tật"
+    "meaning": "cản trở, khó khăn"
   },
   {
     "lesson": "14",
     "words": "福祉",
     "reading": "ふくし",
-    "meaning": "Phú lợi"
+    "meaning": "phúc lợi"
   },
   {
     "lesson": "14",
     "words": "社会",
     "reading": "しゃかい",
-    "meaning": "Xã hội, cộng đồng"
+    "meaning": "xã hội"
   },
   {
     "lesson": "14",
     "words": "都会",
     "reading": "とかい",
-    "meaning": "Thành thị, thành phố"
+    "meaning": "thành phố, thành thị"
   },
   {
     "lesson": "14",
     "words": "世論",
     "reading": "よろん",
-    "meaning": "Dư luận"
+    "meaning": "dư luận"
   },
   {
     "lesson": "14",
     "words": "民族",
     "reading": "みんぞく",
-    "meaning": "Dân tộc"
+    "meaning": "dân tộc"
   },
   {
     "lesson": "14",
     "words": "増大",
     "reading": "ぞうだい",
-    "meaning": "Tăng cường, tăng lên, mở rộng"
+    "meaning": "sự mở rộng, sự tăng thêm"
   },
   {
     "lesson": "14",
     "words": "増量",
     "reading": "ぞうりょう",
-    "meaning": "Tăng số lượng, tăng cân"
+    "meaning": "tăng thêm lượng"
   },
   {
     "lesson": "14",
     "words": "増税",
     "reading": "ぞうぜい",
-    "meaning": "Tăng thuế"
+    "meaning": "tăng thuế"
   },
   {
     "lesson": "14",
     "words": "増員",
     "reading": "ぞういん",
-    "meaning": "Tăng số người"
+    "meaning": "ｔăng nhân sự"
   },
   {
     "lesson": "14",
-    "words": "原点",
+    "words": "減点",
     "reading": "げんてん",
-    "meaning": "Trừ điểm, giảm trừ"
+    "meaning": "giảm trừ"
   },
   {
     "lesson": "14",
     "words": "減退",
     "reading": "げんたい",
-    "meaning": "Giảm sút"
+    "meaning": "giảm sút"
   },
   {
     "lesson": "14",
     "words": "減量",
     "reading": "げんりょう",
-    "meaning": "Giảm về lượng, giảm cân"
+    "meaning": "ｇiảm cân, lượng hao hụt"
   },
   {
     "lesson": "14",
     "words": "開発",
     "reading": "かいはつ",
-    "meaning": "Phát triển, khai thác"
+    "meaning": "phát triển"
   },
   {
     "lesson": "14",
     "words": "開店",
     "reading": "かいてん",
-    "meaning": "Mở cửa hàng, khai trương cửa hàng"
+    "meaning": "mở cửa hàng, khai trương nhà hàng"
   },
   {
     "lesson": "14",
     "words": "開業",
     "reading": "かいぎょう",
-    "meaning": "Khởi nghiệp"
+    "meaning": "khởi nghiệp"
   },
   {
     "lesson": "14",
     "words": "開催",
     "reading": "かいさい",
-    "meaning": "Tổ chức"
+    "meaning": "tổ chức"
   },
   {
     "lesson": "14",
-    "words": "解放",
+    "words": "開放",
     "reading": "かいほう",
-    "meaning": "Mở cửa"
+    "meaning": "sự mở cửa; sự tự do hoá"
   },
   {
     "lesson": "14",
     "words": "閉鎖",
     "reading": "へいさ",
-    "meaning": "Phong tỏa, đóng"
+    "meaning": "sự phong tỏa"
   },
   {
     "lesson": "14",
     "words": "密閉",
     "reading": "みっぺい",
-    "meaning": "Kín gió, niêm phong"
+    "meaning": "kín hơi"
   },
   {
     "lesson": "14",
     "words": "改善",
     "reading": "かいぜん",
-    "meaning": "Cải thiện"
+    "meaning": "cải tiến"
   },
   {
     "lesson": "14",
     "words": "改良",
     "reading": "かいりょう",
-    "meaning": "Cải thiện, cải tiến"
+    "meaning": "cải tiến"
   },
   {
     "lesson": "14",
@@ -4035,2928 +4149,2928 @@ const allData =[
     "lesson": "14",
     "words": "改正",
     "reading": "かいせい",
-    "meaning": "Sửa đổi, chỉnh sửa"
+    "meaning": "cải chính, chỉnh sửa"
   },
   {
     "lesson": "14",
     "words": "改定",
     "reading": "かいてい",
-    "meaning": "Sửa đổi"
+    "meaning": "thay đổi quyết định"
   },
   {
     "lesson": "14",
     "words": "改修",
     "reading": "かいしゅう",
-    "meaning": "Sửa chữa, cải tạo"
+    "meaning": "sửa chữa"
   },
   {
     "lesson": "14",
     "words": "一致",
     "reading": "いっち",
-    "meaning": "Thống nhất, giống nhau"
+    "meaning": "nhất trí"
   },
   {
     "lesson": "14",
     "words": "一方",
     "reading": "いっぽう",
-    "meaning": "Một phía, một chiều, một bên"
+    "meaning": "mặt khác"
   },
   {
     "lesson": "14",
     "words": "一定",
     "reading": "いってい",
-    "meaning": "Nhất định, ổn định"
+    "meaning": "nhất định, không thay đổi"
   },
   {
     "lesson": "14",
     "words": "一人前",
     "reading": "いちにんまえ",
-    "meaning": "Người lớn, người trưởng thành, một phần ăn"
+    "meaning": "①phần một người ăn, ②trưởng thành"
   },
   {
     "lesson": "14",
     "words": "一流",
     "reading": "いちりゅう",
-    "meaning": "Hàng đầu, bậc nhất"
+    "meaning": "bậc nhất, hạng nhất"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "映る",
     "reading": "うつる",
-    "meaning": "Được chiếu, phản chiếu"
+    "meaning": "bị phản chiếu, được chiếu"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "映す",
     "reading": "うつす",
-    "meaning": "Chiếu, soi"
+    "meaning": "chiếu, phản chiếu"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "つかる",
-    "reading": "",
-    "meaning": "Ngập"
+    "reading": "つかる",
+    "meaning": "bị ngập, bị chìm, bị ngâm"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "つける",
-    "reading": "",
-    "meaning": "Ngâm"
+    "reading": "つける",
+    "meaning": "chìm xuống, ngâm, chấm"
   },
   {
-    "lesson": "14",
-    "words": "浮ぶ",
+    "lesson": "15",
+    "words": "浮かぶ",
     "reading": "うかぶ",
-    "meaning": "Nổi, thoáng qua"
+    "meaning": "nổi, nghĩ về, bề mặt　(thuyền nổi, ý tưởng nổi lên, cá chết nổi lên)　"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "浮かべる",
     "reading": "うかべる",
-    "meaning": "Làm nổi lên, thả trôi, bày tỏ"
+    "meaning": "cho nổi"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "浮く",
     "reading": "うく",
-    "meaning": "Nổi, lơ lửng, bị cô lập, dư ra"
+    "meaning": "nổi, tăng lên　(đồng xu nổi, tách biệt khỏi nhóm, dư ra)"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "潜る",
     "reading": "もぐる",
-    "meaning": "Lặn"
+    "meaning": "nhấn chìm, ẩn giấu, lặn"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "跳ねる",
     "reading": "はねる",
-    "meaning": "Nhảy, bắn dầu mỡ, đụng vào, dựng lên, chém đầu"
+    "meaning": "nhảy, (dầu)bắn ra, bị cắt(cổ), bị xe đâm　跳ねられる"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "背負う",
     "reading": "せおう",
-    "meaning": "Đeo, cõng, gánh vác"
+    "meaning": "mang vác, chịu　"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "追う",
     "reading": "おう",
-    "meaning": "Đuổi theo"
+    "meaning": "đuổi, theo đuổi　"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "追いかける",
     "reading": "おいかける",
-    "meaning": "Đuổi theo"
+    "meaning": "chạy theo, đuổi theo"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "追いつく",
     "reading": "おいつく",
-    "meaning": "Đuổi kịp, bắt kịp"
+    "meaning": "đuổi kịp"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "追い越す",
     "reading": "おいこす",
-    "meaning": "Vượt qua, chạy vượt qua"
+    "meaning": "vượt qua"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "振り向く",
     "reading": "ふりむく",
-    "meaning": "Ngoảnh lại"
+    "meaning": "①tha động từ: quay lại, nhìn về phía sau\n②tự động từ: làm ngơ, không quan tâm"
   },
   {
-    "lesson": "14",
-    "words": "採る／捕る／執る",
+    "lesson": "15",
+    "words": "捕る",
     "reading": "とる",
-    "meaning": "Bắt, hái rau/quả, tuyển chọn, chấp nhận, đảm nhiệm"
+    "meaning": "bắt　(thú)"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "取り上げる",
     "reading": "とりあげる",
-    "meaning": "Cầm lên, lấy đi, bàn luận"
+    "meaning": "nhặt lên, lấy, chọn, bàn luận"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "取り入れる",
     "reading": "とりいれる",
-    "meaning": "Lấy, thu thập, áp dụng, đưa vào"
+    "meaning": "thu hoạch、áp dụng"
   },
   {
-    "lesson": "14",
+    "lesson": "15",
     "words": "削る",
     "reading": "けずる",
-    "meaning": "Chuốt, gọt, cắt giảm, lược bớt"
+    "meaning": "cắt xuống, giảm, làm sắc"
   },
   {
     "lesson": "15",
     "words": "縛る",
     "reading": "しばる",
-    "meaning": "Buộc, trói, băng bó, ràng buộc, hạn chế"
+    "meaning": "buộc, thắt"
   },
   {
     "lesson": "15",
-    "words": "絞る／搾る",
+    "words": "絞る・搾る",
     "reading": "しぼる",
-    "meaning": "Vắt, vặn, ép dầu"
+    "meaning": "vắt, bóp"
   },
   {
     "lesson": "15",
     "words": "回る",
     "reading": "まわる",
-    "meaning": "Quay, xoay, quá thời gian, ghé thăm, có tác dụng, xử lý"
+    "meaning": "xoay quanh, quay lại"
   },
   {
     "lesson": "15",
     "words": "回す",
     "reading": "まわす",
-    "meaning": "Vặn, xoay tròn, gửi, chuyển tiền, dành thời gian/tiền bạc"
+    "meaning": "xoay, qua, gửi, chuyển nhượng, đầu tư"
   },
   {
     "lesson": "15",
     "words": "区切る",
     "reading": "くぎる",
-    "meaning": "Chia"
+    "meaning": "chia, nhấn mạnh"
   },
   {
     "lesson": "15",
     "words": "組む",
     "reading": "くむ",
-    "meaning": "Gộp lại, ghép lại, kết thành cặp/nhóm, lập kế hoạch"
+    "meaning": "hiệp lực, tham gia, đoàn kết, vượt qua"
   },
   {
     "lesson": "15",
     "words": "組み立てる",
     "reading": "くみたてる",
-    "meaning": "Lắp ráp, xây dựng"
+    "meaning": "lắp ráp"
   },
   {
     "lesson": "15",
     "words": "加わる",
     "reading": "くわわる",
-    "meaning": "Thêm vào, gia nhập, tham gia, tăng lên"
+    "meaning": "(muối) được thêm, (lực) được thêm, (sức hút) được tăng lên"
   },
   {
     "lesson": "15",
     "words": "加える",
     "reading": "くわえる",
-    "meaning": "Thêm vào"
+    "meaning": "thêm (muối), thêm (người), thêm (lực), tăng (tốc độ)"
   },
   {
     "lesson": "15",
     "words": "仕上がる",
     "reading": "しあがる",
-    "meaning": "Xong, được hoàn thành"
+    "meaning": "được kết thúc, được hoàn thành"
   },
   {
     "lesson": "15",
     "words": "仕上げる",
     "reading": "しあげる",
-    "meaning": "Làm xong, hoàn thành"
+    "meaning": "hoàn thành, kết thúc"
   },
   {
     "lesson": "15",
-    "words": "通り掛かる",
+    "words": "通りかかる",
     "reading": "とおりかかる",
-    "meaning": "Tình cờ đi ngang"
+    "meaning": "đi ngang qua"
   },
   {
     "lesson": "15",
     "words": "飛び回る",
     "reading": "とびまわる",
-    "meaning": "Bay vòng vòng, chạy tới chạy lui, chạy đôn chạy đáo"
+    "meaning": "bay về, vội vàng về"
   },
   {
     "lesson": "15",
     "words": "巡る",
     "reading": "めぐる",
-    "meaning": "Đi quanh, dạo quanh, lặp lại, lưu thông, tuần hoàn, xung quanh vấn đề gì"
+    "meaning": "quanh quanh, lặp lại, liên quan đến"
   },
   {
     "lesson": "15",
     "words": "補う",
     "reading": "おぎなう",
-    "meaning": "Bổ sung, đền bù"
+    "meaning": "thêm, bổ sung"
   },
   {
     "lesson": "15",
     "words": "防ぐ",
     "reading": "ふせぐ",
-    "meaning": "Phòng tránh"
+    "meaning": "phòng, chống"
   },
   {
     "lesson": "15",
     "words": "救う",
     "reading": "すくう",
-    "meaning": "Cứu, cứu trợ"
+    "meaning": "cứu, giúp"
   },
   {
     "lesson": "15",
     "words": "除く",
     "reading": "のぞく",
-    "meaning": "Khử, loại bỏ, trừ"
+    "meaning": "loại trừ, bỏ qua, lấy đi"
   },
   {
     "lesson": "15",
     "words": "省く",
     "reading": "はぶく",
-    "meaning": "Loại bỏ, lược bớt"
+    "meaning": "bỏ sót, tiết kiệm"
   },
   {
     "lesson": "15",
     "words": "誤る",
     "reading": "あやまる",
-    "meaning": "Mắc lỗi, nhầm, sai lầm"
+    "meaning": "mắc lỗi"
   },
   {
     "lesson": "15",
     "words": "奪う",
     "reading": "うばう",
-    "meaning": "Cướp"
+    "meaning": "cướp đoạt, trấn lột"
   },
   {
     "lesson": "15",
     "words": "しまう",
-    "reading": "",
-    "meaning": "Cất"
+    "reading": "しまう",
+    "meaning": "cất"
   },
   {
     "lesson": "15",
     "words": "怠ける",
     "reading": "なまける",
-    "meaning": "Lười biếng"
+    "meaning": "lười biếng"
   },
   {
     "lesson": "15",
     "words": "失う",
     "reading": "うしなう",
-    "meaning": "Mất, bỏ lỡ, mất (chết), mất (ý thức)"
+    "meaning": "mất"
   },
   {
     "lesson": "15",
     "words": "攻める",
     "reading": "せめる",
-    "meaning": "Tấn công"
+    "meaning": "tấn công"
   },
   {
     "lesson": "15",
-    "words": "にらむ",
-    "reading": "",
-    "meaning": "Lườm, liếc"
+    "words": "睨む",
+    "reading": "にらむ",
+    "meaning": "lườm"
   },
   {
     "lesson": "15",
     "words": "責める",
     "reading": "せめる",
-    "meaning": "Đổ lỗi, kết tội, chỉ trích"
+    "meaning": "đổ lỗi"
   },
   {
     "lesson": "15",
     "words": "裏切る",
     "reading": "うらぎる",
-    "meaning": "Phản bội"
+    "meaning": "phảm bội"
   },
   {
     "lesson": "15",
     "words": "頼る",
     "reading": "たよる",
-    "meaning": "Nhờ vả, nhờ cậy, phụ thuộc, dựa vào"
+    "meaning": "dựa dẫm, dựa vào"
   },
   {
     "lesson": "15",
     "words": "遭う",
     "reading": "あう",
-    "meaning": "Gặp tai nạn/sự cố...."
+    "meaning": "gặp gỡ"
   },
   {
     "lesson": "15",
     "words": "招く",
     "reading": "まねく",
-    "meaning": "Mời, rủ, mời đến, gọi đến, dẫn đến, gây ra"
+    "meaning": "mời, ra dấu, gọi, nguyên nhân"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "引っ掛かる",
     "reading": "ひっかかる",
-    "meaning": "Bị mắc vào, vướng vào, khúc mắc, bị dính líu"
+    "meaning": "bị bắt, bị vướng vào, bị lừa"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "引っ掛ける",
     "reading": "ひっかける",
-    "meaning": "Móc vào, mặc, đeo, bắn lên, văng ra"
+    "meaning": "mắc, lừa đảo, ném vào"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "ひっくり返る",
     "reading": "ひっくりかえる",
-    "meaning": "Bị lật, bị đảo ngược, lộn xộn"
+    "meaning": "đảo ngược, ngã"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "ひっくり返す",
     "reading": "ひっくりかえす",
-    "meaning": "Lật ngược, làm đổ"
+    "meaning": "đảo ngược, lật ngửa"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "ずれる",
-    "reading": "",
-    "meaning": "Lệch, trượt khỏi, chệch hướng, xa rời"
+    "reading": "ずれる",
+    "meaning": "trượt, đi chệch"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "ずらす",
-    "reading": "",
-    "meaning": "Kéo ra, dịch ra, hoãn lại"
+    "reading": "ずらす",
+    "meaning": "đi lạc, thay đổi, đưa ra"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "崩れる",
     "reading": "くずれる",
-    "meaning": "Hư hại, sụp đổ, sạt lở"
+    "meaning": "sụp đổ"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "崩す",
     "reading": "くずす",
-    "meaning": "Phá hủy, đổi tiền, thay đổi tư thế/tốc độ..."
+    "meaning": "phá"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "荒れる",
     "reading": "あれる",
-    "meaning": "Bão bùng, biển động, sôi nổi, bị tàn phá, nứt nẻ, khô ráp, bị loét, điên loạn, hư hỏng"
+    "meaning": "bão bùng, cuồng loạn"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "荒らす",
     "reading": "あらす",
-    "meaning": "Phá hoại, xáo trộn"
+    "meaning": "tàn phá, đột phá"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "認める",
     "reading": "みとめる",
-    "meaning": "Thừa nhận, thú nhận, công nhận, cho phép, phê duyệt, nhìn thấy"
+    "meaning": "thừa nhận, ủy quyền, xem"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "見直す",
     "reading": "みなおす",
-    "meaning": "Nhìn lại, xem lại, kiểm tra lại, đánh giá lại"
+    "meaning": "nhìn lại, cân nhắc lại"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "見慣れる",
     "reading": "みなれる",
-    "meaning": "Quen mắt, thân quen"
+    "meaning": "quen, nhẵn mặt"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "求める",
     "reading": "もとめる",
-    "meaning": "Tìm kiếm, yêu cầu, mua"
+    "meaning": "tìm kiếm, yêu cầu, mua"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "漏れる",
     "reading": "もれる",
-    "meaning": "Rò rỉ, bị lộ, phát ra/thốt ra, bị bỏ sót, bị thiếu"
+    "meaning": "rò rỉ, chạy trốn, bày tỏ, bị bỏ lại"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "漏らす",
     "reading": "もらす",
-    "meaning": "Làm lộ, làm rò rỉ"
+    "meaning": "tràn, buông ra, bỏ lỡ"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "なる",
-    "reading": "",
-    "meaning": "Ra quả"
+    "reading": "なる",
+    "meaning": "đỡ"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "焦げる",
     "reading": "こげる",
-    "meaning": "Bị cháy (hết)"
+    "meaning": "bị cháy"
   },
   {
-    "lesson": "15",
+    "lesson": "16",
     "words": "反する",
     "reading": "はんする",
-    "meaning": "Ngược lại, trái lại, vi phạm"
+    "meaning": "trái lại"
   },
   {
     "lesson": "16",
     "words": "膨れる",
     "reading": "ふくれる",
-    "meaning": "Phồng lên, tăng lên, dỗi hờn"
+    "meaning": "phồng, sưng"
   },
   {
     "lesson": "16",
     "words": "膨らむ",
     "reading": "ふくらむ",
-    "meaning": "Phồng lên, tăng lên"
+    "meaning": "to lên, tăng lên"
   },
   {
     "lesson": "16",
     "words": "膨らます",
     "reading": "ふくらます",
-    "meaning": "Mở rộng, thổi phồng"
+    "meaning": "phồng, phình, được làm đầy bởi"
   },
   {
     "lesson": "16",
-    "words": "とがる",
-    "reading": "",
-    "meaning": "Nhọn, sắc"
+    "words": "尖る",
+    "reading": "とがる",
+    "meaning": "trạng thái nhọn, sắc"
   },
   {
     "lesson": "16",
     "words": "当てはまる",
     "reading": "あてはまる",
-    "meaning": "Áp dụng, ứng dụng"
+    "meaning": "áp dụng"
   },
   {
     "lesson": "16",
     "words": "就く",
     "reading": "つく",
-    "meaning": "Làm việc, được bổ nhiệm vào vị trí, bắt đầu"
+    "meaning": "kiếm việc, trở thành"
   },
   {
     "lesson": "16",
     "words": "受け持つ",
     "reading": "うけもつ",
-    "meaning": "Đảm nhận, phụ trách"
+    "meaning": "đảm trách"
   },
   {
     "lesson": "16",
     "words": "従う",
     "reading": "したがう",
-    "meaning": "Tuân thủ, theo, dọc theo"
+    "meaning": "theo đó, theo"
   },
   {
     "lesson": "16",
-    "words": "つぶやく",
-    "reading": "",
-    "meaning": "Thì thầm"
+    "words": "呟く",
+    "reading": "つぶやく",
+    "meaning": "thì thầm, thì thào"
   },
   {
     "lesson": "16",
     "words": "述べる",
     "reading": "のべる",
-    "meaning": "Bày tỏ, nói"
+    "meaning": "phát biểu"
   },
   {
     "lesson": "16",
     "words": "目覚める",
     "reading": "めざめる",
-    "meaning": "Thức dậy, mở mắt, nhận thức"
+    "meaning": "thức giấc, mở mắt"
   },
   {
     "lesson": "16",
     "words": "限る",
     "reading": "かぎる",
-    "meaning": "Không chỉ, là tốt nhất, đúng vào lúc, chưa chắc, giới hạn"
+    "meaning": "không nhất thiết, là tốt nhất, nhân dịp"
   },
   {
     "lesson": "16",
-    "words": "偏る／片寄る",
+    "words": "片寄る",
     "reading": "かたよる",
-    "meaning": "Nghiêng, lệch, mất cân bằng, thiên vị"
+    "meaning": "dồn về một phía"
   },
   {
     "lesson": "16",
     "words": "薄まる",
     "reading": "うすまる",
-    "meaning": "Nhạ"
+    "meaning": "suy nhược"
   },
   {
     "lesson": "16",
     "words": "薄める",
     "reading": "うすめる",
-    "meaning": "Làm nhạt, pha loãng"
+    "meaning": "pha loãng, suy yếu"
   },
   {
     "lesson": "16",
     "words": "薄れる",
     "reading": "うすれる",
-    "meaning": "Nhạt dần, giảm dần"
+    "meaning": "trở nên mờ nhạt, phai màu"
   },
   {
     "lesson": "16",
     "words": "透き通る",
     "reading": "すきとおる",
-    "meaning": "Trong suốt, trong vắt"
+    "meaning": "trở nên rõ ràng, trở nên trong suốt"
   },
   {
     "lesson": "16",
-    "words": "静まる／鎮まる",
+    "words": "静まる・鎮まる",
     "reading": "しずまる",
-    "meaning": "Im lặng, ngớt, lắng xuống, dịu đi"
+    "meaning": "trở nên yên lặng, được bình tĩnh lại"
   },
   {
     "lesson": "16",
-    "words": "静める／鎮める",
+    "words": "静める・鎮める",
     "reading": "しずめる",
-    "meaning": "Làm cho im lặng, trấn tĩnh"
+    "meaning": "yên tĩnh, hạ hỏa, giải tỏa"
   },
   {
     "lesson": "16",
     "words": "優れる",
     "reading": "すぐれる",
-    "meaning": "Xuất sắc, ưu việt, tâm trạng/sức khỏe... không tốt"
+    "meaning": "giỏi, ưu tú, hoàn hảo"
   },
   {
     "lesson": "16",
     "words": "落ち着く",
     "reading": "おちつく",
-    "meaning": "Bình tĩnh, điềm tĩnh, ổn định, yên bình, quyết định, định cư, khiêm tốn"
+    "meaning": "① ổn định (tinh thần, tâm trạng, cuộc sống, công việc)\n② không khỏe trong người"
   },
   {
     "lesson": "16",
     "words": "長引く",
     "reading": "ながびく",
-    "meaning": "Kéo dài"
+    "meaning": "được kéo dài"
   },
   {
     "lesson": "16",
     "words": "衰える",
     "reading": "おとろえる",
-    "meaning": "Yếu đi, sa sút"
+    "meaning": "trở nên yếu, sa sút"
   },
   {
     "lesson": "16",
     "words": "備わる",
     "reading": "そなわる",
-    "meaning": "Được lắp đặt, sở hữu, có tố chất"
+    "meaning": "được trang bị, được ưu đãi với"
   },
   {
     "lesson": "16",
     "words": "備える",
     "reading": "そなえる",
-    "meaning": "Lắp đặt, trang bị, sở hữu, chuẩn bị"
+    "meaning": "chuẩn bị, trang bị, cung cấp"
   },
   {
     "lesson": "16",
     "words": "蓄える",
     "reading": "たくわえる",
-    "meaning": "Tích trữ, dự trữ, tích lũy"
+    "meaning": "dự trữ, tiết kiệm, có trữ lượng lớn"
   },
   {
     "lesson": "16",
     "words": "整う",
     "reading": "ととのう",
-    "meaning": "Sẵn sàng, được chuẩn bị, chỉn chu"
+    "meaning": "chuẩn bị về mọi mặt (số lượng, phương pháp, v.v)"
   },
   {
     "lesson": "16",
-    "words": "整える",
+    "words": "整える・調える",
     "reading": "ととのえる",
-    "meaning": "Chuẩn bị, sẵn sàng, sắp xếp, chỉnh đốn"
+    "meaning": "chuẩn bị, sửa, điều chỉnh"
   },
   {
     "lesson": "16",
     "words": "覆う",
     "reading": "おおう",
-    "meaning": "Phủ lên, đậy lên, bao phủ"
+    "meaning": "phủ, bao bọc, che để người khác không thấy (che mắt, che mặt)"
   },
   {
     "lesson": "16",
     "words": "照る",
     "reading": "てる",
-    "meaning": "Chiếu sáng"
+    "meaning": "chiếu sáng"
   },
   {
     "lesson": "16",
     "words": "照らす",
     "reading": "てらす",
-    "meaning": "Chiếu sáng, soi rọi"
-  },
-  {
-    "lesson": "16",
-    "words": "染まる",
-    "reading": "そまる",
-    "meaning": "Nhuộm, bị tác động, bị nhiễm"
-  },
-  {
-    "lesson": "16",
-    "words": "染める",
-    "reading": "そめる",
-    "meaning": "Nhuộm, nhiễm"
-  },
-  {
-    "lesson": "16",
-    "words": "ダブる",
-    "reading": "",
-    "meaning": "Gấp đôi, trùng nhau"
-  },
-  {
-    "lesson": "16",
-    "words": "あこがれる",
-    "reading": "",
-    "meaning": "Mong ước, mơ ước"
-  },
-  {
-    "lesson": "16",
-    "words": "うやむ",
-    "reading": "",
-    "meaning": "Ghen tị"
-  },
-  {
-    "lesson": "16",
-    "words": "あきらめる",
-    "reading": "",
-    "meaning": "Từ bỏ"
-  },
-  {
-    "lesson": "16",
-    "words": "あきれる",
-    "reading": "",
-    "meaning": "Ngạc nhiên, sốc"
-  },
-  {
-    "lesson": "16",
-    "words": "恐れる",
-    "reading": "おそれる",
-    "meaning": "Sợ"
-  },
-  {
-    "lesson": "16",
-    "words": "恨む",
-    "reading": "うらむ",
-    "meaning": "Căm ghét, hận"
-  },
-  {
-    "lesson": "16",
-    "words": "慰める",
-    "reading": "なぐさめる",
-    "meaning": "An ủi, động viên"
-  },
-  {
-    "lesson": "16",
-    "words": "インテリア",
-    "reading": "",
-    "meaning": "Nội thất"
-  },
-  {
-    "lesson": "16",
-    "words": "コーナー",
-    "reading": "",
-    "meaning": "Quầy, phần, góc"
-  },
-  {
-    "lesson": "16",
-    "words": "カウンター",
-    "reading": "",
-    "meaning": "Quầy"
-  },
-  {
-    "lesson": "16",
-    "words": "スペース",
-    "reading": "",
-    "meaning": "Chỗ trống, khoảng cách"
-  },
-  {
-    "lesson": "16",
-    "words": "オープン",
-    "reading": "",
-    "meaning": "Khai trương, mở cửa hàng, cởi mở"
-  },
-  {
-    "lesson": "16",
-    "words": "センター",
-    "reading": "",
-    "meaning": "Trung tâm, giữa"
-  },
-  {
-    "lesson": "16",
-    "words": "カルチャー",
-    "reading": "",
-    "meaning": "Văn hóa"
-  },
-  {
-    "lesson": "16",
-    "words": "ブーム",
-    "reading": "",
-    "meaning": "Bùng nổ, thịnh hành"
-  },
-  {
-    "lesson": "16",
-    "words": "インフォメーション",
-    "reading": "インフォーメーション",
-    "meaning": "Thông tin"
+    "meaning": "được chiếu sáng"
   },
   {
     "lesson": "17",
-    "words": "キャッチ",
-    "reading": "",
-    "meaning": "Bắt, nắm bắt"
+    "words": "染まる",
+    "reading": "そまる",
+    "meaning": "được nhuộm, bị ảnh hưởng bởi"
+  },
+  {
+    "lesson": "17",
+    "words": "染める",
+    "reading": "そめる",
+    "meaning": "nhuộm, đỏ mặt"
+  },
+  {
+    "lesson": "17",
+    "words": "ダブる",
+    "reading": "ダブる",
+    "meaning": "gấp đôi"
+  },
+  {
+    "lesson": "17",
+    "words": "憧れる",
+    "reading": "あこがれる",
+    "meaning": "mong ước, mơ ước"
+  },
+  {
+    "lesson": "17",
+    "words": "羨む",
+    "reading": "うらやむ",
+    "meaning": "đố kỵ, ghen tị"
+  },
+  {
+    "lesson": "17",
+    "words": "諦める",
+    "reading": "あきらめる",
+    "meaning": "từ bỏ"
+  },
+  {
+    "lesson": "17",
+    "words": "呆れる",
+    "reading": "あきれる",
+    "meaning": "bị shock, ngạc nhiên"
+  },
+  {
+    "lesson": "17",
+    "words": "恐れる",
+    "reading": "おそれる",
+    "meaning": "sợ, dữ tợn, khủng khiếp"
+  },
+  {
+    "lesson": "17",
+    "words": "恨む",
+    "reading": "うらむ",
+    "meaning": "hận, căm thù　(mức độ 嫌う→恨む→憎む)"
+  },
+  {
+    "lesson": "17",
+    "words": "慰める",
+    "reading": "なぐさめる",
+    "meaning": "an ủi, động viên, thiên về an ủi　(励む thiên về động viên)"
+  },
+  {
+    "lesson": "17",
+    "words": "インテリア　",
+    "reading": "interior",
+    "meaning": "nội thất, trang trí"
+  },
+  {
+    "lesson": "17",
+    "words": "コーナー　",
+    "reading": "corner",
+    "meaning": "góc, phần"
+  },
+  {
+    "lesson": "17",
+    "words": "カウンター",
+    "reading": "counter",
+    "meaning": "quầy tính tiền, bar"
+  },
+  {
+    "lesson": "17",
+    "words": "スペース",
+    "reading": "space",
+    "meaning": "khoảng trống, phòng"
+  },
+  {
+    "lesson": "17",
+    "words": "オープン",
+    "reading": "open",
+    "meaning": "mở, mở cửa"
+  },
+  {
+    "lesson": "17",
+    "words": "センター",
+    "reading": "center",
+    "meaning": "trung tâm, ở giữa"
+  },
+  {
+    "lesson": "17",
+    "words": "カルチャー　",
+    "reading": "culture",
+    "meaning": "văn hóa"
+  },
+  {
+    "lesson": "17",
+    "words": "ブーム",
+    "reading": "boom",
+    "meaning": "bùng nổ, trở nên phổ biến"
+  },
+  {
+    "lesson": "17",
+    "words": "インフォメーション",
+    "reading": "information",
+    "meaning": "thông tin"
+  },
+  {
+    "lesson": "17",
+    "words": "キャッチ　",
+    "reading": "catch",
+    "meaning": "bắt lấy"
   },
   {
     "lesson": "17",
     "words": "メディア",
-    "reading": "",
-    "meaning": "Phương tiện truyền thông"
+    "reading": "media",
+    "meaning": "truyền thông"
   },
   {
     "lesson": "17",
     "words": "コメント",
-    "reading": "",
-    "meaning": "Bình luận"
+    "reading": "comment",
+    "meaning": "bình luận"
   },
   {
     "lesson": "17",
-    "words": "コラム",
-    "reading": "",
-    "meaning": "Cột, mục báo/tạp chí..."
+    "words": "コラム　",
+    "reading": "column",
+    "meaning": "cột"
   },
   {
     "lesson": "17",
-    "words": "エピソード",
-    "reading": "",
-    "meaning": "Câu chuyện, chương, phần"
+    "words": "エピソード　",
+    "reading": "episode",
+    "meaning": "chương; phần"
   },
   {
     "lesson": "17",
-    "words": "アリバイ",
-    "reading": "",
-    "meaning": "Bằng chứng ngoại phạm"
+    "words": "アリバイ　",
+    "reading": "alibi",
+    "meaning": "ngoại phạm"
   },
   {
     "lesson": "17",
-    "words": "シリーズ",
-    "reading": "",
-    "meaning": "Loạt, dãy, chuỗi"
+    "words": "シリーズ　",
+    "reading": "series",
+    "meaning": "loạt, chuỗi"
   },
   {
     "lesson": "17",
     "words": "ポイント",
-    "reading": "",
-    "meaning": "Điểm"
+    "reading": "point",
+    "meaning": "điểm"
   },
   {
     "lesson": "17",
     "words": "キー",
-    "reading": "",
-    "meaning": "Chìa khóa, phím đàn"
+    "reading": "key",
+    "meaning": "chìa khóa"
   },
   {
     "lesson": "17",
     "words": "マスター",
-    "reading": "",
-    "meaning": "Nắm vững, thạc sĩ"
+    "reading": "master",
+    "meaning": "bậc thầy, giỏi"
   },
   {
     "lesson": "17",
     "words": "ビジネス",
-    "reading": "",
-    "meaning": "Việc kinh doanh"
+    "reading": "business",
+    "meaning": "kinh doanh"
   },
   {
     "lesson": "17",
-    "words": "キャリア",
-    "reading": "",
-    "meaning": "Sự nghiệp, nghề nghiệp, kinh nghiệm làm việc"
+    "words": "キャリア　",
+    "reading": "career",
+    "meaning": "nghề nghiệp, vận chuyển"
   },
   {
     "lesson": "17",
-    "words": "ベテラン",
-    "reading": "",
-    "meaning": "Kỳ cựu, chuyên gia"
+    "words": "ベテラン　",
+    "reading": "veteran",
+    "meaning": "chuyên gia, có kinh nghiệm"
   },
   {
     "lesson": "17",
     "words": "フリー",
-    "reading": "",
-    "meaning": "Tự do, miễn phí, độc thân"
+    "reading": "free",
+    "meaning": "tự do, độc thân, làm tự do"
   },
   {
     "lesson": "17",
-    "words": "エコノミー",
-    "reading": "",
-    "meaning": "Tiết kiệm"
+    "words": "エコノミー　",
+    "reading": "economy",
+    "meaning": "nền kinh tế"
   },
   {
     "lesson": "17",
     "words": "キャッシュ",
-    "reading": "",
-    "meaning": "Tiền mặt"
+    "reading": "cash",
+    "meaning": "tiền mặt"
   },
   {
     "lesson": "17",
-    "words": "インフル",
-    "reading": "",
-    "meaning": "Lạm phát"
+    "words": "インフレ　　",
+    "reading": "inflation",
+    "meaning": "lạm phát"
   },
   {
     "lesson": "17",
     "words": "デモ",
-    "reading": "",
-    "meaning": "Biểu tình"
+    "reading": "demo",
+    "meaning": "cuộc biểu tình, thuyết minh"
   },
   {
     "lesson": "17",
     "words": "メーカー",
-    "reading": "",
-    "meaning": "Người, nhà máy, hãng sản xuất"
+    "reading": "maker",
+    "meaning": "nhà chế tạo, nhà sản xuất, nghệ sĩ"
   },
   {
     "lesson": "17",
     "words": "システム",
-    "reading": "",
-    "meaning": "Hệ thống"
+    "reading": "system",
+    "meaning": "hệ thống"
   },
   {
     "lesson": "17",
     "words": "ケース",
-    "reading": "",
-    "meaning": "Cái hộp, đồ đựng, trường hợp, ốp điện thoại"
+    "reading": "case",
+    "meaning": "trường hợp"
   },
   {
     "lesson": "17",
     "words": "パターン",
-    "reading": "",
-    "meaning": "Kiểu"
+    "reading": "pattern",
+    "meaning": "mẫu"
   },
   {
     "lesson": "17",
     "words": "プラン",
-    "reading": "",
-    "meaning": "Kế họach"
+    "reading": "plan",
+    "meaning": "kế hoạch"
   },
   {
     "lesson": "17",
     "words": "トラブル",
-    "reading": "",
-    "meaning": "Rắc rối"
+    "reading": "trouble",
+    "meaning": "rắc rối"
   },
   {
     "lesson": "17",
     "words": "エラー",
-    "reading": "",
-    "meaning": "Lỗi"
+    "reading": "error",
+    "meaning": "lỗi"
   },
   {
     "lesson": "17",
     "words": "クレーム",
-    "reading": "",
-    "meaning": "Phàn nàn, khiếu nại"
+    "reading": "claim",
+    "meaning": "phàn nàn, phản đói"
   },
   {
     "lesson": "17",
     "words": "キャンセル",
-    "reading": "",
-    "meaning": "Hủy bỏ"
+    "reading": "cancel",
+    "meaning": "hủy bỏ"
   },
   {
     "lesson": "17",
     "words": "ストップ",
-    "reading": "",
-    "meaning": "Dừng"
+    "reading": "stop",
+    "meaning": "dừng lại"
   },
   {
     "lesson": "17",
     "words": "カット",
-    "reading": "",
-    "meaning": "Cắt"
+    "reading": "cut",
+    "meaning": "cắt bớt, giảm bớt"
   },
   {
     "lesson": "17",
     "words": "カバー",
-    "reading": "",
-    "meaning": "Vỏ bọc, bìa sách, đậy, phủ, che giấu"
+    "reading": "cover",
+    "meaning": "bao bọc, che"
   },
   {
     "lesson": "17",
-    "words": "リハビリ",
-    "reading": "",
-    "meaning": "Phục hồi chức năng"
+    "words": "リハビリ　",
+    "reading": "rehabilitation",
+    "meaning": "hồi phục chức năng"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "プレッシャー",
-    "reading": "",
-    "meaning": "Áp lực"
+    "reading": "pressure",
+    "meaning": "sức ép"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "カウンセリング",
-    "reading": "",
-    "meaning": "Tư vấn tâm lý"
+    "reading": "counseling",
+    "meaning": "tư vấn"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "キャラクター",
-    "reading": "",
-    "meaning": "Nhân vật, tính cách"
+    "reading": "character",
+    "meaning": "nhân cách, tính cách"
   },
   {
-    "lesson": "17",
-    "words": "ユニーク",
-    "reading": "",
-    "meaning": "Độc đáo"
+    "lesson": "18",
+    "words": "ユニークな　",
+    "reading": "unique",
+    "meaning": "độc nhất"
   },
   {
-    "lesson": "17",
-    "words": "ルーズ",
-    "reading": "",
-    "meaning": "Không đúng giờ, cẩu thả, luộm thuộm"
+    "lesson": "18",
+    "words": "ルーズな　",
+    "reading": "loose",
+    "meaning": "luộm thuộm, không đúng giờ"
   },
   {
-    "lesson": "17",
-    "words": "ロマンティック",
-    "reading": "",
-    "meaning": "Lãng mạn"
+    "lesson": "18",
+    "words": "ロマンチックな",
+    "reading": "romantic",
+    "meaning": "lãng mạn"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "センス",
-    "reading": "",
-    "meaning": "Cảm giác, cảm nhận"
+    "reading": "sense",
+    "meaning": "giác quan, cảm nhận"
   },
   {
-    "lesson": "17",
-    "words": "エコロジー",
-    "reading": "",
-    "meaning": "Sinh thái"
+    "lesson": "18",
+    "words": "エコロジー　",
+    "reading": "ecology",
+    "meaning": "sinh thái học"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "ダム",
-    "reading": "",
-    "meaning": "Đập nước"
+    "reading": "dam",
+    "meaning": "đê"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "コンクリート",
-    "reading": "",
-    "meaning": "Bê tông"
+    "reading": "concrete",
+    "meaning": "bê tông"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "単純",
-    "reading": "たんじゅん",
-    "meaning": "Đơn giản"
+    "reading": "たんじゅんな",
+    "meaning": "đơn giản"
   },
   {
-    "lesson": "17",
-    "words": "純粋",
-    "reading": "じゅんすい",
-    "meaning": "Trong sáng, ngây thơ, thật"
+    "lesson": "18",
+    "words": "純粋な",
+    "reading": "じゅんすいな",
+    "meaning": "trong sáng, nguyên chất"
   },
   {
-    "lesson": "17",
-    "words": "透明",
-    "reading": "とうめい",
-    "meaning": "Trong suốt"
+    "lesson": "18",
+    "words": "透明な",
+    "reading": "とうめいな",
+    "meaning": "trong suốt"
   },
   {
-    "lesson": "17",
-    "words": "さわやか",
-    "reading": "",
-    "meaning": "Dễ chịu, sảng khoái"
+    "lesson": "18",
+    "words": "爽やかな",
+    "reading": "さわやかな",
+    "meaning": "sảng khoái, tươi"
   },
   {
-    "lesson": "17",
-    "words": "素直",
-    "reading": "すなお",
-    "meaning": "Nhẹ nhàng, hòa nhã, ngoan ngoãn, dễ bảo"
+    "lesson": "18",
+    "words": "素直な",
+    "reading": "すなおな",
+    "meaning": "vâng lời, dịu dàng, ôn hòa"
   },
   {
-    "lesson": "17",
-    "words": "率直",
-    "reading": "そっちょく",
-    "meaning": "Thật thà, thẳng thắn, chân thật"
+    "lesson": "18",
+    "words": "率直な",
+    "reading": "そっちょくな",
+    "meaning": "trực tính, thẳng thắn"
   },
   {
-    "lesson": "17",
-    "words": "誠実",
-    "reading": "せいじつ",
-    "meaning": "Thành thật"
+    "lesson": "18",
+    "words": "誠実な",
+    "reading": "せいじつな",
+    "meaning": "thật thà"
   },
   {
-    "lesson": "17",
-    "words": "謙虚",
-    "reading": "けんきょ",
-    "meaning": "Khiếm tốn"
+    "lesson": "18",
+    "words": "謙虚な",
+    "reading": "けんきょな",
+    "meaning": "khiêm tốn"
   },
   {
-    "lesson": "17",
+    "lesson": "18",
     "words": "賢い",
     "reading": "かしこい",
-    "meaning": "Thông minh"
+    "meaning": "thông minh, khôn ngoan"
   },
   {
     "lesson": "18",
-    "words": "慎重",
-    "reading": "しんちょう",
-    "meaning": "Thận trọng"
+    "words": "慎重な",
+    "reading": "しんちょうな",
+    "meaning": "thận trọng"
   },
   {
     "lesson": "18",
-    "words": "穏やか",
-    "reading": "おだやか",
-    "meaning": "Ôn hòa, điềm đạm, yên ả, lặng sóng"
+    "words": "穏やかな",
+    "reading": "おだやかな",
+    "meaning": "điềm tĩnh, yên lặng"
   },
   {
     "lesson": "18",
-    "words": "真剣",
-    "reading": "しんけん",
-    "meaning": "Nghiêm túc, nghiêm chỉnh"
+    "words": "真剣な",
+    "reading": "しんけんな",
+    "meaning": "nghiêm túc, nghiêm trọng"
   },
   {
     "lesson": "18",
-    "words": "正式",
-    "reading": "せいしき",
-    "meaning": "Trang trọng, chính thức"
+    "words": "正式な",
+    "reading": "せいしきな",
+    "meaning": "chính thức, trang trọng"
   },
   {
     "lesson": "18",
-    "words": "主",
-    "reading": "おも",
-    "meaning": "Chủ yếu, chính"
+    "words": "主な",
+    "reading": "おもな",
+    "meaning": "chính, chủ yếu　(部分、問題)"
   },
   {
     "lesson": "18",
-    "words": "主要",
-    "reading": "しゅよう",
-    "meaning": "Chủ yếu, quan trọng, chính"
+    "words": "主要な",
+    "reading": "しゅような",
+    "meaning": "chủ yếu, chính, thường ghép với từ khác (主要年、主要人物)　"
   },
   {
     "lesson": "18",
-    "words": "貴重",
-    "reading": "きちょう",
-    "meaning": "Quý giá"
+    "words": "貴重な",
+    "reading": "きちょうな",
+    "meaning": "quý giá"
   },
   {
     "lesson": "18",
-    "words": "偉大",
-    "reading": "いだい",
-    "meaning": "Vĩ đại"
+    "words": "偉大な",
+    "reading": "いだいな",
+    "meaning": "vĩ đại"
   },
   {
     "lesson": "18",
     "words": "偉い",
     "reading": "えらい",
-    "meaning": "Vĩ đại, đáng nể, tuyệt vời"
+    "meaning": "đáng ngưỡng mộ, vị trí cao"
   },
   {
     "lesson": "18",
-    "words": "独特",
-    "reading": "どくとく",
-    "meaning": "Độc đáo"
+    "words": "独特な",
+    "reading": "どくとくな",
+    "meaning": "độc nhất, đặc biệt, riêng bản thân có thôi"
   },
   {
     "lesson": "18",
-    "words": "特殊",
-    "reading": "とくしゅ",
-    "meaning": "Đặc biệt, đặc thù"
+    "words": "特殊な",
+    "reading": "とくしゅな",
+    "meaning": "độc đáo, đặc biệt (vd: năng khiếu đặc biệt, thông minh, giỏi giang)"
   },
   {
     "lesson": "18",
-    "words": "奇妙",
-    "reading": "きみょう",
-    "meaning": "Kì lạ, lạ lùng"
+    "words": "奇妙な",
+    "reading": "きみょうな",
+    "meaning": "kỳ lạ"
   },
   {
     "lesson": "18",
-    "words": "妙",
-    "reading": "みょう",
-    "meaning": "Kì lạ"
+    "words": "妙な",
+    "reading": "みょうな",
+    "meaning": "lạ, tò mò"
   },
   {
     "lesson": "18",
     "words": "怪しい",
     "reading": "あやしい",
-    "meaning": "Đáng ngờ, khó tin, không bình thường"
+    "meaning": "đáng nghi, nghi ngờ, có thiên về cảm giác nguy hiểm, lo lắng, bất an"
   },
   {
     "lesson": "18",
-    "words": "異常",
-    "reading": "いじょう",
-    "meaning": "Khác thường, bất thường"
+    "words": "異常な",
+    "reading": "いじょうな",
+    "meaning": "bất thường"
   },
   {
     "lesson": "18",
-    "words": "高度",
-    "reading": "こうど",
-    "meaning": "Tiên tiến, cao"
+    "words": "高度な",
+    "reading": "こうどな",
+    "meaning": "độ chính xác cao"
   },
   {
     "lesson": "18",
-    "words": "新た",
-    "reading": "あらた",
-    "meaning": "Mới, tươi mới, mới mẻ"
+    "words": "新たな",
+    "reading": "あらたな",
+    "meaning": "mới, được làm mới"
   },
   {
     "lesson": "18",
-    "words": "合理的",
-    "reading": "ごうりてき",
-    "meaning": "Hợp lý, logic"
+    "words": "合理的な",
+    "reading": "ごうりてきな",
+    "meaning": "hợp lý"
   },
   {
     "lesson": "18",
-    "words": "器用",
-    "reading": "きよう",
-    "meaning": "Khéo léo"
+    "words": "器用な",
+    "reading": "きような",
+    "meaning": "lanh tay, tài giỏi, khéo léo"
   },
   {
     "lesson": "18",
-    "words": "手軽",
-    "reading": "てがる",
-    "meaning": "Đơn giản, dễ dàng"
+    "words": "手軽な",
+    "reading": "てがるな",
+    "meaning": "nhẹ nhàng, đơn giản"
   },
   {
     "lesson": "18",
-    "words": "手ごろ",
-    "reading": "てごろ",
-    "meaning": "Hợp lý, giá cả phải chăng"
+    "words": "手ごろな",
+    "reading": "てごろな",
+    "meaning": "hợp lý, phù hợp"
   },
   {
     "lesson": "18",
-    "words": "高価",
-    "reading": "こうか",
-    "meaning": "Đắt, giá cao"
+    "words": "高価な",
+    "reading": "こうかな",
+    "meaning": "đắt"
   },
   {
     "lesson": "18",
-    "words": "ぜいたく",
-    "reading": "",
-    "meaning": "Xa xỉ, xa hoa, phung phí"
+    "words": "ぜいたくな",
+    "reading": "ぜいたくな",
+    "meaning": "sang trọng, lãng phí (phong cách sống)"
   },
   {
     "lesson": "18",
-    "words": "豪華",
-    "reading": "ごうか",
-    "meaning": "Tráng lệ, rực rỡ, hào nhoáng"
+    "words": "豪華な",
+    "reading": "ごうかな",
+    "meaning": "hào hoa"
   },
   {
     "lesson": "18",
-    "words": "高級",
-    "reading": "こうきゅう",
-    "meaning": "Cao cấp"
+    "words": "高級な",
+    "reading": "こうきゅうな",
+    "meaning": "chất lượng cao, đắt"
   },
   {
     "lesson": "18",
-    "words": "上等",
-    "reading": "じょうとう",
-    "meaning": "Thượng hạng"
+    "words": "上等な",
+    "reading": "じょうとうな",
+    "meaning": "thượng đẳng, đủ tốt"
   },
   {
     "lesson": "18",
-    "words": "上品",
-    "reading": "じょうひん",
-    "meaning": "Tao nhã, lịch thiệp"
+    "words": "上品な",
+    "reading": "じょうひんな",
+    "meaning": "thượng phẩm"
   },
   {
     "lesson": "18",
-    "words": "適度",
-    "reading": "てきど",
-    "meaning": "Vừa phải, điều độ, chừng mực"
+    "words": "適度な",
+    "reading": "てきどな",
+    "meaning": "mức độ thích hợp, điều độ"
   },
   {
     "lesson": "18",
-    "words": "快適",
-    "reading": "かいてき",
-    "meaning": "Thoải mái, dễ chịu"
+    "words": "快適な",
+    "reading": "かいてきな",
+    "meaning": "dễ chịu, sảng khoái"
   },
   {
     "lesson": "18",
     "words": "快い",
     "reading": "こころよい",
-    "meaning": "Dễ chịu, vui lòng, thoải mái"
+    "meaning": "hài lòng, dễ chịu"
   },
   {
     "lesson": "18",
-    "words": "順調",
-    "reading": "じゅんちょう",
-    "meaning": "Thuận lợi"
+    "words": "順調な",
+    "reading": "じゅんちょうな",
+    "meaning": "ｔhuận lợi; tốt; trôi chảy"
   },
   {
-    "lesson": "18",
-    "words": "活発",
-    "reading": "かっぱつ",
-    "meaning": "Hoạt bát, năng động, sôi nổi"
+    "lesson": "19",
+    "words": "活発な",
+    "reading": "かっぱつな",
+    "meaning": "hoạt bát, sôi nổi (thiên về tính cách con người)"
   },
   {
-    "lesson": "18",
-    "words": "的確",
-    "reading": "てきかく",
-    "meaning": "Rõ ràng, chính xác"
+    "lesson": "19",
+    "words": "的確な",
+    "reading": "てきかくな",
+    "meaning": "chính xác"
   },
   {
-    "lesson": "18",
-    "words": "確実",
-    "reading": "かくじつ",
-    "meaning": "Chính xác, chắc chắn"
+    "lesson": "19",
+    "words": "確実な",
+    "reading": "かくじつな",
+    "meaning": "thật （sự thật, người thật）"
   },
   {
-    "lesson": "18",
-    "words": "明らか",
-    "reading": "あきらか",
-    "meaning": "Rõ ràng, hiển nhiên, sáng tỏ"
+    "lesson": "19",
+    "words": "明らかな",
+    "reading": "あきらかな",
+    "meaning": "rõ ràng"
   },
   {
-    "lesson": "18",
-    "words": "あいまい",
-    "reading": "",
-    "meaning": "Mơ hồ, mập mờ, khó hiểu"
+    "lesson": "19",
+    "words": "曖昧な",
+    "reading": "あいまいな",
+    "meaning": "mơ hồ, không rõ ràng"
   },
   {
-    "lesson": "18",
-    "words": "具大的",
-    "reading": "ぐだいてき",
-    "meaning": "Cụ thể"
+    "lesson": "19",
+    "words": "具体的な",
+    "reading": "ぐたいてきな",
+    "meaning": "cụ thể"
   },
   {
-    "lesson": "18",
-    "words": "抽象的",
-    "reading": "ちゅうしょうてき",
-    "meaning": "Trừu tượng"
+    "lesson": "19",
+    "words": "抽象的な",
+    "reading": "ちゅうしょうてきな",
+    "meaning": "trừu tượng"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "等しい",
     "reading": "ひとしい",
-    "meaning": "Bằng nhau, giống như"
+    "meaning": "giống nhau"
   },
   {
-    "lesson": "18",
-    "words": "平等",
-    "reading": "びょうどう",
-    "meaning": "Bình đẳng"
+    "lesson": "19",
+    "words": "平等な",
+    "reading": "びょうどうな",
+    "meaning": "bình đẳng (người ngoài cuộc nhìn nhận)"
   },
   {
-    "lesson": "18",
-    "words": "公平",
-    "reading": "こうへい",
-    "meaning": "Công bằng"
+    "lesson": "19",
+    "words": "公平な",
+    "reading": "こうへいな",
+    "meaning": "công bằng (người trong cuộc nhìn nhận)"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "人物",
     "reading": "じんぶつ",
-    "meaning": "Nhân vật"
+    "meaning": "nhân vật"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "者",
     "reading": "もの",
-    "meaning": "Người"
+    "meaning": "người, kẻ"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "各自",
     "reading": "かくじ",
-    "meaning": "Mỗi người"
+    "meaning": "mỗi người"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "気分",
     "reading": "きぶん",
-    "meaning": "Tâm trạng"
+    "meaning": "tâm tư, tinh thần"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "気配",
     "reading": "けはい",
-    "meaning": "Cảm giác, dấu hiệu"
+    "meaning": "cảm giác, linh cảm"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "生きがい",
     "reading": "いきがい",
-    "meaning": "Lẽ sống, động lực sống"
+    "meaning": "mục đích sống"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "行儀",
     "reading": "ぎょうぎ",
-    "meaning": "Cách cư xử"
+    "meaning": "tác phong, cách cư xử"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "品",
     "reading": "ひん",
-    "meaning": "Phẩm giá, phong độ"
+    "meaning": "hàng hóa"
   },
   {
-    "lesson": "18",
+    "lesson": "19",
     "words": "姿",
     "reading": "すがた",
-    "meaning": "Tư thế, dáng, điệu bộ"
+    "meaning": "hình ảnh, bóng dáng"
   },
   {
     "lesson": "19",
     "words": "姿勢",
     "reading": "しせい",
-    "meaning": "Tư thế, dáng điệu, điệu bộ, thái độ"
+    "meaning": "tư thế, thái độ"
   },
   {
     "lesson": "19",
     "words": "見かけ",
     "reading": "みかけ",
-    "meaning": "Vẻ bề ngoài, ngoại hình"
+    "meaning": "nhìn bề ngoài, từ đó suy đoán bên trong"
   },
   {
     "lesson": "19",
     "words": "ふり",
-    "reading": "",
-    "meaning": "Giả vờ"
+    "reading": "ふり",
+    "meaning": "giả vờ"
   },
   {
     "lesson": "19",
     "words": "苦情",
     "reading": "くじょう",
-    "meaning": "Phàn nàn, than phiền"
+    "meaning": "phàn nàn"
   },
   {
     "lesson": "19",
     "words": "口実",
     "reading": "こうじつ",
-    "meaning": "Viện cớ, viện lý do"
+    "meaning": "xin lỗi, bào chữa (văn viết của 言い訳)"
   },
   {
     "lesson": "19",
     "words": "動機",
     "reading": "どうき",
-    "meaning": "Động cơ, lý do, nguyên nhân"
+    "meaning": "động cơ"
   },
   {
     "lesson": "19",
     "words": "皮肉",
     "reading": "ひにく",
-    "meaning": "Giễu cợt, châm chọc"
+    "meaning": "giễu cợt, mỉa mai"
   },
   {
     "lesson": "19",
     "words": "意義",
     "reading": "いぎ",
-    "meaning": "Ý nghĩa"
+    "meaning": "ý nghĩa"
   },
   {
     "lesson": "19",
     "words": "主義",
     "reading": "しゅぎ",
-    "meaning": "Chủ nghĩa, nguyên tắc, chế độ, trường phái nghệ thuật"
+    "meaning": "nguyên tắc, niềm tin"
   },
   {
     "lesson": "19",
     "words": "精神",
     "reading": "せいしん",
-    "meaning": "Tinh thần, tư tưởng"
+    "meaning": "tinh thần"
   },
   {
     "lesson": "19",
     "words": "年代",
     "reading": "ねんだい",
-    "meaning": "Những năm---, niên đại, thế hệ"
+    "meaning": "kỷ nguyên, năm"
   },
   {
     "lesson": "19",
     "words": "世代",
     "reading": "せだい",
-    "meaning": "Thế hệ"
+    "meaning": "thời đại , thế hệ"
   },
   {
     "lesson": "19",
     "words": "基礎",
     "reading": "きそ",
-    "meaning": "Nền tảng, căn bản"
+    "meaning": "cơ bản, gốc"
   },
   {
     "lesson": "19",
     "words": "基準",
     "reading": "きじゅん",
-    "meaning": "Tiêu chuẩn"
+    "meaning": "tiêu chuẩn, mang tính pháp lý, luật lệ, thường có phạm vi rộng"
   },
   {
     "lesson": "19",
     "words": "標準",
     "reading": "ひょうじゅん",
-    "meaning": "Hạn mức, tiêu chuẩn"
+    "meaning": "tiêu chuẩn, từ nhiều mức độ xảy ra chọn mức độ trung bình làm tiêu chuẩn"
   },
   {
     "lesson": "19",
-    "words": "定型",
-    "reading": "ていけい",
-    "meaning": "Điển hình"
+    "words": "典型",
+    "reading": "てんけい",
+    "meaning": "điển hình, mô hình"
   },
   {
     "lesson": "19",
     "words": "方言",
     "reading": "ほうげん",
-    "meaning": "Tiếng địa phương, giọng địa phương"
+    "meaning": "tiếng địa phương"
   },
   {
     "lesson": "19",
     "words": "分布",
     "reading": "ぶんぷ",
-    "meaning": "Phân bố"
+    "meaning": "phân bố (phân bố dân số, phân bố động thực vật)"
   },
   {
     "lesson": "19",
     "words": "発展",
     "reading": "はってん",
-    "meaning": "Phát triển"
+    "meaning": "phát triển, mở rộng"
   },
   {
     "lesson": "19",
     "words": "文明",
     "reading": "ぶんめい",
-    "meaning": "Văn minh"
+    "meaning": "văn minh"
   },
   {
     "lesson": "19",
     "words": "普及",
     "reading": "ふきゅう",
-    "meaning": "Phổ cập, phổ biến"
+    "meaning": "phổ cập, phổ biến"
   },
   {
     "lesson": "19",
     "words": "制限",
     "reading": "せいげん",
-    "meaning": "Hạn chế, giới hạn"
+    "meaning": "hạn chế (ăn uống, tuổi tác, thời gian, tốc độ, calorie )"
   },
   {
     "lesson": "19",
     "words": "限度",
     "reading": "げんど",
-    "meaning": "Giới hạn, hạn mức"
+    "meaning": "mức độ giới hạn(sự chịu đựng, giới hạn khoản tiền vay, )"
   },
   {
     "lesson": "19",
     "words": "限界",
     "reading": "げんかい",
-    "meaning": "Giới hạn"
+    "meaning": "mức độ giới hạn,đỉnh điểm, tối đa (năng lực, thể lực, sự chịu đựng )"
   },
   {
     "lesson": "19",
     "words": "検討",
     "reading": "けんとう",
-    "meaning": "Thảo luận, bàn bạc"
+    "meaning": "nghiên cứu, xem xét"
   },
   {
     "lesson": "19",
     "words": "選択",
     "reading": "せんたく",
-    "meaning": "Lựa chọn, tuyển chọn"
+    "meaning": "lựa chọn"
   },
   {
     "lesson": "19",
     "words": "考慮",
     "reading": "こうりょ",
-    "meaning": "Xem xét"
+    "meaning": "xem xét"
   },
   {
     "lesson": "19",
     "words": "重視",
     "reading": "じゅうし",
-    "meaning": "Coi trọng, chú trọng"
+    "meaning": "xem trọng, xem là quan trọng"
   },
   {
     "lesson": "19",
     "words": "見当",
     "reading": "けんとう",
-    "meaning": "Đoán, ước tính"
+    "meaning": "phỏng đoán, ước tính"
   },
   {
     "lesson": "19",
     "words": "訂正",
     "reading": "ていせい",
-    "meaning": "Đính chính, sửa lại"
+    "meaning": "đính chính"
   },
   {
     "lesson": "19",
-    "words": "修生",
+    "words": "修正",
     "reading": "しゅうせい",
-    "meaning": "Chỉnh sửa"
+    "meaning": "chỉnh sửa, sửa đổi"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "反抗",
     "reading": "はんこう",
-    "meaning": "Phản kháng, chống đối"
+    "meaning": "chống, không vâng lời　（ý chí chống đối）"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "抵抗",
     "reading": "ていこう",
-    "meaning": "Kháng cự, chống đối, đề kháng"
+    "meaning": "đẩy lui, chống đối"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "災難",
     "reading": "さいなん",
-    "meaning": "Tai nạn, thiên tai, đen đủi"
+    "meaning": "tai nạn, thiên tai (mức độ cao nhất)"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "汚染",
     "reading": "おせん",
-    "meaning": "Ô nhiễm"
+    "meaning": "ô nhiễm"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "害",
     "reading": "がい",
-    "meaning": "Hại, gây hại"
+    "meaning": "có hại"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "伝染",
     "reading": "でんせん",
-    "meaning": "Truyền nhiễm, lây nhiễm"
+    "meaning": "truyền nhiễm"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "対策",
     "reading": "たいさく",
-    "meaning": "Biện pháp, đối sách"
+    "meaning": "đối sách, biện pháp đối phó"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "処置",
     "reading": "しょち",
-    "meaning": "Cách sử trí, xử lý"
+    "meaning": "xử lý, điều trị, thường là những việc cần làm ngay (vd xử lý vết thương)"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "処分",
     "reading": "しょぶん",
-    "meaning": "Vứt bỏ, xử phạt"
+    "meaning": "tiêu hủy, trừng trị"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "処理",
     "reading": "しょり",
-    "meaning": "Xử lý"
+    "meaning": "xử lý"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "輪",
     "reading": "わ",
-    "meaning": "Vòng tròn, cuộn"
+    "meaning": "vòng, lặp"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "でこぼこ",
-    "reading": "",
-    "meaning": "Lồi lõm, gập ghềnh"
+    "reading": "でこぼこ",
+    "meaning": "lồi lõm, ổ gà"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "跡",
     "reading": "あと",
-    "meaning": "Dấu vết, vết sẹo"
+    "meaning": "dấu vết"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "手間",
     "reading": "てま",
-    "meaning": "Thời gian, rủi ro"
+    "meaning": "thời gian, phiền phức"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "能率",
     "reading": "のうりつ",
-    "meaning": "Năng suất, hiệu quả"
+    "meaning": "hiệu quả, năng suất"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "性能",
     "reading": "せいのう",
-    "meaning": "Tính năng, hiệu năng"
+    "meaning": "hiệu năng, hiệu quả"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "操作",
     "reading": "そうさ",
-    "meaning": "Thao tác, điều khiển, vận hành, điều chỉnh"
+    "meaning": "thao tác hoạt động"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "発揮",
     "reading": "はっき",
-    "meaning": "Phát huy"
+    "meaning": "phát huy, gắng sức"
   },
   {
-    "lesson": "19",
+    "lesson": "20",
     "words": "頂点",
     "reading": "ちょうてん",
-    "meaning": "Đỉnh"
+    "meaning": "đỉnh, điểm"
   },
   {
     "lesson": "20",
     "words": "周辺",
     "reading": "しゅうへん",
-    "meaning": "Vùng xung quanh"
+    "meaning": "xung quanh"
   },
   {
     "lesson": "20",
     "words": "現場",
     "reading": "げんば",
-    "meaning": "Hiện trường, nơi thực hiện công việc, công trường"
+    "meaning": "hiện trường"
   },
   {
     "lesson": "20",
     "words": "状況",
     "reading": "じょうきょう",
-    "meaning": "Tình hình, tình trạng, hoàn cảnh"
+    "meaning": "trạng thái, tình trạng"
   },
   {
     "lesson": "20",
     "words": "組織",
     "reading": "そしき",
-    "meaning": "Tổ chức, mô (sinh học)"
+    "meaning": "tổ chức"
   },
   {
     "lesson": "20",
     "words": "制度",
     "reading": "せいど",
-    "meaning": "Chế độ, hệ thống"
+    "meaning": "chế độ"
   },
   {
     "lesson": "20",
     "words": "構成",
     "reading": "こうせい",
-    "meaning": "Cấu thành, cấu trúc"
+    "meaning": "cấu thành"
   },
   {
     "lesson": "20",
     "words": "形式",
     "reading": "けいしき",
-    "meaning": "Hình thức, cách thức"
+    "meaning": "hình thức"
   },
   {
     "lesson": "20",
     "words": "傾向",
     "reading": "けいこう",
-    "meaning": "Khuynh hướng, xu hướng"
+    "meaning": "khuynh hướng"
   },
   {
     "lesson": "20",
     "words": "方針",
     "reading": "ほうしん",
-    "meaning": "Phương châm"
+    "meaning": "phương châm, chính sách"
   },
   {
     "lesson": "20",
     "words": "徹底",
     "reading": "てってい",
-    "meaning": "Triệt để"
+    "meaning": "triệt để"
   },
   {
     "lesson": "20",
     "words": "分析",
     "reading": "ぶんせき",
-    "meaning": "Phân tích"
+    "meaning": "phân tích"
   },
   {
     "lesson": "20",
     "words": "維持",
     "reading": "いじ",
-    "meaning": "Duy trì"
+    "meaning": "duy trì, (hòa bình, mức sống, tốc độ)"
   },
   {
     "lesson": "20",
     "words": "管理",
     "reading": "かんり",
-    "meaning": "Quản lí"
+    "meaning": "quản lý, điều hành, điều khiển"
   },
   {
     "lesson": "20",
     "words": "行方",
     "reading": "ゆくえ",
-    "meaning": "Hành tung, tung tích"
+    "meaning": "tung tích, tương lai"
   },
   {
     "lesson": "20",
     "words": "端",
     "reading": "はし",
-    "meaning": "Cạnh, lề, mép"
+    "meaning": "cạnh"
   },
   {
     "lesson": "20",
     "words": "場",
     "reading": "ば",
-    "meaning": "Chỗ, nơi, địa điểm"
+    "meaning": "địa điểm, kinh nghiệm, dịp, hoàn cảnh"
   },
   {
     "lesson": "20",
     "words": "分野",
     "reading": "ぶんや",
-    "meaning": "Lĩnh vực"
+    "meaning": "lĩnh vực"
   },
   {
     "lesson": "20",
     "words": "需要",
     "reading": "じゅよう",
-    "meaning": "Nhu cầu"
+    "meaning": "nhu cầu (CẦU)"
   },
   {
     "lesson": "20",
     "words": "供給",
     "reading": "きょうきゅう",
-    "meaning": "Cung cấp"
+    "meaning": "cung cấp (CUNG)"
   },
   {
     "lesson": "20",
-    "words": "物質",
+    "words": "物資",
     "reading": "ぶっし",
-    "meaning": "Vật phẩm, hàng hóa"
+    "meaning": "vật tư"
   },
   {
     "lesson": "20",
     "words": "用途",
     "reading": "ようと",
-    "meaning": "Công dụng"
+    "meaning": "sử dụng, ứng dụng"
   },
   {
     "lesson": "20",
     "words": "関連",
     "reading": "かんれん",
-    "meaning": "Liên quan"
+    "meaning": "liên quan, quan hệ"
   },
   {
     "lesson": "20",
     "words": "消耗",
     "reading": "しょうもう",
-    "meaning": "Tiêu thụ, tiêu hóa"
+    "meaning": "tiêu thụ, tiêu hao"
   },
   {
     "lesson": "20",
     "words": "欠陥",
     "reading": "けっかん",
-    "meaning": "Khiếm khuyết, thiếu sót"
+    "meaning": "khuyết điểm, hỏng"
   },
   {
     "lesson": "20",
     "words": "予備",
     "reading": "よび",
-    "meaning": "Dự phòng, dự bị"
+    "meaning": "dự bị, dự trữ"
   },
   {
     "lesson": "20",
     "words": "付属",
     "reading": "ふぞく",
-    "meaning": "Gắn liền với, trực thuộc"
+    "meaning": "sự phụ thuộc, sát nhập, phụ kiện"
   },
   {
     "lesson": "20",
     "words": "手当",
     "reading": "てあて",
-    "meaning": "Chữa trị, chuẩn bị, tiền phụ cấp"
+    "meaning": "trị liệu, chuẩn bị"
   },
   {
     "lesson": "20",
     "words": "元",
     "reading": "もと",
-    "meaning": "Vị trí cũ, nguồn gốc, nguyên nhân"
+    "meaning": "nguyên, ban đầu, lý do"
   },
   {
     "lesson": "20",
     "words": "面",
     "reading": "めん",
-    "meaning": "Mặt nạ, mặt, khía cạnh"
+    "meaning": "mặt, mặt phẳng, diện mạo"
   },
   {
     "lesson": "20",
     "words": "説",
     "reading": "せつ",
-    "meaning": "Thuyết, giả thuyết"
+    "meaning": "thuyết, ý kiến"
   },
   {
     "lesson": "20",
     "words": "差",
     "reading": "さ",
-    "meaning": "Khoảng cách, khác biệt, cách biệt, phần còn lại, số dư"
+    "meaning": "sai khác, khoảng cách"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "間",
     "reading": "ま",
-    "meaning": "Thời gian, thời điểm, phòng"
+    "meaning": "giữa, trong khoảng"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "分",
     "reading": "ぶん",
-    "meaning": "Phần, tình trạng, thành phần"
+    "meaning": "thành phần, điều kiện"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "筋",
     "reading": "すじ",
-    "meaning": "Cốt truyện, logic, gân, cơ, nguồn"
+    "meaning": "cốt, sườn"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "余裕",
     "reading": "よゆう",
-    "meaning": "Khoản dư, rảnh rỗi"
+    "meaning": "dư, thừa (dùng còn dư), phụ cấp"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "負担",
     "reading": "ふたん",
-    "meaning": "Chịu trách nhiệm, đảm nhận"
+    "meaning": "gánh chịu"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "保証",
     "reading": "ほしょう",
-    "meaning": "Bảo hành, đảm bảo, cam kết"
+    "meaning": "bảo hành"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "催促",
     "reading": "さいそく",
-    "meaning": "Thúc giục, hối thúc"
+    "meaning": "thúc giục, gợi nhớ"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "成立",
     "reading": "せいりつ",
-    "meaning": "Thành lập, thiết lập"
+    "meaning": "thành lập"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "矛盾",
     "reading": "むじゅん",
-    "meaning": "Mâu thuẫn"
+    "meaning": "mâu thuẫn"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "存在",
     "reading": "そんざい",
-    "meaning": "Tồn tại"
+    "meaning": "tồn tại"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "編む",
     "reading": "あむ",
-    "meaning": "Đan, bện"
+    "meaning": "đan"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "縫う",
     "reading": "ぬう",
-    "meaning": "Khâu, may, thêu"
+    "meaning": "may, khâu lại"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "指す",
     "reading": "さす",
-    "meaning": "Chỉ, nhắm vào, hướng tới, gọi tên, ám chỉ, chơi"
+    "meaning": "biểu thị, chỉ vào,"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "示す",
     "reading": "しめす",
-    "meaning": "Xuất trình, trình bày, thể hiện, bày tỏ"
+    "meaning": "chỉ, bày tỏ, biểu thị"
   },
   {
-    "lesson": "20",
-    "words": "注ぐ",
+    "lesson": "21",
+    "words": "そそぐ (注ぐ)",
     "reading": "そそぐ",
-    "meaning": "Đổ vào, chảy vào, rót, dồn"
+    "meaning": "rót　(nước nóng)"
   },
   {
-    "lesson": "20",
-    "words": "すすぐ",
-    "reading": "",
-    "meaning": "Súc, rửa, giũ"
+    "lesson": "21",
+    "words": "漱ぐ",
+    "reading": "すすぐ",
+    "meaning": "rửa, súc"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "触る",
     "reading": "さわる",
-    "meaning": "Chạm, sờ"
+    "meaning": "sờ"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "触れる",
     "reading": "ふれる",
-    "meaning": "Chạm, đề cập, nhắc tới, nhận biết, vi phạm"
+    "meaning": "chạm, đề cập"
   },
   {
-    "lesson": "20",
+    "lesson": "21",
     "words": "抱く",
     "reading": "いだく",
-    "meaning": "Ấp ủ, ôm ấp, bao trùm"
+    "meaning": "ôm, mang, yêu mến"
   },
   {
     "lesson": "21",
     "words": "抱える",
     "reading": "かかえる",
-    "meaning": "Ôm, cầm trong tay, vướng phải, mắc phải"
+    "meaning": "cầm nhiểu hơn 持つ, còn có nghĩa bóng (頭を抱える：ôm đầu)"
   },
   {
     "lesson": "21",
     "words": "担ぐ",
     "reading": "かつぐ",
-    "meaning": "Vác, khiêng, mê tín"
+    "meaning": "mang, vác"
   },
   {
     "lesson": "21",
     "words": "剥がす",
     "reading": "はがす",
-    "meaning": "Bóc"
+    "meaning": "bóc ra, lột vỏ"
   },
   {
     "lesson": "21",
     "words": "描く",
     "reading": "えがく",
-    "meaning": "Vẽ, miêu tả, tưởng tượng"
+    "meaning": "vẽ, mô tả, tưởng tượng"
   },
   {
     "lesson": "21",
     "words": "砕ける",
     "reading": "くだける",
-    "meaning": "Bị vỡ, suồng sã, thân mật (không trang trọng)"
+    "meaning": "bị vỡ, trơn, hỏng"
   },
   {
     "lesson": "21",
     "words": "砕く",
     "reading": "くだく",
-    "meaning": "Đập vỡ"
+    "meaning": "phá vỡ, nghiền nát"
   },
   {
     "lesson": "21",
-    "words": "ふさがる",
+    "words": "塞がる",
     "reading": "ふさがる",
-    "meaning": "Tắc nghẽn, đang sử dụng, bận, kín miệng (vết thương)"
+    "meaning": "bị chặn, bị chiếm, khít lại, không có khoảng trống (mắc kẹt giữa dòng đời)"
   },
   {
     "lesson": "21",
-    "words": "ふさぐ",
+    "words": "塞ぐ",
     "reading": "ふさぐ",
-    "meaning": "Bịt, lấp, chặn, chiếm, buồn bã"
+    "meaning": "chiếm, chặn. bị trầm cảm"
   },
   {
     "lesson": "21",
     "words": "避ける",
     "reading": "さける",
-    "meaning": "Tránh"
+    "meaning": "tránh, tránh xa"
   },
   {
     "lesson": "21",
     "words": "よける",
-    "reading": "",
-    "meaning": "Tránh, né, dẹp qua một bên"
+    "reading": "よける",
+    "meaning": "tránh, để qua một bên"
   },
   {
     "lesson": "21",
     "words": "それる",
-    "reading": "",
-    "meaning": "Lệch, trượt, lạc"
+    "reading": "それる",
+    "meaning": "trượt, lỗ, lạc đề"
   },
   {
     "lesson": "21",
-    "words": "そらす",
-    "reading": "",
-    "meaning": "Tránh, nhắm trượt, nhìn sang hướng khác, lảng sang chuyện khác"
+    "words": "逸らす",
+    "reading": "そらす",
+    "meaning": "trốn tránh, lảng tránh"
   },
   {
     "lesson": "21",
     "words": "見つめる",
     "reading": "みつめる",
-    "meaning": "Nhìn chằm chằm, nhìn chăm chú, nhìn thẳng"
+    "meaning": "nhìn chằm chằm, đối mặt"
   },
   {
     "lesson": "21",
     "words": "眺める",
     "reading": "ながめる",
-    "meaning": "Nhìn, ngắm"
+    "meaning": "nhìn, trông coi"
   },
   {
     "lesson": "21",
     "words": "見合わせる",
     "reading": "みあわせる",
-    "meaning": "Nhìn nhau, hoãn lại"
+    "meaning": "nhìn nhau, bị hoãn, bị hủy"
   },
   {
     "lesson": "21",
     "words": "見送る",
     "reading": "みおくる",
-    "meaning": "Tiễn, để một thứ gì đó, hoãn, mất người thân,..."
+    "meaning": "đi tiễn (khách)"
   },
   {
     "lesson": "21",
     "words": "訪れる",
     "reading": "おとずれる",
-    "meaning": "Đến, ghé thăm"
+    "meaning": "đến, thăm"
   },
   {
     "lesson": "21",
     "words": "引き返す",
     "reading": "ひきかえす",
-    "meaning": "Quay trở lại"
+    "meaning": "quay lại"
   },
   {
     "lesson": "21",
     "words": "去る",
     "reading": "さる",
-    "meaning": "Qua, rời khỏi"
+    "meaning": "rời xa, bỏ đi"
   },
   {
     "lesson": "21",
     "words": "すする",
-    "reading": "",
-    "meaning": "Húp, nhai nhóp nhép, húp sùm sụp, khẹt mũi"
+    "reading": "すする",
+    "meaning": "hớp, hút"
   },
   {
     "lesson": "21",
     "words": "味わう",
     "reading": "あじわう",
-    "meaning": "Nếm thử, thưởng thức, nếm trải, tận hưởng"
+    "meaning": "thưởng thức, trải nghiệm (món ăn ngon, phim hay, cảnh đẹp)"
   },
   {
     "lesson": "21",
     "words": "匂う",
     "reading": "におう",
-    "meaning": "Bốc mùi, tỏa hương, đáng ngờ"
+    "meaning": "có mùi, nực mùi"
   },
   {
     "lesson": "21",
     "words": "飢える",
     "reading": "うえる",
-    "meaning": "Đói, thèm khát, khát khao"
+    "meaning": "①đói lả, ②khao khát, thèm muốn (một cái gì đó)"
   },
   {
     "lesson": "21",
     "words": "問う",
     "reading": "とう",
-    "meaning": "Hỏi, thăm hỏi, truy cứu, yêu cầu, đòi hỏi"
+    "meaning": "hỏi về, yêu cầu"
   },
   {
     "lesson": "21",
     "words": "語る",
     "reading": "かたる",
-    "meaning": "Kể, thuật lại"
+    "meaning": "nói"
   },
   {
     "lesson": "21",
     "words": "誓う",
     "reading": "ちかう",
-    "meaning": "Thề, thề nguyện"
+    "meaning": "thề, hứa"
   },
   {
     "lesson": "21",
     "words": "支える",
     "reading": "ささえる",
-    "meaning": "Chống đỡ, hỗ trợ, giúp đỡ"
+    "meaning": "hỗ trợ, giúp đỡ"
   },
   {
     "lesson": "21",
     "words": "費やす",
     "reading": "ついやす",
-    "meaning": "Dùng, tiêu tốn"
+    "meaning": "tiêu"
   },
   {
     "lesson": "21",
     "words": "用いる",
     "reading": "もちいる",
-    "meaning": "Sử dụng, áp dụng, trọng dụng, bổ nhiệm"
+    "meaning": "sử dụng, nhận nuôi, thuê"
   },
   {
     "lesson": "21",
     "words": "改まる",
     "reading": "あらたまる",
-    "meaning": "Cải thiện, được sửa đổi, được thay đổi, trịnh trọng"
+    "meaning": "được cải tiến, được thay thế"
   },
   {
     "lesson": "21",
     "words": "改める",
     "reading": "あらためる",
-    "meaning": "Sửa đổi, phù hợp, lần nữa, kiên trì, kiểm tra, lúc khác"
+    "meaning": "cải tiến, thay thế"
   },
   {
-    "lesson": "21",
-    "words": "収まる／納まる／納まる",
+    "lesson": "22",
+    "words": "収まる・納まる・治まる",
     "reading": "おさまる",
-    "meaning": "Vừa, lắng xuống, dịu đi, nguôi ngoai, ngừng, yên bình"
+    "meaning": "thu nạp, định cư, bình tĩnh　"
   },
   {
-    "lesson": "21",
-    "words": "収める／治める／納める",
+    "lesson": "22",
+    "words": "収める・納める・治める",
     "reading": "おさめる",
-    "meaning": "Cất, giữ, hòa giải, giành được, giao hàng, cai trị"
+    "meaning": "giải quyết, đạt được, giao hàng （tham khảo phía trên có giải thích）"
   },
   {
-    "lesson": "21",
-    "words": "添う／沿う",
+    "lesson": "22",
+    "words": "沿う・添う",
     "reading": "そう",
-    "meaning": "Dọc theo, dựa theo, đáp ứng, dựa trên"
+    "meaning": "dọc theo, men theo"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "添える",
     "reading": "そえる",
-    "meaning": "Đính kèm, kèm theo, thêm vào, tô điểm"
+    "meaning": "gắn với"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "兼ねる",
     "reading": "かねる",
-    "meaning": "Kết hợp, không thể"
+    "meaning": "không thể"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "適する",
-    "reading": "てくする",
-    "meaning": "Thích hợp"
+    "reading": "てきする",
+    "meaning": "hợp, xứng đáng"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "相当する",
     "reading": "そうとうする",
-    "meaning": "Tương đương"
+    "meaning": "tương ứng (tương ứng với A là B. VD tương ứng với trúng giải nhất là 100 triệu đồng)"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "伴う",
     "reading": "ともなう",
-    "meaning": "Kèm theo, đi kèm, kéo theo, dẫn theo"
+    "meaning": "được tham gia, kèm theo, cùng với"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "響く",
     "reading": "ひびく",
-    "meaning": "Vang vọng, lay động, ảnh hưởng"
+    "meaning": "vang, vọng"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "次ぐ",
     "reading": "つぐ",
-    "meaning": "Đứng sau, sau, tiếp theo"
+    "meaning": "tiếp theo"
   },
   {
-    "lesson": "21",
-    "words": "略す／略する",
-    "reading": "りゃくす／りゃくする",
-    "meaning": "Rút ngắn, rút gọn, lược bỏ"
+    "lesson": "22",
+    "words": "略す",
+    "reading": "りゃくす",
+    "meaning": "lượt bớt, viết tắt, tóm gọn"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "迫る",
     "reading": "せまる",
-    "meaning": "Áp suất, tiến gần, cận kề, ép buộc, thôi thúc"
+    "meaning": "tiến sát, thúc giục, cưỡng bức"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "狙う",
     "reading": "ねらう",
-    "meaning": "Nhắm tới, hướng tới"
+    "meaning": "nhắm đến　(con mồi, đối tượng, mục tiêu, tạo cảm giác gian xảo)"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "犯す",
     "reading": "おかす",
-    "meaning": "Vi phạm, xâm phạm"
+    "meaning": "thực hiện (hành vi phạm tội)"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "侵す",
     "reading": "おかす",
-    "meaning": "Xâm nhập, xâm phạm"
+    "meaning": "xâm chiếm"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "冒す",
     "reading": "おかす",
-    "meaning": "Đương đầu, đe dọa, mạo phạm"
+    "meaning": "can đảm, đương đầu"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "脅す",
     "reading": "おどす",
-    "meaning": "Đe dọa, hăm dọa"
+    "meaning": "bắt nạt, đe dọa"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "脅かす",
     "reading": "おどかす",
-    "meaning": "Hù dọa"
+    "meaning": "hù dọa"
   },
   {
-    "lesson": "21",
+    "lesson": "22",
     "words": "逆らう",
     "reading": "さからう",
-    "meaning": "Ngược với, không nghe lời, không tuân theo"
+    "meaning": "làm ngược lại (ko vâng lời, bơi ngược dòng, đi ngược gió)"
   },
   {
     "lesson": "22",
     "words": "妨げる",
     "reading": "さまたげる",
-    "meaning": "Ảnh hưởng, gây trở ngại, cản trở"
+    "meaning": "ngăn chặn"
   },
   {
     "lesson": "22",
     "words": "打ち消す",
     "reading": "うちけす",
-    "meaning": "Phủ định, bác bỏ"
+    "meaning": "phủ nhận, bác bỏ"
   },
   {
     "lesson": "22",
     "words": "応じる",
     "reading": "おうじる",
-    "meaning": "Hưởng ứng, đáp ứng, tùy theo, ứng với"
+    "meaning": "đáp lại, đối ứng"
   },
   {
     "lesson": "22",
     "words": "承る",
     "reading": "うけたまわる",
-    "meaning": "Tiếp nhận, nghe"
+    "meaning": "nhận, nghe (khiêm nhường ngữ của 聞く、受ける)"
   },
   {
     "lesson": "22",
     "words": "頂戴する",
     "reading": "ちょうだいする",
-    "meaning": "Nhận, chấp nhận, cho, hãy làm.... cho tôi"
+    "meaning": "① nhận (=もらう), ②hãy làm (=～ください)"
   },
   {
     "lesson": "22",
     "words": "学ぶ",
     "reading": "まなぶ",
-    "meaning": "Học"
+    "meaning": "học"
   },
   {
     "lesson": "22",
     "words": "練る",
     "reading": "ねる",
-    "meaning": "Nhào nặn, trau chuốt, hoạch định"
+    "meaning": "nhào trộn (bột, đất sét), trau chuốt (kế hoạch)"
   },
   {
     "lesson": "22",
     "words": "負う",
     "reading": "おう",
-    "meaning": "Mang, vác, bị thương, có trách nhiệm, gánh vác"
+    "meaning": "mang, vác"
   },
   {
     "lesson": "22",
     "words": "果たす",
-    "reading": "あたす",
-    "meaning": "Hoàn thành, thực hiện, đóng vai trò"
+    "reading": "はたす",
+    "meaning": "hoàn thành"
   },
   {
     "lesson": "22",
     "words": "引き受ける",
     "reading": "ひきうける",
-    "meaning": "Đảm nhận, xác nhận"
+    "meaning": "nhận, đảm trách"
   },
   {
     "lesson": "22",
     "words": "増す",
     "reading": "ます",
-    "meaning": "Tăng lên, làm tăng"
+    "meaning": "tăng lên"
   },
   {
     "lesson": "22",
     "words": "欠ける",
     "reading": "かける",
-    "meaning": "Bị mẻ, thiếu"
+    "meaning": "bỏ lỡ, thiếu sót"
   },
   {
     "lesson": "22",
     "words": "欠かす",
     "reading": "かかす",
-    "meaning": "Thiếu sót, bỏ sót"
+    "meaning": "thiếu, lỡ"
   },
   {
     "lesson": "22",
     "words": "澄む",
     "reading": "すむ",
-    "meaning": "Trong, sạch"
+    "meaning": "trở nên rõ ràng"
   },
   {
     "lesson": "22",
     "words": "濁る",
     "reading": "にごる",
-    "meaning": "Đục"
+    "meaning": "dính bùn, đục"
   },
   {
     "lesson": "22",
     "words": "濁す",
     "reading": "にごす",
-    "meaning": "Ngập ngừng"
+    "meaning": "nhập nhằng (nói)"
   },
   {
     "lesson": "22",
     "words": "生じる",
     "reading": "しょうじる",
-    "meaning": "Xảy ra, phát sinh, nảy sinh"
+    "meaning": "phát sinh, nguyên nhân"
   },
   {
     "lesson": "22",
     "words": "及ぶ",
     "reading": "およぶ",
-    "meaning": "Lan ra, đạt đến, không cần"
+    "meaning": "đạt đến, lan ra"
   },
   {
     "lesson": "22",
     "words": "及ぼす",
     "reading": "およぼす",
-    "meaning": "Gây"
+    "meaning": "gây ra (thường là ảnh hưởng xấu)"
   },
   {
     "lesson": "22",
     "words": "至る",
     "reading": "いたる",
-    "meaning": "Dẫn tới, cho đến"
+    "meaning": "dẫn đến, đi đến"
   },
   {
     "lesson": "22",
     "words": "達する",
     "reading": "たっする",
-    "meaning": "Tới, lên đến, đạt tới"
+    "meaning": "đến, chạm tới"
   },
   {
     "lesson": "22",
     "words": "実る",
     "reading": "みのる",
-    "meaning": "Chín, ra quả, đạt kết quả"
+    "meaning": "mang lại kết quả tốt"
   },
   {
     "lesson": "22",
     "words": "暮れる",
     "reading": "くれる",
-    "meaning": "Tối, hết, lặn"
+    "meaning": "tối, hết (thường diễn tả hết ngày, hết năm)"
   },
   {
     "lesson": "22",
     "words": "劣る",
     "reading": "おとる",
-    "meaning": "Kém hơn, thấp hơn"
+    "meaning": "kém hơn"
   },
   {
     "lesson": "22",
     "words": "異なる",
     "reading": "ことなる",
-    "meaning": "Khác"
+    "meaning": "khác"
   },
   {
     "lesson": "22",
     "words": "乱れる",
     "reading": "みだれる",
-    "meaning": "Bị rối, bị xáo trộn, bị lộn xộn"
+    "meaning": "hỗn hoạn, bị nhầm lẫn"
   },
   {
     "lesson": "22",
     "words": "乱す",
     "reading": "みだす",
-    "meaning": "Chen ngang, đảo lộn, làm xáo trộn"
+    "meaning": "lộn xộn, làm đảo lộn kế hoạch, làm hỏng"
   },
   {
     "lesson": "22",
     "words": "緩む",
-    "reading": "ゆるむ",
-    "meaning": "Lỏng, nhẹ nhõm, giảm bớt, dịu đi"
+    "reading": "ゆるす",
+    "meaning": "nới lỏng, được thư giãn, phá vớ"
   },
   {
     "lesson": "22",
     "words": "緩める",
     "reading": "ゆるめる",
-    "meaning": "Nới lỏng, thư giãn, làm chậm lại"
+    "meaning": "lỏng, thư giãn, hạ xuống"
   },
   {
     "lesson": "22",
-    "words": "さびる",
+    "words": "錆びる",
     "reading": "さびる",
-    "meaning": "Gỉ sét"
+    "meaning": "bị rỉ sét"
   },
   {
     "lesson": "22",
     "words": "接する",
     "reading": "せっする",
-    "meaning": "Tiếp giáp, tiếp xúc, gặp, liên lạc, nhận"
+    "meaning": "gắn với, tiếp xúc, gặp"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "属する",
-    "reading": "ずくする",
-    "meaning": "Thuộc về, thuộc vào"
+    "reading": "ぞくする",
+    "meaning": "thuộc về"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "占める",
     "reading": "しめる",
-    "meaning": "Chiếm"
+    "meaning": "chiếm, giữ (vị trí)"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "くたびれる",
-    "reading": "",
-    "meaning": "Mệt mỏi, kiệt sức, tả tơi"
+    "reading": "くたびれる",
+    "meaning": "bị mệt, bị chán"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "恵まれる",
     "reading": "めぐまれる",
-    "meaning": "Được ban cho, may mắn có được"
+    "meaning": "được ban phước, được ưa chuộng"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "湧く",
     "reading": "わく",
-    "meaning": "Sôi sục, tràn đầy, sinh sôi"
+    "meaning": "sôi sục, dâng trào"
   },
   {
-    "lesson": "22",
-    "words": "ほほえむ",
-    "reading": "",
-    "meaning": "Mỉm cười"
+    "lesson": "23",
+    "words": "微笑む",
+    "reading": "ほほえむ",
+    "meaning": "cười"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "ふざける",
-    "reading": "",
-    "meaning": "Nô đùa"
+    "reading": "ふざける",
+    "meaning": "quậy phá"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "悔やむ",
     "reading": "くやむ",
-    "meaning": "Hối hận, thương tiếc, đau buồn"
+    "meaning": "hối tiếc"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "ためらう",
-    "reading": "",
-    "meaning": "Do dự, chần chừ"
+    "reading": "ためらう",
+    "meaning": "chần chừ"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "敬う",
     "reading": "うやまう",
-    "meaning": "Tôn kính, kính trọng"
+    "meaning": "tôn trọng"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "さっぱり",
-    "reading": "",
-    "meaning": "Sảng khoái, thoải mái, nhạt, vừa miệng, dễ chịu, thoải mái, hoàn toàn"
+    "reading": "さっぱり",
+    "meaning": "hoàn toàn, sảng khoái"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "すっきり",
-    "reading": "",
-    "meaning": "Tỉnh táo, thoải mái, sảng khoái, đơn giản, gọn gàng"
+    "reading": "すっきり",
+    "meaning": "①sảng khoái, ②rõ ràng, gọn gàng (デザイン、部屋、文章)"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "実に",
     "reading": "じつに",
-    "meaning": "Vô cùng, thật là"
+    "meaning": "thực sự là, thực tế, thực ra"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "思い切り",
     "reading": "おもいきり",
-    "meaning": "Hết mình, hết cỡ, quyết tâm"
+    "meaning": "hết sức, dứt khoát"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "何となく",
     "reading": "なんとなく",
-    "meaning": "Không hiểu sao"
+    "meaning": "hơi hơi (cảm giác)"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "何だか",
     "reading": "なんだか",
-    "meaning": "Một chút, hơi hơi"
+    "meaning": "hơi hơi, 1 chút"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "どうにか",
-    "reading": "",
-    "meaning": "Bằng cách nào đó"
+    "reading": "どうにか",
+    "meaning": "bằng cách nào đó, như thế nào đó"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "どうにも",
-    "reading": "",
-    "meaning": "Không làm gì"
+    "reading": "どうにも",
+    "meaning": "chẳng thể làm gì"
   },
   {
-    "lesson": "22",
+    "lesson": "23",
     "words": "何とか",
     "reading": "なんとか",
-    "meaning": "Bằng cách nào đó, cách này hay cách khác"
+    "meaning": "chút nào đó, gì đó　（何とか言ってください）"
   },
   {
     "lesson": "23",
     "words": "何とも",
     "reading": "なんとも",
-    "meaning": "Không... một chút nào, không hề"
+    "meaning": "không…một chút nào（何とも…ない）"
   },
   {
     "lesson": "23",
     "words": "わざと",
-    "reading": "",
-    "meaning": "Cố tình"
+    "reading": "わざと",
+    "meaning": "cố ý"
   },
   {
     "lesson": "23",
     "words": "わざわざ",
-    "reading": "",
-    "meaning": "Mất công, đặc biệt làm cho ai"
+    "reading": "わざわざ",
+    "meaning": "làm phiền, gây phiền"
   },
   {
     "lesson": "23",
     "words": "せっかく",
-    "reading": "",
-    "meaning": "Mất công, cất công, chờ đợi đã lâu"
+    "reading": "せっかく",
+    "meaning": "đã mất công"
   },
   {
     "lesson": "23",
     "words": "あいにく",
-    "reading": "",
-    "meaning": "Không may"
+    "reading": "あいにく",
+    "meaning": "đáng tiếc"
   },
   {
     "lesson": "23",
     "words": "案の定",
     "reading": "あんのじょう",
-    "meaning": "Đúng như dự định"
+    "meaning": "như mong đợi"
   },
   {
     "lesson": "23",
     "words": "いよいよ",
-    "reading": "",
-    "meaning": "Cuối cùng, ngày càng"
+    "reading": "いよいよ",
+    "meaning": "cuối cùng, đã đến lúc, càng ngày càng"
   },
   {
     "lesson": "23",
     "words": "さすが",
-    "reading": "",
-    "meaning": "Quả thật, đúng thật là, thậm chí, ngay cả"
+    "reading": "さすが",
+    "meaning": "quả là, như dự đoán, thật đúng là"
   },
   {
     "lesson": "23",
     "words": "とにかく",
-    "reading": "",
-    "meaning": "Dù sao thì, dù thế nào thì"
+    "reading": "とにかく",
+    "meaning": "dù sao, cách này hay cách khác"
   },
   {
     "lesson": "23",
     "words": "ともかく",
-    "reading": "",
-    "meaning": "Dù sao đi nữa, khoan bàn đến..."
+    "reading": "ともかく",
+    "meaning": "dù sao, đặt (cái gì) sang một bên"
   },
   {
     "lesson": "23",
     "words": "せめて",
-    "reading": "",
-    "meaning": "Ít nhất, tối thiểu"
+    "reading": "せめて",
+    "meaning": "ít nhất là（mong muốn nhiều hơn thế nhưng biết là không được \nnên ít nhất là muốn cỡ này）"
   },
   {
     "lesson": "23",
     "words": "せいぜい",
-    "reading": "",
-    "meaning": "Tối đa"
+    "reading": "せいぜい",
+    "meaning": "cho dù nhiều thì cũng cỡ (phán đoán)"
   },
   {
     "lesson": "23",
     "words": "どうせ",
-    "reading": "",
-    "meaning": "Dù sao đi nữa"
+    "reading": "どうせ",
+    "meaning": "dù cho, đằng nào thì"
   },
   {
     "lesson": "23",
     "words": "ぎっしり",
-    "reading": "",
-    "meaning": "Chật kín, đầy ắp"
+    "reading": "ぎっしり",
+    "meaning": "lèn chặt, đầy chặt, kín lịch"
   },
   {
     "lesson": "23",
     "words": "ずらりと",
-    "reading": "",
-    "meaning": "Theo hàng"
+    "reading": "ずらりと",
+    "meaning": "trong một dãy"
   },
   {
     "lesson": "23",
-    "words": "あっきり",
-    "reading": "",
-    "meaning": "Thanh đạm, đơn giản, nhẹ nhàng, thanh nhã, dễ dàng"
+    "words": "あっさり",
+    "reading": "あっさり",
+    "meaning": "① tao nhã (món ăn, màu sắc, thiết kế)\n② dễ dàng, trôi chảy"
   },
   {
     "lesson": "23",
-    "words": "しんと／しいんと",
-    "reading": "",
-    "meaning": "Im lặng"
+    "words": "しんと・しいんと",
+    "reading": "しんと・しいんと",
+    "meaning": "yên lặng, lặng lẽ"
   },
   {
     "lesson": "23",
     "words": "ちゃんと",
-    "reading": "",
-    "meaning": "Chỉn chu, đứng đắn, cẩn thận, đàng hoàng, tươm tất"
+    "reading": "ちゃんと",
+    "meaning": "nghiêm túc, cẩn thận, tuyệt đối"
   },
   {
     "lesson": "23",
     "words": "続々",
     "reading": "ぞくぞく",
-    "meaning": "Liên tục, liên tiếp"
+    "meaning": "liên tục, cái này sau cái kia"
   },
   {
     "lesson": "23",
     "words": "どっと",
-    "reading": "",
-    "meaning": "Bật cười, bất chợt, đột nhiên"
+    "reading": "どっと",
+    "meaning": "tất cả cùng lúc, bất thình lình, bất chợt"
   },
   {
     "lesson": "23",
-    "words": "ばったと",
-    "reading": "",
-    "meaning": "Sập/đổ rầm 1 cái, tình cờ, ngẫu nhiên, đột ngột"
+    "words": "ばったり",
+    "reading": "ばったり",
+    "meaning": "đột nhiên (ngã), ngẫu nhiên (gặp ai đó)"
   },
   {
     "lesson": "23",
     "words": "さっさと",
-    "reading": "",
-    "meaning": "Nhanh chóng, khẩn trương"
+    "reading": "さっさと",
+    "meaning": "thể hiện hành động, động tác nhanh (ăn nhanh lên, làm nhanh lên)"
   },
   {
     "lesson": "23",
     "words": "さっと",
-    "reading": "",
-    "meaning": "Nhanh chóng, đột ngột"
+    "reading": "さっと",
+    "meaning": "thể hiện quá trình thay đổi nhanh (vừa bị đổ đã nhanh chóng được lau sạch, sắc mặt thay đổi rất nhanh)"
   },
   {
     "lesson": "23",
     "words": "すっと",
-    "reading": "",
-    "meaning": "Thẳng, tỉnh táo, sảng khoái"
+    "reading": "すっと",
+    "meaning": "đột nhiên (đứng dậy), \nsảng khoái (trong lòng, ăn chewgum thấy trong miệng sảng khoái)"
   },
   {
     "lesson": "23",
     "words": "せっせと",
-    "reading": "",
-    "meaning": "Siêng năng, chăm chỉ"
+    "reading": "せっせと",
+    "meaning": "siêng năng, cần cù"
   },
   {
     "lesson": "23",
     "words": "ざっと",
-    "reading": "",
-    "meaning": "Đại khái, qua loa, khoảng"
+    "reading": "ざっと",
+    "meaning": "sơ qua, đại khái (tính toán sơ, nhìn sơ qua), \nđại khái (lễ hội đại khái có 3000 người)"
   },
   {
     "lesson": "23",
     "words": "こっそり",
-    "reading": "",
-    "meaning": "Lén lút"
+    "reading": "こっそり",
+    "meaning": "bí mật, lén lút"
   },
   {
     "lesson": "23",
-    "words": "生き生きと",
-    "reading": "いきいきと",
-    "meaning": "Hoạt bát, hăng hái, sống động"
+    "words": "生き生き",
+    "reading": "いきいき",
+    "meaning": "sinh động"
   },
   {
     "lesson": "23",
-    "words": "ぼんやりと",
-    "reading": "",
-    "meaning": "Lờ mờ, ngờ ngợ, lơ đãng, thẫn thờ"
+    "words": "ぼんやり",
+    "reading": "ぼんやり",
+    "meaning": "nhìn thấy lờ mờ\nnhớ lờ mờ, đầu óc lờ mờ\nđi bộ lững thững"
   },
   {
     "lesson": "23",
     "words": "ふと",
-    "reading": "",
-    "meaning": "Đột nhiên, tình cờ"
+    "reading": "ふと",
+    "meaning": "đột nhiên, tình cờ"
   },
   {
     "lesson": "23",
-    "words": "じかに",
-    "reading": "",
-    "meaning": "Trực tiếp"
-  },
-  {
-    "lesson": "23",
-    "words": "一度に",
-    "reading": "いちどに",
-    "meaning": "Cùng lúc, đồng thời"
-  },
-  {
-    "lesson": "23",
-    "words": "一斉に",
-    "reading": "いっせいに",
-    "meaning": "Cùng một lúc, đồng loạt"
-  },
-  {
-    "lesson": "23",
-    "words": "共に",
-    "reading": "ともに",
-    "meaning": "Cùng với, đồng thời"
-  },
-  {
-    "lesson": "23",
-    "words": "相互に",
-    "reading": "そうごに",
-    "meaning": "Lẫn nhau"
-  },
-  {
-    "lesson": "23",
-    "words": "ひとりひとり",
-    "reading": "",
-    "meaning": "Từng người, mỗi người"
-  },
-  {
-    "lesson": "23",
-    "words": "いちいち",
-    "reading": "",
-    "meaning": "Mọi thứ, từng cái một, một cách tường tận"
-  },
-  {
-    "lesson": "23",
-    "words": "所々",
-    "reading": "ところどころ",
-    "meaning": "Đổi chỗ, một vài chỗ"
-  },
-  {
-    "lesson": "23",
-    "words": "どうか",
-    "reading": "",
-    "meaning": "Mong, xin, sai lầm, gặp chuyện"
-  },
-  {
-    "lesson": "23",
-    "words": "できれば／できたら",
-    "reading": "",
-    "meaning": "Nếu có thể, nếu được"
-  },
-  {
-    "lesson": "23",
-    "words": "たいして",
-    "reading": "",
-    "meaning": "Không.... nhiều, không...... lắm"
-  },
-  {
-    "lesson": "23",
-    "words": "恐らく",
-    "reading": "おそらく",
-    "meaning": "E rằng, có lẽ, có thể"
-  },
-  {
-    "lesson": "23",
-    "words": "むしろ",
-    "reading": "",
-    "meaning": "Hơn, thà... còn hơn"
-  },
-  {
-    "lesson": "23",
-    "words": "果たして",
-    "reading": "はたして",
-    "meaning": "Rốt cuộc, quả thật, quả đúng là"
-  },
-  {
-    "lesson": "23",
-    "words": "かえって",
-    "reading": "",
-    "meaning": "Ngược lại"
-  },
-  {
-    "lesson": "23",
-    "words": "必ずしも",
-    "reading": "かならずしも",
-    "meaning": "Không hẳn là, chưa chắc, không nhất thiết"
-  },
-  {
-    "lesson": "23",
-    "words": "単に",
-    "reading": "たんに",
-    "meaning": "Chỉ là, một cách đơn thuần"
-  },
-  {
-    "lesson": "23",
-    "words": "いまだに",
-    "reading": "",
-    "meaning": "Đến giờ vẫn chưa"
-  },
-  {
-    "lesson": "23",
-    "words": "ついでに",
-    "reading": "",
-    "meaning": "Nhân tiện, nhân thể"
-  },
-  {
-    "lesson": "23",
-    "words": "とりあえず",
-    "reading": "",
-    "meaning": "Ngay lập tức, trước hết"
+    "words": "直に",
+    "reading": "じかに",
+    "meaning": "trực tiếp"
   },
   {
     "lesson": "24",
-    "words": "万一／万が一",
-    "reading": "まんいち／まんがいち",
-    "meaning": "Nếu lỡ, lỡ như, bất trắc"
+    "words": "一度に",
+    "reading": "いちどに",
+    "meaning": "cùng lúc làm nhiều thứ"
+  },
+  {
+    "lesson": "24",
+    "words": "一斉に",
+    "reading": "いっせいに",
+    "meaning": "cùng lúc có nhiều đối tượng cùng làm một hành động"
+  },
+  {
+    "lesson": "24",
+    "words": "共に",
+    "reading": "ともに",
+    "meaning": "cùng với"
+  },
+  {
+    "lesson": "24",
+    "words": "相互に",
+    "reading": "そうごに",
+    "meaning": "lẫn nhau, cùng nhau"
+  },
+  {
+    "lesson": "24",
+    "words": "一人一人",
+    "reading": "ひとりひとり",
+    "meaning": "từng người một, lần lượt"
+  },
+  {
+    "lesson": "24",
+    "words": "いちいち",
+    "reading": "いちいち",
+    "meaning": "chi li quá (thường mang nghĩa không tốt, không cần thiết quá như thế)"
+  },
+  {
+    "lesson": "24",
+    "words": "所々",
+    "reading": "ところどころ",
+    "meaning": "đây đó"
+  },
+  {
+    "lesson": "24",
+    "words": "どうか",
+    "reading": "どうか",
+    "meaning": "làm ơn"
+  },
+  {
+    "lesson": "24",
+    "words": "できれば・できたら",
+    "reading": "できれば・できたら",
+    "meaning": "nếu có thể"
+  },
+  {
+    "lesson": "24",
+    "words": "たいして。。。ません",
+    "reading": "たいして",
+    "meaning": "Không...nhiều; không...lắm"
+  },
+  {
+    "lesson": "24",
+    "words": "恐らく",
+    "reading": "おそらく",
+    "meaning": "có lẽ"
+  },
+  {
+    "lesson": "24",
+    "words": "むしろ",
+    "reading": "むしろ",
+    "meaning": "hơn, tốt"
+  },
+  {
+    "lesson": "24",
+    "words": "果たして",
+    "reading": "はたして",
+    "meaning": "có thực sự là...(sẽ thành công, sẽ chiến thắng ?)\nquả thực là , đúng với dự đoán"
+  },
+  {
+    "lesson": "24",
+    "words": "かえって",
+    "reading": "かえって",
+    "meaning": "ngược lại, hơn"
+  },
+  {
+    "lesson": "24",
+    "words": "必ずしも",
+    "reading": "かならずしも",
+    "meaning": "không hẳn, không cần thiết"
+  },
+  {
+    "lesson": "24",
+    "words": "単に",
+    "reading": "たんに",
+    "meaning": "chỉ, đơn giản"
+  },
+  {
+    "lesson": "24",
+    "words": "いまだに。。。ません",
+    "reading": "いまだに",
+    "meaning": "vẫn chưa"
+  },
+  {
+    "lesson": "24",
+    "words": "ついでに",
+    "reading": "ついでに",
+    "meaning": "nhân tiện"
+  },
+  {
+    "lesson": "24",
+    "words": "とりあえず",
+    "reading": "とりあえず",
+    "meaning": "đầu tiên, trong thơi gian này"
+  },
+  {
+    "lesson": "24",
+    "words": "万一・万が一",
+    "reading": "まんいち・まんがいち",
+    "meaning": "khẩn cấp, trường hợp xấu"
   },
   {
     "lesson": "24",
     "words": "偶然",
     "reading": "ぐうぜん",
-    "meaning": "Ngẫu nhiên, tình cờ"
+    "meaning": "ngẫu nhiên, bất ngờ"
   },
   {
     "lesson": "24",
     "words": "たまたま",
-    "reading": "",
-    "meaning": "Tình cờ"
+    "reading": "たまたま",
+    "meaning": "tình cờ, thỉnh thoảng"
   },
   {
     "lesson": "24",
-    "words": "実際に",
-    "reading": "じっさいに",
-    "meaning": "Thực tế, sự thực"
+    "words": "実際",
+    "reading": "じっさい",
+    "meaning": "tình cờ, thỉnh thoảng"
   },
   {
     "lesson": "24",
     "words": "同様",
     "reading": "どうよう",
-    "meaning": "Như, tương tự"
+    "meaning": "giống như"
   },
   {
     "lesson": "24",
     "words": "元々",
     "reading": "もともと",
-    "meaning": "Vốn dĩ, nguyên là, vốn là"
+    "meaning": "ban đầu"
   },
   {
     "lesson": "24",
     "words": "本来",
     "reading": "ほんらい",
-    "meaning": "Vốn dĩ, ban đầu, khởi đầu"
+    "meaning": "từ đầu, nguyên bản"
   },
   {
     "lesson": "24",
     "words": "ある",
-    "reading": "",
-    "meaning": "Nào đó, mỗi, có một, nọ"
+    "reading": "ある",
+    "meaning": "có, một số"
   },
   {
     "lesson": "24",
     "words": "あらゆる",
-    "reading": "",
-    "meaning": "Tất cả"
+    "reading": "あらゆる",
+    "meaning": "tất cả"
   },
   {
     "lesson": "24",
-    "words": "たいした",
-    "reading": "",
-    "meaning": "To tát, quan trọng, lớn lao, tuyệt vời"
+    "words": "大した",
+    "reading": "たいした",
+    "meaning": "to lớn (đi cùng phủ định: không có gì to lớn)\ngiỏi (chỉ những người giải quyết tốt vấn đề)"
   },
   {
     "lesson": "24",
     "words": "いわゆる",
-    "reading": "",
-    "meaning": "Cái gọi là, nôm na là"
+    "reading": "いわゆる",
+    "meaning": "cái được gọi là"
   }
 ]
